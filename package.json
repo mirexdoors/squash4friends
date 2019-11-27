@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "squash4friends",
   "version": "1.0.0",
-  "description": "",
+  "description": "squash4friends web site",
   "scripts": {
     "lint": "eslint src/",
     "clean": "rimraf public",
@@ -9,11 +9,11 @@
     "dev": "webpack-dev-server --open --mode development"
   },
   "engines": {
-    "node": "12.13.0"
+    "node": "9.x"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mirexdoors/squash4friends"
   },
   "author": "",
   "license": "ISC",
