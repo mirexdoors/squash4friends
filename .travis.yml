@@ -1,0 +1,15 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 9
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: heroku
+  app: "squash4friends"
+  api_key:
+    secure: "0836a314-534e-4aec-9872-b255ff9a7fe7"
