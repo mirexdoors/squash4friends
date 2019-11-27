@@ -1,5 +1,4 @@
 import './css/style.css';
-import text from './js/text';
 import setCounter from './js/counter';
 
 setCounter();
