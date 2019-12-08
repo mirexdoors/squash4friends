@@ -1,7 +1,40 @@
-body {
-    background-image: url("../img/modal-map.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    color: royalblue; 
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #666666;
+}
+
+/*toolbar start*/
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 7px;
+    background: #333333;
+}
+
+.toolbar__counter {
+    display: flex;
+    justify-content:flex-start;
+    width: 50%;
+}
+
+.counter {
+    color: #FFF;
+    font-size: 14px;
+}
+.counter__item {
+    margin-right: 10px;
+    border-radius: 26px;
+    background: #1C1C1A;
+    padding: 3px 8px;
+}
+.counter__itemDigit {
+    color: #EB2E34;
+    font-weight: 600;
+}
+
+/*toolbar end*/
