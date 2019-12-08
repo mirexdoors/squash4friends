@@ -31,10 +31,42 @@ body {
     border-radius: 26px;
     background: #1C1C1A;
     padding: 3px 8px;
+    align-self: flex-start;
 }
 .counter__itemDigit {
     color: #EB2E34;
     font-weight: 600;
 }
-
+.toolbar__helpers {
+    width:  50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.toolbar__helper {
+    margin-left: 20px;
+}
+.search__icon {
+    cursor: pointer;
+}
+.language__item--active {
+    color: #FFFFFF;
+}
+.language__item--last::before {
+    content: '|';
+    margin: 0 3px;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+.social__item {
+    margin-left: 8px;
+    height: 25px;
+    width: 25px;
+}
+.social__image {
+    height: 100%;
+    max-height: 25px;
+}
 /*toolbar end*/
