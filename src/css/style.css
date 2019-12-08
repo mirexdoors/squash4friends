@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+    url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueBold.eot');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+    url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
 }
@@ -12,7 +34,7 @@ body {
 .toolbar {
     display: flex;
     justify-content: space-between;
-    padding: 14px 7px;
+    padding: 7px;
     background: #333333;
 }
 
@@ -70,3 +92,40 @@ body {
     max-height: 25px;
 }
 /*toolbar end*/
+
+/*menu start*/
+.menu {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;.toolbar
+    background: #E4E3E0;;
+}
+.navigation {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+.navigation__item {
+    font-family: Bebas Neue, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration-line: none;
+    color: #666666;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navigation__item.navigation__item--red {
+    color: #FFFFFF;
+    background: #EB2E34;
+    letter-spacing: 2px;
+}
+.feedback {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*menu end*/
