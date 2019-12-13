@@ -142,19 +142,18 @@ ul {
 /*menu start*/
 .menu {
     display: flex;
-    height: 60px;
     justify-content: space-between;
     background: #E4E3E0;;
 }
-
+.menu__block {
+    height: 60px;
+}
 .navigation {
     width: 70%;
     display: flex;
     justify-content: flex-start;
 }
-.navigation__item {
 
-}
 .navigation__link{
     font-family: Bebas Neue, sans-serif;
     display: flex;
@@ -168,14 +167,14 @@ ul {
     letter-spacing: 1px;
     padding: 0 20px;
 }
-
+.navigation__link--white {
+    color: #FBF8F6;
+}
 .navigation__item.navigation__item--red {
     background: #EB2E34;
     letter-spacing: 2px;
 }
-.navigation__item--red .navigation__link {
-    color: #FFFFFF;
-}
+
 .feedback {
     display: flex;
     justify-content: space-between;
@@ -506,6 +505,18 @@ ul {
 }
 /*instagram end*/
 
+/*footerNav start*/
+.footer__nav {
+    background: #3F3F3F;
+}
+.footer__navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*footerNav end*/
+
 /*footerCounter start*/
 .footerCounter {
     padding: 45px 0 65px 0;
@@ -527,6 +538,7 @@ ul {
 
 }
 /*footerCounter end*/
+
 /*bottomBar start*/
 .bottomBar {
     color: #888888;
