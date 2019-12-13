@@ -80,15 +80,16 @@ ul {
 
 .counter {
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
 }
-
-.counter__item {
+.toolbar__item {
     margin-right: 10px;
+    align-self: flex-start;
+}
+.counter__item {
     border-radius: 26px;
     background: #1C1C1A;
     padding: 3px 8px;
-    align-self: flex-start;
 }
 
 .counter__itemDigit {
@@ -504,6 +505,28 @@ ul {
     justify-content: space-between;
 }
 /*instagram end*/
+
+/*footerCounter start*/
+.footerCounter {
+    padding: 45px 0 65px 0;
+    background: #333333;
+}
+.footerCounter__container {
+    list-style-type: none;
+    display: flex;
+}
+.footerCounter__item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.footerCounter__image {
+    margin-right: 8px;
+}
+.footerCounter__textBlock {
+
+}
+/*footerCounter end*/
 /*bottomBar start*/
 .bottomBar {
     color: #888888;
