@@ -30,29 +30,38 @@ body {
     margin: 0;
     color: #666666;
 }
+ul {
+    padding: 0!important;
+}
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.innerWrapper {
+    padding: 80px 0;
+}
 .logoSymbol {
+    display: inline;
     position: relative;
-    z-index: 100;
 }
 .logoSymbol::before {
     content: ':';
     position: absolute;
-    top: 15px;
-    left: 8px;
+    left: -10px;
+    top: -3px;
+    color: #EB2E34;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 700;
     height: 50%;
+    padding-right: 8px;
 }
-
+.logoSymbol--link::before {
+    left: 10px;
+    top: 15px;
+}
 .logoSymbol--white::before {
     color: #FFF;
-}
-
-.logoSymbol--red::before {
-    top: 11px;
-    left: 0;
-    color: #EB2E34;
 }
 
 /*toolbar start*/
@@ -142,27 +151,30 @@ body {
     display: flex;
     justify-content: flex-start;
 }
-
 .navigation__item {
+
+}
+.navigation__link{
     font-family: Bebas Neue, sans-serif;
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 20px;
     text-decoration-line: none;
     color: #666666;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
+    padding: 0 20px;
 }
 
 .navigation__item.navigation__item--red {
-    color: #FFFFFF;
     background: #EB2E34;
     letter-spacing: 2px;
 }
-
+.navigation__item--red .navigation__link {
+    color: #FFFFFF;
+}
 .feedback {
     display: flex;
     justify-content: space-between;
@@ -233,7 +245,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 75px;
+    padding: 40px 75px;
     background: transparent;
     z-index: 10;
 }
@@ -332,7 +344,7 @@ body {
 }
 
 .slideDescription__content {
-    padding: 14px 115px 14px 16px;
+    padding: 14px 115px 14px 14px;
     color: #666666;
 }
 .slideDescription__text {
@@ -363,11 +375,11 @@ body {
     width:auto;
     color:#FBF8F6;
 }
-.slidePagination__container {
+.paginationBlock__container {
     display: flex;
     list-style-type: none;
 }
-.slidePagination__item {
+.paginationBlock__item {
     width: 26px;
     height: 26px;
     display: flex;
@@ -376,7 +388,9 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
-.slidePagination__item.slidePagination__item--active {
+.paginationBlock__item.paginationBlock__item--active, .paginationBlock__item:hover {
+    color: #FBF8F6;
+    padding-bottom: 3px;
     border-radius: 50%;
     background-color: #EB2E34;
 }
@@ -389,7 +403,10 @@ body {
 }
 .about__block {
     width: 50%;
-    padding: 80px 150px 120px;
+    padding: 80px 115px 120px;
+}
+.about__block--descr {
+    background:#E4E3E0;
 }
 .about__block--photo {
     position: relative;
@@ -403,18 +420,102 @@ body {
     bottom: 0;
     z-index: 10;
 }
-.aboutTitle {
+.titleText {
     font-family: Bebas Neue;
     font-weight: bold;
     font-size: 50px;
     line-height: 50px;
     letter-spacing: 3px;
     margin-bottom: 20px;
-}
-.aboutTitle__text {
     color: #31312E;
 }
-.aboutTitle__text--red {
+
+.titleText--red {
+    color: #EB2E34;
+}
+.aboutDescription__content {
+    padding: 14px 0;
+}
+.aboutDescription__text {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+.aboutDescription__text--bold {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.aboutDescriptionBlock {
+    display: flex;
+    font-family: Bebas Neue;
+    padding-left: 16px;
+}
+.aboutDescriptionBlock__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.aboutDescriptionBlock__main {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 3px;
     color: #EB2E34;
 }
 /*about end*/
+
+/*instagram start*/
+.instagram {
+    position: relative;
+    z-index: 10;
+}
+.instagram__logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.instagram__description {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+    z-index: 10;
+}
+.instagram__feed {
+    display: flex;
+    list-style-type: none;
+}
+.instagram__item {
+    width: 285px;
+    height: 285px;
+    margin-right: 10px;
+}
+.instagram__item:nth-child(4) {
+    margin-right: 0;
+}
+.instagram__footer {
+    display: flex;
+    justify-content: space-between;
+}
+/*instagram end*/
+/*bottomBar start*/
+.bottomBar {
+    color: #888888;
+    background: #1C1C1A;
+}
+.bottomBar__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.bottomBar__policy {
+    text-decoration-line: none;
+    color:  #888888;
+}
+/*bottomBar end*/
