@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header class="header">
+<section class="topBar">
     <div class="header__toolbar toolbar">
         <div class="toolbar__counter counter">
             <div class="counter__item toolbar__item">
@@ -59,6 +59,9 @@
             </div>
         </div>
     </div>
+</section>
+<header class="header">
+
     <div class="menu">
         <nav class="menu__block navigation nav">
             <div class="navigation__item navigation__item--red ">
@@ -229,6 +232,213 @@
         </div>
         <img src="./img/instagram/insta_title.png" class="instagram__logo" alt="">
     </section>
+    <section class="ambassadors innerWrapper">
+        <div class="wrapper ambassadors__bg">
+            <div class="ambassadors__title titleText">Амбассадоры</div>
+            <div class="ambassadors__filter  filter">
+                <select class="ambassadors__select filter__select" name="country">
+                    <option class="filter__option ambassadors__option" selected><img src="./img/ambassadors/ru.png">
+                        Россия
+                    </option>
+                    <option class="filter__option ambassadors__option">Украина</option>
+                </select>
+                <select class="ambassadors__select filter__select" name="city">
+                    <option class="filter__option">Выберите город</option>
+                    <option class="filter__option">Москва</option>
+                    <option class="filter__option">Санкт-Петербург</option>
+                    <option class="filter__option">Новосибирск</option>
+                </select>
+            </div>
+            <div class="ambassadors__container">
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/ambassadors/amb1.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <a
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">Попробовать
+                            сквош</a>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/ambassadors/amb3.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <a
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">Попробовать
+                            сквош</a>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/ambassadors/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <a
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">Попробовать
+                            сквош</a>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ambassadors__footer">
+                <div class="ambassadors__linkAll linkBlock">
+                    <a class="linkBlock__item linkBlock__item--white">Все амбассадоры &rarr;</a>
+                </div>
+                <div class="ambassadors__pagination paginationBlock">
+                    <ul class="paginationBlock__container">
+                        <li
+                                class=" paginationBlock__item  paginationBlock__item--arrow  paginationBlock__itemArrow--left">
+                            &#11104;
+                        </li>
+                        <li class="paginationBlock__item paginationBlock__item--active">1</li>
+                        <li class="paginationBlock__item">2</li>
+                        <li
+                                class="paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
+                            &#10141;
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="articles innerWrapper">
+        <div class="wrapper">
+            <div class="articles__title titleText">Полезные статьи</div>
+            <div class="articles__container">
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/2.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol"> Довольно длинное название статьи в две строки</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <a class="linkBlock__item linkBlock__item--red article__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__footer">
+                <div class="articles__linkAll linkBlock">
+                    <a class="linkBlock__item linkBlock__item--white">Все статьи &rarr;</a>
+                </div>
+                <div class="articles__pagination paginationBlock">
+                    <ul class="paginationBlock__container">
+                        <li
+                                class=" paginationBlock__item  paginationBlock__item--arrow  paginationBlock__itemArrow--left">
+                            &#11104;
+                        </li>
+                        <li class="paginationBlock__item paginationBlock__item--active">1</li>
+                        <li class="paginationBlock__item">2</li>
+                        <li
+                                class="paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
+                            &#10141;
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="seo  innerWrapper">
         <div class="wrapper">
@@ -244,54 +454,54 @@
 
     <footer class="footer">
         <div class="footer__nav">
-        <div class="wrapper">
-            <div class="footer__navContainer">
-                <nav class="menu__block navigation nav">
-                    <div class="navigation__item navigation__item--red ">
-                        <div class="logoSymbol logoSymbol--link logoSymbol--white">
-                            <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+            <div class="wrapper">
+                <div class="footer__navContainer">
+                    <nav class="menu__block navigation nav">
+                        <div class="navigation__item navigation__item--red ">
+                            <div class="logoSymbol logoSymbol--link logoSymbol--white">
+                                <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="navigation__item ">
-                        <a class="navigation__link navigation__link--white" href="#">Клубы</a>
-                    </div>
-                    <div class="navigation__item ">
-                        <a class="navigation__link navigation__link--white" href="#">Амбассадоры</a>
-                    </div>
-                    <div class="navigation__item ">
-                        <a class="navigation__link navigation__link--white" href="#">О нас</a>
-                    </div>
-                    <div class="navigation__item">
-                        <a class="navigation__link navigation__link--white" href="#">Сквош-вики</a>
-                    </div>
-                    <div class="navigation__item ">
-                        <a class="navigation__link navigation__link--white" href="#">Статьи</a>
-                    </div>
-                </nav>
-                <div class="social toolbar__helper">
-                    <div class="social__item">
-                        <a href="https://vk.com" target="_blank" class="social__link">
-                            <img class="social__image" src="./img/socials/vk.png" alt="VK"/>
-                        </a>
-                    </div>
-                    <div class="social__item">
-                        <a href="https://facebook.com" target="_blank" class="social__link">
-                            <img class="social__image" src="./img/socials/fb.png" alt="FB"/>
-                        </a>
-                    </div>
-                    <div class="social__item">
-                        <a href="https://instagram.com" target="_blank" class="social__link">
-                            <img class="social__image" src="./img/socials/ig.png" alt="Instagram"/>
-                        </a>
-                    </div>
-                    <div class="social__item">
-                        <a href="https://youtube.com" target="_blank" class="social__link">
-                            <img class="social__image" src="./img/socials/yt.png" alt="youtube"/>
-                        </a>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">Клубы</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">Амбассадоры</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">О нас</a>
+                        </div>
+                        <div class="navigation__item">
+                            <a class="navigation__link navigation__link--white" href="#">Сквош-вики</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">Статьи</a>
+                        </div>
+                    </nav>
+                    <div class="social toolbar__helper">
+                        <div class="social__item">
+                            <a href="https://vk.com" target="_blank" class="social__link">
+                                <img class="social__image" src="./img/socials/vk.png" alt="VK"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://facebook.com" target="_blank" class="social__link">
+                                <img class="social__image" src="./img/socials/fb.png" alt="FB"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://instagram.com" target="_blank" class="social__link">
+                                <img class="social__image" src="./img/socials/ig.png" alt="Instagram"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://youtube.com" target="_blank" class="social__link">
+                                <img class="social__image" src="./img/socials/yt.png" alt="youtube"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="footer__block footerCounter">
             <div class="wrapper">
