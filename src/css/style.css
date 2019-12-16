@@ -76,7 +76,13 @@ ul {
 .logoSymbol--white::before {
     color: #FFF;
 }
-
+.red {
+    color: #EB2E34;
+}
+.instaLink {
+    text-decoration-line: none;
+    font-weight: bold;
+}
 /*toolbar start*/
 .toolbar {
     display: flex;
@@ -486,7 +492,9 @@ ul {
     margin-bottom: 20px;
     color: #31312E;
 }
-
+.titleText--white {
+    color: #FBF8F6;
+}
 .titleText--red {
     color: #EB2E34;
 }
@@ -615,11 +623,77 @@ ul {
     height: 22px;
     padding-left: 3px;
 }
-.ambassadors__option::before {
-    content: url("../img/ambassadors/ru.png");
-    vertical-align: middle;
-}
 /*ambassadors end*/
+
+/* orders start*/
+.orders {
+    background-image: url('../img/orders/orders_bg.png');
+}
+.orders__title {
+    width: 50%;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+.orders__container {
+    display: flex;
+    justify-content: space-between;
+}
+.orderBlock {
+    width: calc(50% - 5px);
+    height: 460px;
+    background: #FBF8F6;
+}
+.orderBlock__main {
+    display: flex;
+    height: 400px;
+    padding: 25px 42px 0 42px;
+}
+.orderBlock__content {
+    width: 63%;
+}
+.orderBlock__picture {
+    width: 100%;
+    height: fit-content;
+}
+.orderBlock__img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 37%;
+}
+.orderBlock__title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    color: #31312E;
+}
+.orderBlock__subTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.orderBlock__text {
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.orderCTA {
+    display: flex;
+    width: 100%;
+}
+.orderCTA__item {
+    width: 60%;
+}
+.orderCTA__item--min {
+    width: 40%;
+}
+.orderCTA__link {
+    width: 100%;
+}
+    /*orders end*/
+
 /*articles start*/
 .articles {
     background: #E4E3E0;
