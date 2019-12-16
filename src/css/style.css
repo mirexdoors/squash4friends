@@ -692,7 +692,15 @@ ul {
 .orderCTA__link {
     width: 100%;
 }
-    /*orders end*/
+ /*orders end*/
+
+/*map start*/
+.map {
+    width: 100%;
+    height: 840px;
+
+}
+/*map end*/
 
 /*articles start*/
 .articles {
