@@ -38,7 +38,8 @@ body {
 }
 
 ul {
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -78,6 +79,10 @@ ul {
 }
 .red {
     color: #EB2E34;
+}
+.option {
+    padding: 10px;
+    font-size: 18px;
 }
 .instaLink {
     text-decoration-line: none;
@@ -696,9 +701,120 @@ ul {
 
 /*map start*/
 .map {
+    position: relative;
     width: 100%;
     height: 840px;
-
+    z-index: 1;
+}
+.map__list {
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    width: 400px;
+    z-index: 10;
+}
+.mapList__titleBlock {
+    padding: 18px 28px;
+    background: #EB2E34;
+}
+.mapList__title {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    color: #FBF8F6;
+}
+.mapList__selectBlock {
+    display: flex;
+    flex-direction: column;
+}
+.mapList__select {
+    padding: 17px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FBF8F6;
+    border: 2px solid #D3D2CC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #666666;
+}
+.mapList__select:first-child {
+    margin-bottom: 6px;
+}
+.mapList__listBlock {
+    padding: 20px 15px 20px 28px;
+    background: #FBF8F6;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+}
+.mapClubs__container {
+    height: 459px;
+    overflow-y: auto;
+    list-style-type: none;
+}
+.mapClubs__item {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+.mapClub__title, .baloon__title{
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.mapClub__address, .baloon__address {
+    margin-bottom: 4px;
+}
+.mapClub__metro:before, .baloon__metro:before {
+    content: url("../img/metro.png");
+    margin-right: 6px;
+}
+.mapClub__schedule {
+    margin-top: 12px;
+}
+.map ::-webkit-scrollbar {
+    width: 6px;
+    margin-right: 15px;
+}
+.map ::-webkit-scrollbar-track {
+    background: #FBF8F6;
+    padding: 12px;
+}
+.map ::-webkit-scrollbar-thumb {
+    background: #D3D2CC;
+    border-radius: 6px;
+}
+.baloon {
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+.baloon__title {
+    color:  #EB2E34;
+}
+.clubInfo {
+    margin-top: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.clubPhone, .clubSchedule {
+    width: calc(50% - 15px);
+}
+.baloon__socials {
+    display: flex;
+    margin-top: 18px;
+    list-style-type: none;
+}
+.baloon__socialItem {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.baloon_socialImg {
+    width: 100%;
 }
 /*map end*/
 
@@ -816,6 +932,7 @@ ul {
 
 .instagram__feed {
     display: flex;
+    padding: 40px 0 30px 0;
     list-style-type: none;
 }
 

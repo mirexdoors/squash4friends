@@ -240,16 +240,16 @@
             <div class="ambassadors__title titleText">Амбассадоры</div>
             <div class="ambassadors__filter  filter">
                 <select class="ambassadors__select filter__select" name="country" size="1">
-                    <option class="filter__option ambassadors__option" selected>
+                    <option class="option filter__option ambassadors__option" selected>
                         Россия
                     </option>
-                    <option class="filter__option ambassadors__option">Украина</option>
+                    <option class="option filter__option ambassadors__option">Украина</option>
                 </select>
                 <select class="ambassadors__select filter__select" name="city">
-                    <option class="filter__option">Выберите город</option>
-                    <option class="filter__option">Москва</option>
-                    <option class="filter__option">Санкт-Петербург</option>
-                    <option class="filter__option">Новосибирск</option>
+                    <option class="filter__option option">Выберите город</option>
+                    <option class="filter__option option">Москва</option>
+                    <option class="filter__option option">Санкт-Петербург</option>
+                    <option class="filter__option option">Новосибирск</option>
                 </select>
             </div>
             <div class="ambassadors__container">
@@ -436,7 +436,52 @@
         </div>
     </section>
 
-    <section class="map" id="map"></section>
+    <section class="map" id="map">
+        <div class="map__list mapList">
+            <div class="mapList__titleBlock">
+                <div class="mapList__title">Карта клубов</div>
+                <div class="mapList__selectBlock">
+                    <select class="mapList__select" name="map_country">
+                        <option class="option mapList__option">Россия</option>
+                        <option class="option mapList__option">Франция</option>
+                    </select>
+                    <select class="mapList__select" name="map_city">
+                        <option class="option mapList__option">Москва</option>
+                        <option class="option mapList__option">Новосибирск</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mapList__listBlock mapClubs">
+                <ul class="mapClubs__container">
+                    <li class="mapClubs__item mapClub">
+                        <div class="mapClub__title">Название клуба</div>
+                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
+                        <div class="mapClub__metro">Волгоградский проспект</div>
+                        <div class="mapClub__schedule">Ежедневно 10:00—22:00</div>
+                    </li>
+                    <li class="mapClubs__item mapClub">
+                        <div class="mapClub__title">Название клуба</div>
+                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
+                        <div class="mapClub__metro">Волгоградский проспект</div>
+                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
+                    </li>
+                    <li class="mapClubs__item mapClub">
+                        <div class="mapClub__title">«Москва»</div>
+                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
+                        <div class="mapClub__metro">Волгоградский проспект</div>
+                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
+                    </li>
+                    <li class="mapClubs__item mapClub">
+                        <div class="mapClub__title">«Москва»</div>
+                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
+                        <div class="mapClub__metro">Волгоградский проспект</div>
+                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="articles innerWrapper">
         <div class="wrapper">
             <div class="articles__title titleText">Полезные статьи</div>
