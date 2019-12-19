@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU" type="text/javascript">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
+            type="text/javascript">
     </script>
 </head>
 <body>
@@ -95,69 +97,218 @@
 </header>
 <main>
     <section class="slider">
-        <div class="slider__item slide">
-            <div class="slide__description slideDescription slide__block">
-                <div class="slide__title slideTitle">
+        <div id="main-slider">
+            <div class="slider__item">
+                <div class="slide">
+                    <div class="slide__description slideDescription slide__block">
+                        <div class="slide__title slideTitle">
                     <span class="slideTitle__text slideTitle__text--red-white">
                         Влюбляем
                     </span>
-                    <br>
-                    <span class="slideTitle__text">в сквош</span>
-                </div>
-                <div class="slideDescription__content ">
-                    <div class="logoSymbol"> <span
-                            class="slideDescription__text slideDescription__text--bold">Пожалуй, это лучшая спортивная
+                            <br>
+                            <span class="slideTitle__text">в сквош</span>
+                        </div>
+                        <div class="slideDescription__content ">
+                            <div class="logoSymbol"> <span
+                                    class="slideDescription__text slideDescription__text--bold">Пожалуй, это лучшая спортивная
                         игра, которую создал
                         человек. Сегодня мы — амбассадоры сквоша в нашей стране.</span></div>
-                    <span class="slideDescription__text">Знаете ли вы, что в сквош в мире играет каждый 300-й человек? Для сравнения в хоккей на льду играет один человек из 4100! В России сквош только набирает популярность, и играет в него лишь один человек из 70 000.</span>
-                </div>
-                <img class="slideDescription__verticalImage" src="./img/slider/squash4friends.png">
-            </div>
-            <div class="slide__photo slidePromo slide__block" style="background-image: url('img/slider/moskva.png')">
-                <div class="slidePromo__container">
-                    <div class="slidePromo__descriptionWrapper">
-                        <div class="sliderPromo__triangle"></div>
-                        <div class="slidePromo__description slidePromoDescription">
-                            <div class="logoSymbol">
-                                <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
-                            </div>
-                            <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                            <span class="slideDescription__text">Знаете ли вы, что в сквош в мире играет каждый 300-й человек? Для сравнения в хоккей на льду играет один человек из 4100! В России сквош только набирает популярность, и играет в него лишь один человек из 70 000.</span>
                         </div>
+                        <img class="slideDescription__verticalImage" src="./img/slider/squash4friends.png">
                     </div>
-                    <div class="slidePromo__linkBlock linkBlock">
-                        <a href="#" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                    <div class="slide__photo slidePromo slide__block"
+                         style="background-image: url('img/slider/moskva.png')">
+                        <div class="slidePromo__container">
+                            <div class="slidePromo__descriptionWrapper">
+                                <div class="sliderPromo__triangle"></div>
+                                <div class="slidePromo__description slidePromoDescription">
+                                    <div class="logoSymbol">
+                                        <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                    </div>
+                                    <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                                </div>
+                            </div>
+                            <div class="slidePromo__linkBlock linkBlock">
+                                <a href="#" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                            </div>
+
+                        </div>
+
+                        <div class="slidePromo__overlay"></div>
                     </div>
-
-                </div>
-
-                <div class="slidePromo__overlay"></div>
-            </div>
-            <div class="slide__footer slideFooter">
-                <button class="slideFooter__more">Подробнее</button>
-                <div class="slideFooter__pagination slidePagination  paginationBlock">
-                    <ul class="paginationBlock__container">
-                        <li
-                                class="paginationBlock__item paginationBlock__item--arrow  paginationBlock__itemArrow--left">
-                            &#11104;
-                        </li>
-                        <li class="paginationBlock__item  paginationBlock__item--active">1</li>
-                        <li class="paginationBlock__item">2</li>
-                        <li class="paginationBlock__item">3</li>
-                        <li class="paginationBlock__item">4</li>
-                        <li
-                                class=" paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
-                            &#10141;
-                        </li>
-                    </ul>
+                    <div class="slide__footer slideFooter">
+                        <button class="slideFooter__more">Подробнее</button>
+                    </div>
+                    <div class="slide__person">
+                        <img class="slide__personImage" src="./img/slider/person.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="slide__person">
-                <img class="slide__personImage" src="./img/slider/person.png" alt="">
+            <div class="slider__item">
+                <div class="slide">
+                    <div class="slide__description slideDescription slide__block">
+                        <div class="slide__title slideTitle">
+                    <span class="slideTitle__text slideTitle__text--red-white">
+                        Влюбляем
+                    </span>
+                            <br>
+                            <span class="slideTitle__text">в сквош</span>
+                        </div>
+                        <div class="slideDescription__content ">
+                            <div class="logoSymbol"> <span
+                                    class="slideDescription__text slideDescription__text--bold">Пожалуй, это лучшая спортивная
+                        игра, которую создал
+                        человек. Сегодня мы — амбассадоры сквоша в нашей стране.</span></div>
+                            <span class="slideDescription__text">Знаете ли вы, что в сквош в мире играет каждый 300-й человек? Для сравнения в хоккей на льду играет один человек из 4100! В России сквош только набирает популярность, и играет в него лишь один человек из 70 000.</span>
+                        </div>
+                        <img class="slideDescription__verticalImage" src="./img/slider/squash4friends.png">
+                    </div>
+                    <div class="slide__photo slidePromo slide__block"
+                         style="background-image: url('img/slider/moskva.png')">
+                        <div class="slidePromo__container">
+                            <div class="slidePromo__descriptionWrapper">
+                                <div class="sliderPromo__triangle"></div>
+                                <div class="slidePromo__description slidePromoDescription">
+                                    <div class="logoSymbol">
+                                        <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                    </div>
+                                    <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                                </div>
+                            </div>
+                            <div class="slidePromo__linkBlock linkBlock">
+                                <a href="#" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                            </div>
+
+                        </div>
+
+                        <div class="slidePromo__overlay"></div>
+                    </div>
+                    <div class="slide__footer slideFooter">
+                        <button class="slideFooter__more">Подробнее</button>
+                        <!--                    <div class="slideFooter__pagination slidePagination  paginationBlock">-->
+                        <!--                        <ul class="paginationBlock__container">-->
+                        <!--                            <li-->
+                        <!--                                    class="paginationBlock__item paginationBlock__item&#45;&#45;arrow  paginationBlock__itemArrow&#45;&#45;left">-->
+                        <!--                                &#11104;-->
+                        <!--                            </li>-->
+                        <!--                            <li class="paginationBlock__item  paginationBlock__item&#45;&#45;active">1</li>-->
+                        <!--                            <li class="paginationBlock__item">2</li>-->
+                        <!--                            <li class="paginationBlock__item">3</li>-->
+                        <!--                            <li class="paginationBlock__item">4</li>-->
+                        <!--                            <li-->
+                        <!--                                    class=" paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow&#45;&#45;right">-->
+                        <!--                                &#10141;-->
+                        <!--                            </li>-->
+                        <!--                        </ul>-->
+                        <!--                    </div>-->
+                    </div>
+                    <div class="slide__person">
+                        <img class="slide__personImage" src="./img/slider/person.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slide">
+                    <div class="slide__description slideDescription slide__block">
+                        <div class="slide__title slideTitle">
+                    <span class="slideTitle__text slideTitle__text--red-white">
+                        Влюбляем
+                    </span>
+                            <br>
+                            <span class="slideTitle__text">в сквош</span>
+                        </div>
+                        <div class="slideDescription__content ">
+                            <div class="logoSymbol"> <span
+                                    class="slideDescription__text slideDescription__text--bold">Пожалуй, это лучшая спортивная
+                        игра, которую создал
+                        человек. Сегодня мы — амбассадоры сквоша в нашей стране.</span></div>
+                            <span class="slideDescription__text">Знаете ли вы, что в сквош в мире играет каждый 300-й человек? Для сравнения в хоккей на льду играет один человек из 4100! В России сквош только набирает популярность, и играет в него лишь один человек из 70 000.</span>
+                        </div>
+                        <img class="slideDescription__verticalImage" src="./img/slider/squash4friends.png">
+                    </div>
+                    <div class="slide__photo slidePromo slide__block"
+                         style="background-image: url('img/slider/moskva.png')">
+                        <div class="slidePromo__container">
+                            <div class="slidePromo__descriptionWrapper">
+                                <div class="sliderPromo__triangle"></div>
+                                <div class="slidePromo__description slidePromoDescription">
+                                    <div class="logoSymbol">
+                                        <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                    </div>
+                                    <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                                </div>
+                            </div>
+                            <div class="slidePromo__linkBlock linkBlock">
+                                <a href="#" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                            </div>
+
+                        </div>
+
+                        <div class="slidePromo__overlay"></div>
+                    </div>
+                    <div class="slide__footer slideFooter">
+                        <button class="slideFooter__more">Подробнее</button>
+                    </div>
+                    <div class="slide__person">
+                        <img class="slide__personImage" src="./img/slider/person.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slide">
+                    <div class="slide__description slideDescription slide__block">
+                        <div class="slide__title slideTitle">
+                    <span class="slideTitle__text slideTitle__text--red-white">
+                        Влюбляем
+                    </span>
+                            <br>
+                            <span class="slideTitle__text">в сквош</span>
+                        </div>
+                        <div class="slideDescription__content ">
+                            <div class="logoSymbol"> <span
+                                    class="slideDescription__text slideDescription__text--bold">Пожалуй, это лучшая спортивная
+                        игра, которую создал
+                        человек. Сегодня мы — амбассадоры сквоша в нашей стране.</span></div>
+                            <span class="slideDescription__text">Знаете ли вы, что в сквош в мире играет каждый 300-й человек? Для сравнения в хоккей на льду играет один человек из 4100! В России сквош только набирает популярность, и играет в него лишь один человек из 70 000.</span>
+                        </div>
+                        <img class="slideDescription__verticalImage" src="./img/slider/squash4friends.png">
+                    </div>
+                    <div class="slide__photo slidePromo slide__block"
+                         style="background-image: url('img/slider/moskva.png')">
+                        <div class="slidePromo__container">
+                            <div class="slidePromo__descriptionWrapper">
+                                <div class="sliderPromo__triangle"></div>
+                                <div class="slidePromo__description slidePromoDescription">
+                                    <div class="logoSymbol">
+                                        <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                    </div>
+                                    <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                                </div>
+                            </div>
+                            <div class="slidePromo__linkBlock linkBlock">
+                                <a href="#" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                            </div>
+
+                        </div>
+
+                        <div class="slidePromo__overlay"></div>
+                    </div>
+                    <div class="slide__footer slideFooter">
+                        <button class="slideFooter__more">Подробнее</button>
+                    </div>
+                    <div class="slide__person">
+                        <img class="slide__personImage" src="./img/slider/person.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="slider__pagination">
+            <div><button class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button></div>
+            <div class="slider__paginationContainer"></div>
+            <div><button class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button></div>
+        </div>
     </section>
-
-
     <section class="about">
         <div class="about__block about__block--descr">
             <div class="about__title aboutTitle">
@@ -424,7 +575,8 @@
                     </div>
                     <div class="orderBlock__CTA orderCTA">
                         <div class="orderCTA__item linkBlock">
-                            <button class="linkBlock__item linkBlock__item--red orderCTA__link">Стать амбассадором &rarr;
+                            <button class="linkBlock__item linkBlock__item--red orderCTA__link">Стать амбассадором
+                                &rarr;
                             </button>
                         </div>
                         <div class="orderCTA__item orderCTA__item--min linkBlock">

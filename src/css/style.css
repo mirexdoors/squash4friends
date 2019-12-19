@@ -52,7 +52,6 @@ ul {
 }
 
 .logoSymbol {
-    display: inline;
     position: relative;
 }
 
@@ -199,7 +198,9 @@ ul {
 .navigation__link--white {
     color: #FBF8F6;
 }
-
+.navigation__item {
+    display: flex;
+}
 .navigation__item.navigation__item--red {
     background: #EB2E34;
     letter-spacing: 2px;
@@ -258,11 +259,10 @@ ul {
 .slider {
     position: relative;
     width: 100%;
-
-    position: relative;
 }
 
 .slide {
+    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
@@ -434,13 +434,25 @@ ul {
     width: auto;
     color: #FBF8F6;
 }
-
+.slider .slider__pagination {
+    position: absolute;
+    bottom: 40px;
+    right: 10%;
+    display: flex;
+}
 .paginationBlock__container {
     display: flex;
     list-style-type: none;
 }
-
-.paginationBlock__item {
+ .slider__pagination  button{
+    color: #FBF8F6;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+.paginationBlock__item, .slider .paginationBlock__container li {
     width: 26px;
     height: 26px;
     display: flex;
@@ -450,7 +462,7 @@ ul {
     cursor: pointer;
 }
 
-.paginationBlock__item.paginationBlock__item--active, .paginationBlock__item:hover {
+.paginationBlock__item.paginationBlock__item--active, .paginationBlock__item:hover, .slider .paginationBlock__container .slick-active {
     color: #FBF8F6;
     padding-bottom: 3px;
     border-radius: 50%;
