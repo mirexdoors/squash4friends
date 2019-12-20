@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
             type="text/javascript">
     </script>
@@ -32,7 +33,7 @@
         </div>
         <div class="toolbar__helpers">
             <div class="search toolbar__helper">
-                <img class="search__icon" src="./img/search.png" alt="Поиск"/>
+                <img class="search__icon js-search-icon" src="./img/search.png" alt="Поиск"/>
             </div>
             <div class="language toolbar__helper">
                 <span class="language__item  language__item--active">Ru</span>
@@ -303,9 +304,12 @@
             </div>
         </div>
         <div class="slider__pagination">
-            <div><button class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button></div>
+            <button class="slick-prev paginationBlock__item" aria-label="Previous" type="button"
+                    data-slider="main-slider">&#11104;
+            </button>
             <div class="slider__paginationContainer"></div>
-            <div><button class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button></div>
+            <button class="slick-next paginationBlock__item"   data-slider="main-slider" aria-label="Next"
+                    type="button">&#10141;</button>
         </div>
     </section>
     <section class="about">
@@ -353,7 +357,11 @@
                     событий
                     #squash4friends
                 </div>
-                <ul class="instagram__feed">
+                <ul class="instagram__feed" id="insta-slider">
+                    <li class="instagram__item"><img src="./img/instagram/image_1.png" alt=""></li>
+                    <li class="instagram__item"><img src="./img/instagram/image_2.png" alt=""></li>
+                    <li class="instagram__item"><img src="./img/instagram/image_3.png" alt=""></li>
+                    <li class="instagram__item"><img src="./img/instagram/image_4.png" alt=""></li>
                     <li class="instagram__item"><img src="./img/instagram/image_1.png" alt=""></li>
                     <li class="instagram__item"><img src="./img/instagram/image_2.png" alt=""></li>
                     <li class="instagram__item"><img src="./img/instagram/image_3.png" alt=""></li>
@@ -363,22 +371,16 @@
                     <div class="instagram__linkBlock linkBlock">
                         <a href="#" class="linkBlock__item linkBlock__item--red">Следить за нами →</a>
                     </div>
-                    <div class="instagram__pagination paginationBlock">
-                        <ul class="paginationBlock__container">
-                            <li
-                                    class=" paginationBlock__item  paginationBlock__item--arrow  paginationBlock__itemArrow--left">
-                                &#11104;
-                            </li>
-                            <li class="paginationBlock__item paginationBlock__item--active">1</li>
-                            <li class="paginationBlock__item">2</li>
-                            <li class="paginationBlock__item">3</li>
-                            <li class="paginationBlock__item">4</li>
-                            <li
-                                    class="paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
-                                &#10141;
-                            </li>
-                        </ul>
+                    <div class="instagram__paginationWrapper">
+                        <button class="slick-prev paginationBlock__item"   data-slider="insta-slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>
+                        <div class="instagram__pagination paginationBlock"></div>
+                        <button data-slider="insta-slider"  class="slick-next paginationBlock__item"
+                                aria-label="Next" type="button">&#10141;
+                        </button>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -402,7 +404,7 @@
                     <option class="filter__option option">Новосибирск</option>
                 </select>
             </div>
-            <div class="ambassadors__container">
+            <div class="ambassadors__container" id="ambassador-slider">
                 <div class="ambassadors__item ambassador">
                     <div class="ambassador__img">
                         <img src="img/ambassadors/amb1.png" alt="" class="ambassador__picture">
@@ -484,25 +486,76 @@
                         <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
                     </div>
                 </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/ambassadors/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <a
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">Попробовать
+                            сквош</a>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/ambassadors/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <a
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">Попробовать
+                            сквош</a>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
             </div>
             <div class="ambassadors__footer">
                 <div class="ambassadors__linkAll linkBlock">
                     <a class="linkBlock__item linkBlock__item--white">Все амбассадоры &rarr;</a>
                 </div>
-                <div class="ambassadors__pagination paginationBlock">
-                    <ul class="paginationBlock__container">
-                        <li
-                                class=" paginationBlock__item  paginationBlock__item--arrow  paginationBlock__itemArrow--left">
-                            &#11104;
-                        </li>
-                        <li class="paginationBlock__item paginationBlock__item--active">1</li>
-                        <li class="paginationBlock__item">2</li>
-                        <li
-                                class="paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
-                            &#10141;
-                        </li>
-                    </ul>
-                </div>
+
+                    <div class="ambassadors__paginationWrapper">
+                        <button class="slick-prev paginationBlock__item"   data-slider="ambassador-slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>
+                        <div class="ambassadors__pagination paginationBlock"></div>
+                        <button data-slider="ambassador-slider"  class="slick-next paginationBlock__item"
+                                aria-label="Next" type="button">&#10141;
+                        </button>
+                    </div>
+
             </div>
         </div>
     </section>
@@ -636,7 +689,67 @@
     <section class="articles innerWrapper">
         <div class="wrapper">
             <div class="articles__title titleText">Полезные статьи</div>
-            <div class="articles__container">
+            <div class="articles__container" id="articles-slider">
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/2.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol"> Довольно длинное название статьи в две строки</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="./img/articles/1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <a class="linkBlock__item linkBlock__item--red article__link">Подробнее</a>
+                    </div>
+                </div>
                 <div class="articles__item article">
                     <div class="article__img">
                         <img src="./img/articles/1.png" alt="" class="article__picture">
@@ -702,19 +815,14 @@
                 <div class="articles__linkAll linkBlock">
                     <a class="linkBlock__item linkBlock__item--white">Все статьи &rarr;</a>
                 </div>
-                <div class="articles__pagination paginationBlock">
-                    <ul class="paginationBlock__container">
-                        <li
-                                class=" paginationBlock__item  paginationBlock__item--arrow  paginationBlock__itemArrow--left">
-                            &#11104;
-                        </li>
-                        <li class="paginationBlock__item paginationBlock__item--active">1</li>
-                        <li class="paginationBlock__item">2</li>
-                        <li
-                                class="paginationBlock__item  paginationBlock__itemArrow  paginationBlock__itemArrow--right">
-                            &#10141;
-                        </li>
-                    </ul>
+                <div class="articles__paginationWrapper">
+                    <button class="slick-prev paginationBlock__item"   data-slider="articles-slider"
+                            aria-label="Previous" type="button">&#11104;
+                    </button>
+                    <div class="articles__pagination paginationBlock"></div>
+                    <button data-slider="articles-slider"  class="slick-next paginationBlock__item"
+                            aria-label="Next" type="button">&#10141;
+                    </button>
                 </div>
             </div>
         </div>
@@ -827,6 +935,13 @@
             </div>
         </div>
     </footer>
+    <section class="searchBox">
+        <div class="searchBox__container">
+        <div class="searchBox__title">Поиск по сайту</div>
+        <div class="searchBox__inputWrapper"><input type="text" placeholder="Начните набирать" class="searchBox__input"></div>
+        </div>
+    </section>
+    <div class="darkenMask" style="display: none;"></div>
 </main>
 </body>
 </html>
