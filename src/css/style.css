@@ -1237,6 +1237,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 28px;
 }
 .modalForm__right__subTitle img {
+    width: 28px;
     margin-right: 10px;
 }
 /*breadcrumbs start*/
