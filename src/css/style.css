@@ -45,12 +45,16 @@ body.darken {
     top: 0;
     z-index: 95;
 }
-
+.pageTitle__title {
+    margin-bottom: 40px;
+}
 ul {
     margin: 0;
     padding: 0;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
@@ -306,7 +310,7 @@ ul {
     font-size: 16px;
     line-height: 19px;
     font-style: italic;
-    color: #666666;
+    color: #666666!important;
 }
 
 .slideFooter__more::before {
@@ -1015,10 +1019,6 @@ ul {
     margin-right: 8px;
 }
 
-.footerCounter__textBlock {
-
-}
-
 /*footerCounter end*/
 
 /*bottomBar start*/
@@ -1153,11 +1153,9 @@ ul {
     display: flex;
     flex-direction: column;
 }
-.modalForm__input {
-    width: 100%;
+.input, modamodalForm__input {
     height: 54px;
     padding-left: 20px;
-    margin-bottom: 6px;
     background: #FBF8F6;
     border: 2px solid #D3D2CC;
     box-sizing: border-box;
@@ -1166,6 +1164,10 @@ ul {
     font-size: 16px;
     line-height: 19px;
     color: #666666;
+}
+.modalForm__input {
+    width: 100%;
+    margin-bottom: 6px;
 }
 .modalForm__text {
     margin: 20px auto 0 auto;
@@ -1237,3 +1239,52 @@ ul {
 .modalForm__right__subTitle img {
     margin-right: 10px;
 }
+/*breadcrumbs start*/
+.breadcrumbs {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+.breadcrumbs__item {
+    color: #888888;
+}
+.breadcrumbs__link {
+    color: #666666;
+    text-decoration-line: none;
+}
+.breadcrumbs__link::after {
+    content: '/';
+    margin: 0 6px;
+}
+/*breadcrumbs end*/
+.subTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/*textblock start*/
+.textBlock {
+    width: 100%;
+}
+.textBlock__form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 30px 0 35px 0;
+}
+.textBlock__form input, .textBlock__form select {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+.textBlock__footer {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.textBlock__linkBlock {
+    width: 35%;
+}
+/*textblock end*/
