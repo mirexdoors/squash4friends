@@ -33,8 +33,7 @@ body {
     color: #666666;
 }
 body.darken {
-    height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .topBar {
@@ -44,7 +43,7 @@ body.darken {
 .header {
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 95;
 }
 
 ul {
@@ -639,11 +638,9 @@ ul {
 .ambassadors__filter {
     margin-bottom: 30px;
 }
-.ambassadors__select {
-    width: 280px;
+.select {
     height: 54px;
     padding: 0 20px;
-    margin-right: 6px;
     color: #666666;
     font-weight: 600;
     font-size: 16px;
@@ -651,6 +648,10 @@ ul {
     border: 2px solid #D3D2CC;
     border-radius: 4px;
     background: #FBF8F6;
+}
+.ambassadors__select {
+    width: 280px;
+    margin-right: 6px;
 }
 .ambassadors__option {
     height: 22px;
@@ -1040,7 +1041,7 @@ ul {
 /*searchBox start*/
 .searchBox {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 100px;
     width:  100%;
     z-index: 99;
@@ -1095,12 +1096,144 @@ ul {
 /*searchBox end*/
 .darkenMask {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     min-height: 100%;
     background: #000;
     opacity: .6;
     z-index: 95;
+}
+
+/*modal forms*/
+.modalForm {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 400px;
+    margin: auto;
+    background: #FBF8F6;
+    z-index: 99;
+}
+.modalForm h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    color: #31312E;
+}
+.modalForm__fields, .modalForm__titleBlock {
+    padding: 20px 28px;
+}
+.modalForm__titleBlock {
+    color: #FBF8F6;;
+    background: #EB2E34;
+}
+.modalForm__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.modalForm__fields {
+    background:#FBF8F6;
+    padding-bottom: 30px;
+}
+.modalForm__selectBox {
+    display: flex;
+    flex-direction: column;
+}
+.modalForm__select {
+    margin-bottom: 6px;
+}
+.modalForm__fields {
+    display: flex;
+    flex-direction: column;
+}
+.modalForm__input {
+    width: 100%;
+    height: 54px;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    background: #FBF8F6;
+    border: 2px solid #D3D2CC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+.modalForm__text {
+    margin: 20px auto 0 auto;
+}
+.modalForm__submit {
+    width: 100%;
+}
+.modalForm__close {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    cursor: pointer;
+}
+.modalForm__close span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+.modalForm__close span:before, .modalForm__close span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #FBF8F6;
+}
+.modalForm__close span:before {
+    transform: rotate3d(0,0,1,45deg);
+}
+.modalForm__close span:after {
+    transform: rotate3d(0,0,1,-45deg);
+}
+.modalForm.modalForm--insta {
+    display: flex;
+    top: 30%;
+    width: 700px;
+}
+.modalForm__left {
+    width: 300px
+}
+.modalForm__img {
+    width: 100%;
+    height: 100%;
+}
+.modalForm__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 18px;
+    width: 400px
+}
+.modalForm__rightText {
+    padding: 0 28px;
+}
+.modalForm__rightText h2 {
+    margin-bottom: 25px;
+}
+.modalForm__linkBlock {
+    width: 100%;
+}
+.modalForm__right__subTitle {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 28px;
+}
+.modalForm__right__subTitle img {
+    margin-right: 10px;
 }
