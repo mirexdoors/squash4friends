@@ -8,7 +8,6 @@
     <link rel="icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
             type="text/javascript">
@@ -432,8 +431,8 @@
                         </div>
                     </div>
                     <div class="ambassadors__linkBlock linkBlock">
-                        <button data-modal="#try-squash"
-                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                        <button type="submit"
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
                             Попробовать
                             сквош
                         </button>
@@ -966,7 +965,7 @@
         </div>
     </section>
 
-    <form class="modalForm" id="order-ambassador" style="display: none;">
+    <form class="modalForm form" id="order-ambassador" style="display: none;">
         <div class="modalForm__close js-formClose">
             <span></span>
         </div>
@@ -985,9 +984,14 @@
             </div>
         </div>
         <div class="modalForm__fields">
-            <input type="text" class="modalForm__input" name="name" placeholder="ФИО">
-            <input type="tel" class="modalForm__input" name="phone" placeholder="Телефон">
-            <input type="email" class="modalForm__input" name="email" placeholder="Email">
+            <div class="inputWrapper"><input type="text" class="modalForm__input input required" name="name"
+                                             placeholder="ФИО*"></div>
+
+            <div class="inputWrapper"><input type="tel"
+                                             class="modalForm__input input required"
+                                             name="phone" placeholder="Телефон*"></div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input required" name="email"
+                                             placeholder="Email*"></div>
             <div class="modalForm__text">
                 Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
             </div>
@@ -1000,7 +1004,7 @@
         </div>
     </form>
 
-    <form class="modalForm" id="try-squash" style="display: none;">
+    <form class="modalForm form" id="try-squash" style="display: none;">
         <div class="modalForm__close js-formClose">
             <span></span>
         </div>
@@ -1024,9 +1028,12 @@
             </div>
         </div>
         <div class="modalForm__fields">
-            <input type="text" class="modalForm__input" name="name" placeholder="ФИО">
-            <input type="tel" class="modalForm__input" name="phone" placeholder="Телефон">
-            <input type="email" class="modalForm__input" name="email" placeholder="Email">
+            <div class="inputWrapper"><input type="text" class="modalForm__input input required" name="name"
+                                             placeholder="ФИО"></div>
+            <div class="inputWrapper"><input type="tel" class="modalForm__input input required" name="phone"
+                                             placeholder="Телефон"></div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input required" name="email"
+                                             placeholder="Email"></div>
             <div class="modalForm__text">
                 Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
             </div>

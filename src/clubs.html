@@ -8,7 +8,6 @@
     <link rel="icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
             type="text/javascript">
     </script>
@@ -118,7 +117,8 @@
             <div class="titleText">Не нашли своего клуба?</div>
             <div class="subTitle logoSymbol">Напишите нам на почту, либо заполните форму ниже и мы внесем его в список
             </div>
-            <form class="textBlock__form">
+            <form class="textBlock__form form" method="post">
+                <div class="textBlock__fields">
                 <select class="select" name="country">
                     <option value="Россия">Россия</option>
                     <option value="Франция">Франция</option>
@@ -127,19 +127,22 @@
                     <option value="Москва">Москва</option>
                     <option value="Новосибирск">Новосибирск</option>
                 </select>
-                <input type="text" class="input" placeholder="Название клуба">
-                <input type="text" class="input" placeholder="ФИО">
-                <input type="tel" class="input" placeholder="Телефон">
-                <input type="email" class="input" placeholder="Email">
+                <div class="inputWrapper"><input type="text" class="input required" placeholder="Название клуба"></div>
+                <div class="inputWrapper"><input type="text" class="input required" placeholder="ФИО"></div>
+                <div class="inputWrapper"><input type="tel" class="input required" placeholder="Телефон"></div>
+                <div class="inputWrapper"><input type="email" class="input required" placeholder="Email"></div>
+                </div>
+                <div class="textBlock__footer">
+                    <div class="linkBlock textBlock__linkBlock">
+                        <button type="submit" class="linkBlock__item linkBlock__item--red">Отправить заявку
+                            &rarr;
+                        </button>
+                    </div>
+                    <div class="textBlock__footerText">Нажимая на кнопку, вы принимаете условия Политики
+                        конфиденциальности
+                    </div>
+                </div>
             </form>
-            <div class="textBlock__footer">
-                <div class="linkBlock textBlock__linkBlock">
-                    <button class="linkBlock__item linkBlock__item--red js-openModal">Отправить заявку &rarr;</button>
-                </div>
-                <div class="textBlock__footerText">Нажимая на кнопку, вы принимаете условия Политики
-                    конфиденциальности
-                </div>
-            </div>
         </div>
     </section>
     <footer class="footer">
@@ -245,7 +248,7 @@
         </div>
     </section>
 
-    <form class="modalForm" id="order-ambassador" style="display: none;">
+    <form class="modalForm form" id="order-ambassador" style="display: none;">
         <div class="modalForm__close js-formClose">
             <span></span>
         </div>
@@ -264,9 +267,15 @@
             </div>
         </div>
         <div class="modalForm__fields">
-            <input type="text" class="modalForm__input" name="name" placeholder="ФИО">
-            <input type="tel" class="modalForm__input" name="phone" placeholder="Телефон">
-            <input type="email" class="modalForm__input" name="email" placeholder="Email">
+            <div
+                    class="inputWrapper"><input type="text" class="modalForm__input input" name="name"
+                                                placeholder="ФИО"></div>
+            <div class="inputWrapper"><input type="tel" class="modalForm__input input" name="phone"
+                                             placeholder="Телефон">
+            </div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input" name="email"
+                                             placeholder="Email">
+            </div>
             <div class="modalForm__text">
                 Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
             </div>
@@ -279,7 +288,7 @@
         </div>
     </form>
 
-    <form class="modalForm" id="try-squash" style="display: none;">
+    <form class="modalForm form" id="try-squash" style="display: none;">
         <div class="modalForm__close js-formClose">
             <span></span>
         </div>
@@ -303,9 +312,14 @@
             </div>
         </div>
         <div class="modalForm__fields">
-            <input type="text" class="modalForm__input" name="name" placeholder="ФИО">
-            <input type="tel" class="modalForm__input" name="phone" placeholder="Телефон">
-            <input type="email" class="modalForm__input" name="email" placeholder="Email">
+            <div class="inputWrapper"><input type="text" class="modalForm__input input" name="name" placeholder="ФИО">
+            </div>
+            <div class="inputWrapper"><input type="tel" class="modalForm__input input" name="phone"
+                                             placeholder="Телефон">
+            </div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input" name="email"
+                                             placeholder="Email">
+            </div>
             <div class="modalForm__text">
                 Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
             </div>

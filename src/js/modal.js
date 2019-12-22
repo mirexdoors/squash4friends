@@ -17,12 +17,38 @@ $(`.js-formClose`).on(`click`, function () {
     $(`body`).removeClass(`darken`);
 });
 
-$(`.modalForm`).on(`submit`, function (e) {
+$(`.form`).on(`submit`, function (e) {
+    console.log(this);
     e.preventDefault();
-    $(this).fadeOut();
-    $(`#success`).fadeIn();
+    /*валидация*/
+    let isError = false;
+    const requiredFields = $(this).find(`.required`);
+    requiredFields.each((item) => {
+        const input = $(requiredFields[item]);
+        if (input.val().length < 1) {
+            input.parent().addClass(`error`);
+            isError = true;
+        }
+    });
+    if (!isError) {
+        if ($(this).hasClass(`modalForm`)) {
+            $(this).fadeOut();
+        } else {
+            this.reset();
+            $(`.darkenMask`).show();
+            $(`body`).addClass(`darken`);
+        }
+        $(`#success`).fadeIn();
+
+    }
 });
 
+/*ввод в инпут*/
+$(`input.required`).on(`input`, function () {
+    if ($(this).parent().hasClass(`error`)) {
+        $(this).parent().removeClass(`error`);
+    }
+});
 /*проверяем localstorage на показ блока из ИГ */
 if (!localStorage.getItem(`isShowInsta`)) {
     setTimeout(() => {
