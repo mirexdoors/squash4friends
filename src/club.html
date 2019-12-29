@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>:SQUASHFORFRIENDS</title>
     <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
 </head>
@@ -111,15 +112,335 @@
             </div>
         </div>
     </section>
-    <section class="club">
-        <div class="wrapper">
-            <div class="club__pictureBlock">
-                <div class="club__sliderBlock"></div>
-                <div class="club__promoBlock"></div>
+    <section class="club wrapper">
+        <div class="club__pictureBlock">
+            <div class="club__sliderBlock">
+                <div class="club__slider" id="club-slider">
+                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                </div>
+                <div class="clubSlider__paginationWrapper">
+                    <button class="slick-prev paginationBlock__item" data-slider="club-slider"
+                            aria-label="Previous" type="button">&#11104;
+                    </button>
+                    <div class="clubSlider__pagination paginationBlock"></div>
+                    <button data-slider="club-slider" class="slick-next paginationBlock__item"
+                            aria-label="Next" type="button">&#10141;
+                    </button>
+                </div>
             </div>
+            <div class="club__promo">
+                <div class="club__promoBlock">
+                    <div class="club__promoText">Хочу <span class="red">попробовать</span> сквош, где можно?</div>
+                    <div class="club__promoImgBlock">
+                        <img class="club__promoImg" src="img/women.png" alt="">
+                    </div>
+                    <div class="clubPromo__linkBlock linkBlock">
+                        <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
+                            Попробовать
+                            сквош &rarr;
+                        </button>
+                    </div>
+                </div>
+                <div class="club__promoBlock">
+                    <div class="club__promoText">Как стать <span class="red">амбассадором?</span>
+                    </div>
+                    <div class="club__promoImgBlock">
+                        <img class="club__promoImg" src="img/man.png" alt="">
+                    </div>
+                    <div class="clubPromo__linkBlock linkBlock">
+                        <button data-modal="#order-ambassador"
+                                class="js-openModal linkBlock__item linkBlock__item--red">
+                            Стать амбассадором &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="club__contacts">
+            <div class="club__instagram">
+                <a class="red club__instaLink" href="https://www.instagram.com/squashclub.moscow/">@squashclub
+                    .moscow</a>
+            </div>
+            <div class="club__address">
+                Шарикоподшипниковская 13 стр. 46
+            </div>
+            <div class="club__metro">
+                Волгоградский проспект
+            </div>
+            <div class="club__info">
+                <div class="club__phone">+7 (495) 118-30-50<br>+7(905) 714-33-04</div>
+                <div class="club__schedule">Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
+            </div>
+            <ul class="club__socials">
+                <li class="club__socialItem">
+                    <a href="https://vk.com">
+                        <img class="club__socialImg" src="img/vk.png">
+                    </a>
+                </li>
+                <li class="club__socialItem">
+                    <a href="https://facebook.com">
+                        <img class="club__socialImg" src="img/fb.png">
+                    </a>
+                </li>
+                <li class="club__socialItem">
+                    <a href="https://instagram.com">
+                        <img class="club__socialImg" src="img/ig.png">
+                    </a>
+                </li>
+                <li class="club__socialItem">
+                    <a href="https://youtube.com">
+                        <img class="club__socialImg" src="img/yt.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="club__descriptionWrapper">
+            <div class="club__descriptionTitle">Описание клуба</div>
+            <div class="club__description typography">
+                <p> Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
+                    важные задания по разработке существенных финансовых и административных <span
+                            class="red"><b>условий</b>
+                    </span>.</p>
+                <ul>
+                    <li>Таким образом постоянный количественный рост и сфера нашей активности требуют определения и
+                        уточнения систем массового участия.
+                    </li>
+                    <li>Разнообразный и богатый опыт сложившаяся структура организации в значительной степени
+                        обуславливает создание направлений прогрессивного развития.
+                    </li>
+                    <li>Повседневная практика показывает, что новая модель организационной деятельности представляет
+                        собой интересный эксперимент
+                    </li>
+                </ul>
+                <p>Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
+                    важные задания по разработке существенных финансовых и административных условий.</p>
+            </div>
+            <div class="club__linkBlock linkBlock">
+                <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
+                    Попробовать  сквош здесь
+                </button>
+            </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer__nav">
+            <div class="wrapper">
+                <div class="footer__navContainer">
+                    <nav class="menu__block navigation nav">
+                        <div class="navigation__item navigation__item--red ">
+                            <div class="logoSymbol logoSymbol--link logoSymbol--white">
+                                <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                            </div>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="/clubs.html">Клубы</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">Амбассадоры</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">О нас</a>
+                        </div>
+                        <div class="navigation__item">
+                            <a class="navigation__link navigation__link--white" href="#">Сквош-вики</a>
+                        </div>
+                        <div class="navigation__item ">
+                            <a class="navigation__link navigation__link--white" href="#">Статьи</a>
+                        </div>
+                    </nav>
+                    <div class="social toolbar__helper">
+                        <div class="social__item">
+                            <a href="https://vk.com" target="_blank" class="social__link">
+                                <img class="social__image" src="img/vk.png" alt="VK"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://facebook.com" target="_blank" class="social__link">
+                                <img class="social__image" src="img/fb.png" alt="FB"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://instagram.com" target="_blank" class="social__link">
+                                <img class="social__image" src="img/ig.png" alt="Instagram"/>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://youtube.com" target="_blank" class="social__link">
+                                <img class="social__image" src="img/yt.png" alt="youtube"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__block footerCounter">
+            <div class="wrapper">
+                <ul class="footerCounter__container counter">
+                    <li class="footerCounter__item">
+                        <img src="img/globe.png" alt="" class="footerCounter__image">
+                        <div class="footerCounter__textBlock counter__item">
+                            <span class="counter__itemDigit">8</span>&nbsp;стран
+                        </div>
+                    </li>
+                    <li class="footerCounter__item">
+                        <img src="img/ball.png" alt="" class="footerCounter__image">
+                        <div class="footerCounter__textBlock counter__item">
+                            <span class="counter__itemDigit">12</span>&nbsp;клубов
+                        </div>
+                    </li>
+                    <li class="footerCounter__item">
+                        <img src="img/person.png" alt="" class="footerCounter__image">
+                        <div class="footerCounter__textBlock counter__item">
+                            <span class="counter__itemDigit">12 230</span>&nbsp;игроков
+                        </div>
+                    </li>
+                    <li class="footerCounter__item">
+                        <img src="img/speaker.png" alt="" class="footerCounter__image">
+                        <div class="footerCounter__textBlock counter__item">
+                            <span class="counter__itemDigit">123</span>&nbsp;амбассадора
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__block bottomBar">
+            <div class="wrapper">
+                <div class="bottomBar__content">
+                    <div class="bottomBar__copyright">
+                        © squash4friends 2019
+                    </div>
+                    <a href="#" class="bottomBar__policy">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="searchBox">
+        <div class="searchBox__container">
+            <div class="searchBox__title">Поиск по сайту</div>
+            <div class="searchBox__inputWrapper"><input type="text" placeholder="Начните набирать"
+                                                        class="searchBox__input"></div>
+        </div>
+    </section>
+
+    <form class="modalForm form" id="order-ambassador" style="display: none;">
+        <div class="modalForm__close js-formClose">
+            <span></span>
+        </div>
+        <div class="modalForm__titleBlock">
+
+            <div class="modalForm__title">Стать амбассадором</div>
+            <div class="modalForm__selectBox">
+                <select name="country" class="select modalForm__select">
+                    <option value="Россия">Россия</option>
+                    <option value="Россия">Франция</option>
+                </select>
+                <select name="city" class="select modalForm__select">
+                    <option value="Россия">Москва</option>
+                    <option value="Россия">Новосибирск</option>
+                </select>
+            </div>
+        </div>
+        <div class="modalForm__fields">
+            <div class="inputWrapper"><input type="text" class="modalForm__input input required" name="name"
+                                             placeholder="ФИО*"></div>
+
+            <div class="inputWrapper"><input type="tel"
+                                             class="modalForm__input input required"
+                                             name="phone" placeholder="Телефон*"></div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input required" name="email"
+                                             placeholder="Email*"></div>
+            <div class="modalForm__text">
+                Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
+            </div>
+        </div>
+        <div class="modalForm__submitBlock linkBlock">
+            <button type="submit"
+                    class="js-submit modalForm__submit linkBlock__item linkBlock__item--red">Отправить заявку
+                &rarr;
+            </button>
+        </div>
+    </form>
+
+    <form class="modalForm form" id="try-squash" style="display: none;">
+        <div class="modalForm__close js-formClose">
+            <span></span>
+        </div>
+        <div class="modalForm__titleBlock">
+
+            <div class="modalForm__title">Попробовать сквош</div>
+            <div class="modalForm__selectBox">
+                <select name="country" class="select modalForm__select">
+                    <option value="Россия">Россия</option>
+                    <option value="Россия">Франция</option>
+                </select>
+                <select name="city" class="select modalForm__select">
+                    <option value="Россия">Москва</option>
+                    <option value="Россия">Новосибирск</option>
+                </select>
+                <select name="city" class="select modalForm__select">
+                    <option value="">Выберите клуб</option>
+                    <option value="Россия">Сквош-клуб "Москва"</option>
+                    <option value="Россия">Сквош-клуб "Москва"</option>
+                </select>
+            </div>
+        </div>
+        <div class="modalForm__fields">
+            <div class="inputWrapper"><input type="text" class="modalForm__input input required" name="name"
+                                             placeholder="ФИО"></div>
+            <div class="inputWrapper"><input type="tel" class="modalForm__input input required" name="phone"
+                                             placeholder="Телефон"></div>
+            <div class="inputWrapper"><input type="email" class="modalForm__input input required" name="email"
+                                             placeholder="Email"></div>
+            <div class="modalForm__text">
+                Нажимая на кнопку, вы принимаете условия Политики конфиденциальности
+            </div>
+        </div>
+        <div class="modalForm__submitBlock linkBlock">
+            <button type="submit" class="js-submit modalForm__submit linkBlock__item linkBlock__item--red">Отправить
+                заявку
+                &rarr;
+            </button>
+        </div>
+    </form>
+    <form class="modalForm" id="success" style="display: none;">
+        <div class="modalForm__close js-formClose">
+            <span></span>
+        </div>
+        <div class="modalForm__fields">
+            <h2>Заявка отправлена</h2>
+            Как только ваша заявка будет рассмотрена, мы свяжемся с вами
+        </div>
+    </form>
+    <form class="modalForm modalForm--insta" id="insta-modal" style="display: none">
+        <div class="modalForm__close js-formClose">
+            <span></span>
+        </div>
+        <div class="modalForm__left">
+            <img class="modalForm__img" src="./img/insta-modal.png">
+        </div>
+        <div class="modalForm__right">
+            <div class="modalForm__right__subTitle">
+                <img src="img/ig.png"> @squash4friends
+            </div>
+            <div class="modalForm__rightText">
+                <h2>Всё самое интересное — в Instagram</h2>
+                Подпишись на наш инстаграм, чтобы быть в курсе всех событий
+            </div>
+            <div class="modalForm__linkBlock linkBlock">
+                <a class="modalForm__link linkBlock__item  linkBlock__item--red" href="https://instagram.com">Следить за
+                    squash4friends</a>
+            </div>
+        </div>
+    </form>
 </main>
+<div class="darkenMask" style="display: none;"></div>
 </body>
 </html>

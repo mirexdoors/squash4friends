@@ -36,14 +36,23 @@ $(`#articles-slider`).slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    appendDots: $('.articles__pagination'),
+    appendDots: $(`.articles__pagination`),
     arrows: false,
     autoplay: true,
     speed: 500,
     dotsClass: `paginationBlock__container`,
 });
 
-$(`.slick-prev`).on(`click`, function() {
+$(`#club-slider`).slick({
+    dots: true,
+    appendDots: $(`.clubSlider__pagination`),
+    arrows: false,
+    autoplay: true,
+    speed: 500,
+   dotsClass: `paginationBlock__container`,
+});
+
+$(`.slick-prev`).on(`click`, function () {
     const sliderSelector = `#` + $(this).data(`slider`);
     $(sliderSelector).slick(`slickPrev`);
 });

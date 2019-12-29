@@ -100,6 +100,19 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration-line: none;
     font-weight: bold;
 }
+.typography ul {
+    list-style: none;
+}
+.typography ul li {
+    margin-bottom: 12px;
+}
+.typography ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
 /*toolbar start*/
 .toolbar {
     display: flex;
@@ -801,7 +814,7 @@ h1,h2,h3,h4,h5,h6 {
 .mapClub__address, .baloon__address {
     margin-bottom: 4px;
 }
-.mapClub__metro:before, .baloon__metro:before {
+.mapClub__metro:before, .baloon__metro:before, .club__metro:before {
     content: url("../img/metro.png");
     margin-right: 6px;
 }
@@ -1318,3 +1331,90 @@ h1,h2,h3,h4,h5,h6 {
     color: #EB2E34;
 }
 /*textblock end*/
+
+/*club detail page*/
+.club {
+    padding-bottom: 100px;
+}
+.club__pictureBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.club__sliderBlock {
+    width: 60%;
+}
+.club__promo {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+}
+.club__promoBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    background: #E4E3E0;
+}
+.club__promoText {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 32px;
+    color: #31312E;
+}
+.club__promoImg {
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.club__slider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.clubSlider__paginationWrapper {
+    display: flex;
+}
+.clubPromo__linkBlock {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.club__contacts {
+    margin: 50px 0;
+}
+.club__instagram, .club__info, .club__metro {
+    margin-bottom: 12px;
+}
+.club__instaLink {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #EB2E34;
+    text-decoration-line: none;
+}
+.club__info {
+    display: flex;
+}
+.club__phone {
+    margin-right: 30px;
+}
+.club__socials {
+    display: flex;
+    list-style-type: none;
+}
+.club__socialItem {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.club__socialImg {
+    width: 100%;
+}
+.club__descriptionTitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+}
