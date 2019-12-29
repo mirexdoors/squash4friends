@@ -18,22 +18,22 @@ export const init = () => {
                 <ul class="baloon__socials">
                     <li class="baloon__socialItem">
                         <a href=$[properties.clubVK]>
-                        <img class="baloon_socialImg" src="../img/socials/vk.png">
+                        <img class="baloon_socialImg" src="../img/vk.png">
 </a>
                     </li>
                      <li class="baloon__socialItem">
                         <a href=$[properties.clubFB]>
-                        <img class="baloon_socialImg" src="../img/socials/fb.png">
+                        <img class="baloon_socialImg" src="../img/fb.png">
 </a>
                     </li>
                      <li class="baloon__socialItem">
                         <a href=$[properties.clubInsta]>
-                        <img  class="baloon_socialImg" src="../img/socials/ig.png">
+                        <img  class="baloon_socialImg" src="../img/ig.png">
 </a>
                     </li>
                      <li class="baloon__socialItem">
                         <a href=$[properties.clubYT]>
-                        <img class="baloon_socialImg" src="../img/socials/yt.png">
+                        <img class="baloon_socialImg" src="../img/yt.png">
 </a>
                     </li>
                 </ul>

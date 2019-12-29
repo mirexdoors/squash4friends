@@ -49,7 +49,7 @@ module.exports = (env, options) => {
       ],
     },
     plugins: [
-      ...[`index`, `clubs`].map((event) => {
+      ...[`index`, `clubs`, `club`].map((event) => {
         return new HtmlWebpackPlugin({
           template: `./src/${event}.html`,
           filename: `${event}.html`,

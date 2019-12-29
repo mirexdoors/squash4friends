@@ -314,7 +314,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .slideFooter__more::before {
-    content: url(../img/slider/arrow-down.png);
+    content: url(../img/arrow-down.png);
     display: inline-block;
     vertical-align: middle;
     padding: 10px;
@@ -580,7 +580,7 @@ h1,h2,h3,h4,h5,h6 {
 /*about end*/
 /*ambassadors start*/
 .ambassadors {
-    background-image: url("../img/ambassadors/bg.png");
+    background-image: url("../img/bg.png");
     background-color:  #E4E3E0;
 }
 .ambassadors__bg {
@@ -665,7 +665,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* orders start*/
 .orders {
-    background-image: url('../img/orders/orders_bg.png');
+    background-image: url('../img/orders_bg.png');
 }
 .orders__title {
     width: 50%;
@@ -786,6 +786,7 @@ h1,h2,h3,h4,h5,h6 {
     list-style-type: none;
 }
 .mapClubs__item {
+    width: 95%;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 19px;
@@ -806,6 +807,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .mapClub__schedule {
     margin-top: 12px;
+}
+.mapClub__btnBlock {
+    margin-top:  18px;
 }
 .map ::-webkit-scrollbar {
     width: 6px;
@@ -908,7 +912,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .article__counterValue::before {
-    content: url("../img/articles/eye.png");
+    content: url("../img/eye.png");
     margin-right: 4px;
 }
 
