@@ -22,7 +22,7 @@ module.exports = (env, options) => {
   const config = {
     entry: `./src/index.js`,
     output: {
-      filename: `[name].[contenthash].js`,
+      filename: isProd ? `[name].[contenthash].js` : `[name].js`,
       publicPath: ``,
       path: path.join(__dirname, `public`),
     },
@@ -49,14 +49,14 @@ module.exports = (env, options) => {
       ],
     },
     plugins: [
-      ...[`index`, `clubs`, `club`].map((event) => {
+      ...[`index`, `clubs`, `club`, `ambassadors`].map((event) => {
         return new HtmlWebpackPlugin({
           template: `./src/${event}.html`,
           filename: `${event}.html`,
         });
       }),
       new MiniCssExtractPlugin({
-        filename: `css/[name].[contenthash].css`,
+        filename: isProd ? `css/[name].[contenthash].css` : `css/[name].css`,
       }),
     ],
     devtool: `source-map`,

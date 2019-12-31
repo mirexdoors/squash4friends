@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>:SQUASHFORFRIENDS</title>
     <link rel="icon" href="./favicon.png">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
+            type="text/javascript">
+    </script>
 </head>
 <body>
 <section class="topBar">
@@ -72,7 +74,7 @@
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
             <div class="navigation__item ">
-                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+                <a class="navigation__link" href="#">Амбассадоры</a>
             </div>
             <div class="navigation__item ">
                 <a class="navigation__link" href="#">О нас</a>
@@ -97,133 +99,189 @@
     </div>
 </header>
 <main>
-
     <section class="pageTitle">
         <div class="pageTitle__titleBlock">
             <div class="wrapper">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/clubs.html">Клубы</a></li>
-                    <li class="breadcrumbs__item">Сквош-клуб «Москва»</li>
+                    <li class="breadcrumbs__item">Амбассадоры</li>
                 </ul>
                 <div class="pageTitle__title">
-                    <h1 class="titleText">Сквош-клуб «Москва»</h1>
+                    <h1 class="titleText">Амбассадоры</h1>
+                </div>
+                <div class="pageTitle__subTitle logoSymbol">
+                    #squash4friends — волонтерское движение, несущее сквош в массы! прикол в том, чтобы привлечь не конкретных людей, а расширить круг осведомленности об этом виде спорта!
                 </div>
             </div>
         </div>
     </section>
-    <section class="club wrapper">
-        <div class="club__pictureBlock">
-            <div class="club__sliderBlock">
-                <div class="club__slider" id="club-slider">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                </div>
-                <div class="clubSlider__paginationWrapper">
-                    <button class="slick-prev paginationBlock__item" data-slider="club-slider"
-                            aria-label="Previous" type="button">&#11104;
-                    </button>
-                    <div class="clubSlider__pagination paginationBlock"></div>
-                    <button data-slider="club-slider" class="slick-next paginationBlock__item"
-                            aria-label="Next" type="button">&#10141;
-                    </button>
-                </div>
+    <section class="ambassadors innerWrapper">
+        <div class="wrapper ambassadors__bg">
+            <div class="ambassadors__filter  filter">
+                <select class="select ambassadors__select filter__select" name="country" size="1">
+                    <option class="option filter__option ambassadors__option" selected>
+                        Россия
+                    </option>
+                    <option class="option filter__option ambassadors__option">Украина</option>
+                </select>
+                <select class="select ambassadors__select filter__select" name="city">
+                    <option class="filter__option option">Выберите город</option>
+                    <option class="filter__option option">Москва</option>
+                    <option class="filter__option option">Санкт-Петербург</option>
+                    <option class="filter__option option">Новосибирск</option>
+                </select>
             </div>
-            <div class="club__promo">
-                <div class="club__promoBlock">
-                    <div class="club__promoText">Хочу <span class="red">попробовать</span> сквош, где можно?</div>
-                    <div class="club__promoImgBlock">
-                        <img class="club__promoImg" src="img/women.png" alt="">
+            <div class="ambassadors__container">
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/amb1.png" alt="" class="ambassador__picture">
                     </div>
-                    <div class="clubPromo__linkBlock linkBlock">
-                        <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <button type="submit"
+                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
                             Попробовать
-                            сквош &rarr;
+                            сквош
                         </button>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
                     </div>
                 </div>
-                <div class="club__promoBlock">
-                    <div class="club__promoText">Как стать <span class="red">амбассадором?</span>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/amb3.png" alt="" class="ambassador__picture">
                     </div>
-                    <div class="club__promoImgBlock">
-                        <img class="club__promoImg" src="img/man.png" alt="">
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clubPromo__linkBlock linkBlock">
-                        <button data-modal="#order-ambassador"
-                                class="js-openModal linkBlock__item linkBlock__item--red">
-                            Стать амбассадором &rarr;
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <button data-modal="#try-squash"
+                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                            Попробовать
+                            сквош
                         </button>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <button data-modal="#try-squash"
+                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                            Попробовать
+                            сквош
+                        </button>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <button data-modal="#try-squash"
+                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                            Попробовать
+                            сквош
+                        </button>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="ambassadors__item ambassador">
+                    <div class="ambassador__img">
+                        <img src="img/amb2.png" alt="" class="ambassador__picture">
+                    </div>
+                    <div class="ambassador__content">
+                        <div class="ambassador__main">
+                            <div class="ambassador__name logoSymbol">
+                                Иванов Иван Иванович
+                            </div>
+                            <div class="ambassador__city">Россия, Москва</div>
+                        </div>
+                        <div class="ambassador__sub">
+                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
+                                клуба</span>
+                            </div>
+                            <div class="ambassador__experience">
+                                Стаж: <span class="ambassador__experienceValue">2 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ambassadors__linkBlock linkBlock">
+                        <button data-modal="#try-squash"
+                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                            Попробовать
+                            сквош
+                        </button>
+                        <a class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="club__contacts">
-            <div class="club__instagram">
-                <a class="red club__instaLink" href="https://www.instagram.com/squashclub.moscow/">@squashclub
-                    .moscow</a>
-            </div>
-            <div class="club__address">
-                Шарикоподшипниковская 13 стр. 46
-            </div>
-            <div class="club__metro">
-                Волгоградский проспект
-            </div>
-            <div class="club__info">
-                <div class="club__phone">+7 (495) 118-30-50<br>+7(905) 714-33-04</div>
-                <div class="club__schedule">Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-            </div>
-            <ul class="club__socials">
-                <li class="club__socialItem">
-                    <a href="https://vk.com">
-                        <img class="club__socialImg" src="img/vk.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://facebook.com">
-                        <img class="club__socialImg" src="img/fb.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://instagram.com">
-                        <img class="club__socialImg" src="img/ig.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://youtube.com">
-                        <img class="club__socialImg" src="img/yt.png">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="club__descriptionWrapper">
-            <div class="club__descriptionTitle">Описание клуба</div>
-            <div class="club__description typography">
-                <p> Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
-                    важные задания по разработке существенных финансовых и административных <span
-                            class="red"><b>условий</b>
-                    </span>.</p>
-                <ul>
-                    <li>Таким образом постоянный количественный рост и сфера нашей активности требуют определения и
-                        уточнения систем массового участия.
-                    </li>
-                    <li>Разнообразный и богатый опыт сложившаяся структура организации в значительной степени
-                        обуславливает создание направлений прогрессивного развития.
-                    </li>
-                    <li>Повседневная практика показывает, что новая модель организационной деятельности представляет
-                        собой интересный эксперимент
-                    </li>
-                </ul>
-                <p>Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
-                    важные задания по разработке существенных финансовых и административных условий.</p>
-            </div>
-            <div class="club__linkBlock linkBlock">
-                <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
-                    Попробовать  сквош здесь
-                </button>
+            <div class="ambassadors__footer">
+                <div class="ambassadors__linkAll linkBlock">
+                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Показать ещё</a>
+                </div>
             </div>
         </div>
     </section>
@@ -419,6 +477,7 @@
             Как только ваша заявка будет рассмотрена, мы свяжемся с вами
         </div>
     </form>
+
     <form class="modalForm modalForm--insta" id="insta-modal" style="display: none">
         <div class="modalForm__close js-formClose">
             <span></span>
