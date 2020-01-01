@@ -3,7 +3,7 @@ import 'slick-carousel';
 
 $(`#main-slider`).slick({
     dots: true,
-    appendDots: $('.slider__paginationContainer'),
+    appendDots: $(`.slider__paginationContainer`),
     arrows: false,
     autoplay: true,
     speed: 500,
@@ -14,7 +14,7 @@ $(`#insta-slider`).slick({
     dots: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    appendDots: $('.instagram__pagination'),
+    appendDots: $(`.instagram__pagination`),
     arrows: false,
     autoplay: true,
     speed: 500,
@@ -25,7 +25,7 @@ $(`#ambassador-slider`).slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    appendDots: $('.ambassadors__pagination'),
+    appendDots: $(`.ambassadors__pagination`),
     arrows: false,
     autoplay: true,
     speed: 500,
@@ -57,7 +57,7 @@ $(`.slick-prev`).on(`click`, function () {
     $(sliderSelector).slick(`slickPrev`);
 });
 
-$(`.slick-next`).on(`click`, function() {
+$(`.slick-next`).on(`click`, function () {
     const sliderSelector = `#` + $(this).data(`slider`);
     $(sliderSelector).slick(`slickNext`);
 });

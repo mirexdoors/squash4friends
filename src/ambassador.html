@@ -7,10 +7,8 @@
     <title>:SQUASHFORFRIENDS</title>
     <link rel="icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
-            type="text/javascript">
-    </script>
 </head>
 <body>
 <section class="topBar">
@@ -74,7 +72,7 @@
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
             <div class="navigation__item ">
-                <a class="navigation__link" href="#">Амбассадоры</a>
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
             <div class="navigation__item ">
                 <a class="navigation__link" href="#">О нас</a>
@@ -99,18 +97,90 @@
     </div>
 </header>
 <main>
-    <section class="pageTitle">
-        <div class="pageTitle__titleBlock">
-            <div class="wrapper">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                    <li class="breadcrumbs__item">Амбассадоры</li>
-                </ul>
-                <div class="pageTitle__title">
-                    <h1 class="titleText">Амбассадоры</h1>
+
+    <section class="orders innerWrapper">
+        <div class="wrapper">
+            <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
+            </div>
+            <div class="orders__container">
+                <div class="orders__item orderBlock">
+                    <div class="orderBlock__main">
+                        <div class="orderBlock__content">
+                            <div class="orderBlock__title">
+                                Хочу <span class="red">попробовать</span> сквош, где
+                                можно?
+                            </div>
+                            <div class="orderBlock__description">
+                                <div class="orderBlock__subTitle logoSymbol">
+                                    Найди удобный для себя клуб, напиши амбассадору — попробуй сквош!
+                                </div>
+                                <div class="orderBlock__text">
+                                    В рамках программы «Подари другу сквош» мы приглашаем на ознакомительную тренировку
+                                    любого знакомого, друга, подписчика. С нас – бесплатный корт и бесплатная
+                                    тренировка. От вас – честный пост в соцсетях (ФБ, Инстаграм или ВК) о тренировке с
+                                    хештегом #squash4friends.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderBlock__img">
+                            <img class="orderBlock__picture" src="img/women.png" alt="">
+                        </div>
+                    </div>
+                    <div class="orderBlock__CTA orderCTA">
+                        <div class="orderCTA__item linkBlock">
+                            <button
+                                    data-modal="#try-squash"
+                                    class="js-openModal linkBlock__item linkBlock__item--red orderCTA__link">Попробовать
+                                сквош &rarr;
+                            </button>
+                        </div>
+                        <div class="orderCTA__item orderCTA__item--min linkBlock">
+                            <a href="/clubs.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Карта
+                                клубов</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pageTitle__subTitle logoSymbol">
-                    #squash4friends — волонтерское движение, несущее сквош в массы! прикол в том, чтобы привлечь не конкретных людей, а расширить круг осведомленности об этом виде спорта!
+                <div class="orders__item orderBlock">
+                    <div class="orderBlock__main">
+                        <div class="orderBlock__content">
+                            <div class="orderBlock__title">
+                                Как стать <span class="red">амбассадором?</span>
+                            </div>
+                            <div class="orderBlock__description">
+                                <div class="orderBlock__subTitle logoSymbol">
+                                    Отправь заявку, чтобы стать амбассадором в своём городе!
+                                </div>
+                                <div class="orderBlock__text">
+                                    #squash4friends — волонтерское движение, несущее сквош в массы! прикол в том,
+                                    чтобы привлечь не конкретных людей, а расширить круг осведомленности об этом виде
+                                    спорта! Амбассадорами уже стали чемпион России <a class="instaLink red"
+                                                                                      href="https://www.instagram.com/vladtitov97/">@vladtitov97</a>
+                                    и владелец клуба «Москва» <a class="instaLink red"
+                                                                 href="https://www.instagram.com/ivnborodin/">@ivnborodin
+
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderBlock__img">
+                            <img class="orderBlock__picture" src="img/man.png" alt="">
+                        </div>
+                    </div>
+                    <div class="orderBlock__CTA orderCTA">
+                        <div class="orderCTA__item linkBlock">
+                            <button
+                                    data-modal="#order-ambassador"
+                                    class="js-openModal linkBlock__item linkBlock__item--red
+                                    orderCTA__link">Стать
+                                амбассадором
+                                &rarr;
+                            </button>
+                        </div>
+                        <div class="orderCTA__item orderCTA__item--min linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Все
+                                амбассадоры</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,6 +188,7 @@
 
     <section class="ambassadors innerWrapper">
         <div class="wrapper">
+            <div class="ambassadors__title titleText">Другие амбассадоры</div>
             <div class="ambassadors__filter  filter">
                 <select class="select ambassadors__select filter__select" name="country" size="1">
                     <option class="option filter__option ambassadors__option" selected>
@@ -132,7 +203,8 @@
                     <option class="filter__option option">Новосибирск</option>
                 </select>
             </div>
-            <div class="ambassadors__container">
+
+           <div class="ambassadors__container ambassadors__container-slider" id="ambassador-slider">
                 <div class="ambassadors__item ambassador">
                     <div class="ambassador__img">
                         <img src="img/amb1.png" alt="" class="ambassador__picture">
@@ -159,7 +231,7 @@
                             Попробовать
                             сквош
                         </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
+                        <a href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
                             Подробнее</a>
                     </div>
                 </div>
@@ -189,7 +261,7 @@
                             Попробовать
                             сквош
                         </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
+                        <a href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
                     </div>
                 </div>
                 <div class="ambassadors__item ambassador">
@@ -218,8 +290,7 @@
                             Попробовать
                             сквош
                         </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
-                            Подробнее</a>
+                        <a href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
                     </div>
                 </div>
                 <div class="ambassadors__item ambassador">
@@ -248,7 +319,7 @@
                             Попробовать
                             сквош
                         </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
+                        <a href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
                             Подробнее</a>
                     </div>
                 </div>
@@ -285,84 +356,24 @@
             </div>
             <div class="ambassadors__footer">
                 <div class="ambassadors__linkAll linkBlock">
-                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Показать ещё</a>
+                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item&#45;&#45;white">Все амбассадоры
+                        &rarr;</a>
                 </div>
-            </div>
+
+                <div class="ambassadors__paginationWrapper">
+                    <button class="slick-prev paginationBlock__item" data-slider="ambassador-slider"
+                            aria-label="Previous" type="button">&#11104;
+                    </button>
+                    <div class="ambassadors__pagination paginationBlock"></div>
+                    <button data-slider="ambassador-slider" class="slick-next paginationBlock__item"
+                            aria-label="Next" type="button">&#10141;
+                    </button>
+                </div>
+
+           </div>
         </div>
     </section>
-    <section class="about">
-        <div class="about__block">
-            <div class="about__title aboutTitle">
-                    <span class="aboutTitle__text titleText">
-                       Что вы получаете, становясь <span class="red">амбассадором?</span>
-                    </span>
-            </div>
-            <div class="aboutDescription__content ">
-                <div class="logoSymbol">
-                    <span class="aboutDescription__text aboutDescription__text--bold">
-                        Нужен текст о том, почему круто быть амбассадором, что они получают, сотрудничая с нами.
-                    </span>
-                </div>
-                <span class="aboutDescription__text">
-                    Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
-                </span>
-            </div>
-        </div>
-        <div class="about__block about__block--photo" style="background-image: url(img/ambassadors_about.png)">
-            <div class="about__linkBlock linkBlock"><a href="/about.html"
-                                                       class="linkBlock__item linkBlock__item--red">Читать
-                подробнее →</a>
-            </div>
-        </div>
-    </section>
-    <section class="map" id="map">
-        <div class="map__list mapList">
-            <div class="mapList__titleBlock">
-                <div class="mapList__title">Карта клубов</div>
-                <div class="mapList__selectBlock">
-                    <select class="mapList__select" name="map_country">
-                        <option class="option mapList__option">Россия</option>
-                        <option class="option mapList__option">Франция</option>
-                    </select>
-                    <select class="mapList__select" name="map_city">
-                        <option class="option mapList__option">Москва</option>
-                        <option class="option mapList__option">Новосибирск</option>
-                    </select>
-                </div>
-            </div>
-            <div class="mapList__listBlock mapClubs">
-                <ul class="mapClubs__container">
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">Название клуба</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule">Ежедневно 10:00—22:00</div>
-                        <div class="linkBlock mapClub__btnBlock">
-                            <a href="club.html" class="linkBlock__item linkBlock__item--red">Подробнее о клубе</a>
-                        </div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">Название клуба</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">«Москва»</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">«Москва»</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
     <section class="seo  innerWrapper">
         <div class="wrapper">
             <div class="seo__title titleText">squash4friends</div>
