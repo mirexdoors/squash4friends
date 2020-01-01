@@ -522,11 +522,9 @@ h1,h2,h3,h4,h5,h6 {
     width: 50%;
     padding: 80px 115px 120px;
 }
-
-.about__block--descr {
+.about__block--grey {
     background: #E4E3E0;
 }
-
 .about__block--photo {
     position: relative;
     background-size: cover;
@@ -552,9 +550,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .titleText--white {
     color: #FBF8F6;
-}
-.titleText--red {
-    color: #EB2E34;
 }
 
 .aboutDescription__content {
