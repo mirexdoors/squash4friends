@@ -97,7 +97,107 @@
     </div>
 </header>
 <main>
+    <section class="slider">
 
+        <div class="slider__item">
+            <div class="slide">
+
+                <div class="slide__description slideDescription slide__block">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ambassadors.html">
+                            Амбассадоры</a></li>
+                        <li class="breadcrumbs__item">Иван Бородин</li>
+                    </ul>
+                    <div class="slide__title slideTitle">
+                        <span class="slideTitle__text">Иван Бородин</span>
+                    </div>
+                    <div class="slideDescription__content ">
+                        <div class="logoSymbol"> <span
+                                class="slideDescription__text slideDescription__text--bold">Россия, Москва</span></div>
+                        <span class="slideDescription__text">
+                                Клуб: <span class="bold">"Москва"</span>
+                                <br>
+                                Стаж: <span class="bold">3 года</span>
+                            </span>
+                        <div class="slideDescription__delimiter"></div>
+                        2-4 строчки о человеке: Повседневная практика показывает, что дальнейшее развитие различных форм
+                        деятельности способствует подготовки и реализации дальнейших направлений развития.
+                    </div>
+                    <img class="slideDescription__verticalImage" src="img/squash4friends.png">
+                </div>
+                <div class="slide__photo slidePromo slide__block"
+                     style="background-image: url('img/moskva.png')">
+                    <div class="slidePromo__container">
+                        <div class="slidePromo__descriptionWrapper">
+                            <div class="sliderPromo__triangle"></div>
+                            <div class="slidePromo__description slidePromoDescription">
+                                <div class="logoSymbol">
+                                    <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                </div>
+                                <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                            </div>
+                        </div>
+                        <div class="slidePromo__linkBlock linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
+                                амбассадоры &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="slidePromo__overlay"></div>
+                </div>
+                <div class="slide__footer slideFooter">
+                    <button class="slideFooter__more">Подробнее</button>
+                </div>
+                <div class="slide__person">
+                    <img class="slide__personImage" src="img/slider_person.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ambassadorStory">
+        <div class="wrapper">
+            <div class="ambassadorStory__item storyItem">
+                <div class="storyItem__content">
+                    <div class="storyItem__contentTitle titleText">мой путь <br><span class="red">в сквоше</span>
+                    </div>
+                    <div class="logoSymbol storyItem__subText">
+                            <span class="bold">Студенты и предприниматели, профессоры и спортсмены,
+                            топ-менеджеры и
+                                журналисты.</span>
+                    </div>
+                    <div class="storyItem__text">
+                        Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все
+                        вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей
+                        любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно
+                        бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
+                    </div>
+                    <div class="storyItem__link linkBlock">
+                        <button data-modal="#try-squash" class="js-openModal  linkBlock__item linkBlock__item--red">
+                            Попробовать сквош
+                        </button>
+                    </div>
+                </div>
+                <div class="storyItem__picture">
+                    <div class="storyItem__slider"  id="story-slider">
+                        <img src="img/storyItem_slider.png" alt="">
+                        <img src="img/storyItem_slider.png" alt="">
+                        <img src="img/storyItem_slider.png" alt="">
+                        <img src="img/storyItem_slider.png" alt="">
+                    </div>
+                    <div class="storySlider__paginationWrapper">
+                        <button class="slick-prev paginationBlock__item" data-slider="story-slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>
+                        <div class="storySlider__pagination paginationBlock"></div>
+                        <button data-slider="story-slider" class="slick-next paginationBlock__item"
+                                aria-label="Next" type="button">&#10141;
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="orders innerWrapper">
         <div class="wrapper">
             <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
@@ -204,7 +304,7 @@
                 </select>
             </div>
 
-           <div class="ambassadors__container ambassadors__container-slider" id="ambassador-slider">
+            <div class="ambassadors__container ambassadors__container-slider" id="ambassador-slider">
                 <div class="ambassadors__item ambassador">
                     <div class="ambassador__img">
                         <img src="img/amb1.png" alt="" class="ambassador__picture">
@@ -370,7 +470,7 @@
                     </button>
                 </div>
 
-           </div>
+            </div>
         </div>
     </section>
 

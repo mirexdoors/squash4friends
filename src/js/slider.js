@@ -49,9 +49,16 @@ $(`#club-slider`).slick({
     arrows: false,
     autoplay: true,
     speed: 500,
+    dotsClass: `paginationBlock__container`,
+});
+$(`#story-slider`).slick({
+    dots: true,
+    appendDots: $(`.storySlider__pagination`),
+    arrows: false,
+    autoplay: true,
+    speed: 500,
    dotsClass: `paginationBlock__container`,
 });
-
 $(`.slick-prev`).on(`click`, function () {
     const sliderSelector = `#` + $(this).data(`slider`);
     $(sliderSelector).slick(`slickPrev`);
