@@ -7,6 +7,7 @@
     <title>:SQUASHFORFRIENDS</title>
     <link rel="icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
             type="text/javascript">
@@ -74,7 +75,7 @@
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
             <div class="navigation__item ">
-                <a class="navigation__link" href="#">Амбассадоры</a>
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
             <div class="navigation__item ">
                 <a class="navigation__link" href="/about.html">О нас</a>
@@ -99,221 +100,177 @@
     </div>
 </header>
 <main>
-    <section class="pageTitle">
-        <div class="pageTitle__titleBlock">
-            <div class="wrapper">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                    <li class="breadcrumbs__item">Амбассадоры</li>
-                </ul>
-                <div class="pageTitle__title">
-                    <h1 class="titleText">Амбассадоры</h1>
-                </div>
-                <div class="pageTitle__subTitle logoSymbol">
-                    #squash4friends — волонтерское движение, несущее сквош в массы! прикол в том, чтобы привлечь не конкретных людей, а расширить круг осведомленности об этом виде спорта!
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="slider">
 
-    <section class="ambassadors innerWrapper">
-        <div class="wrapper">
-            <div class="ambassadors__filter  filter">
-                <select class="select ambassadors__select filter__select" name="country" size="1">
-                    <option class="option filter__option ambassadors__option" selected>
-                        Россия
-                    </option>
-                    <option class="option filter__option ambassadors__option">Украина</option>
-                </select>
-                <select class="select ambassadors__select filter__select" name="city">
-                    <option class="filter__option option">Выберите город</option>
-                    <option class="filter__option option">Москва</option>
-                    <option class="filter__option option">Санкт-Петербург</option>
-                    <option class="filter__option option">Новосибирск</option>
-                </select>
-            </div>
-            <div class="ambassadors__container">
-                <div class="ambassadors__item ambassador">
-                    <div class="ambassador__img">
-                        <img src="img/amb1.png" alt="" class="ambassador__picture">
+        <div class="slider__item">
+            <div class="slide">
+                <div class="slide__description slideDescription slide__block">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                        <li class="breadcrumbs__item">О нас</li>
+                    </ul>
+                    <div class="slide__title slideTitle">
+                        <span class="slideTitle__text">О нас</span>
                     </div>
-                    <div class="ambassador__content">
-                        <div class="ambassador__main">
-                            <div class="ambassador__name logoSymbol">
-                                Иванов Иван Иванович
-                            </div>
-                            <div class="ambassador__city">Россия, Москва</div>
-                        </div>
-                        <div class="ambassador__sub">
-                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
-                                клуба</span>
-                            </div>
-                            <div class="ambassador__experience">
-                                Стаж: <span class="ambassador__experienceValue">2 года</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ambassadors__linkBlock linkBlock">
-                        <button type="submit"
-                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
-                            Попробовать
-                            сквош
-                        </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
-                            Подробнее</a>
+                    <div class="slideDescription__content ">
+                        <div class="logoSymbol"> <span
+                                class="slideDescription__text slideDescription__text--bold">Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты.</span></div>
+
+                        Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
                     </div>
                 </div>
-                <div class="ambassadors__item ambassador">
-                    <div class="ambassador__img">
-                        <img src="img/amb3.png" alt="" class="ambassador__picture">
-                    </div>
-                    <div class="ambassador__content">
-                        <div class="ambassador__main">
-                            <div class="ambassador__name logoSymbol">
-                                Иванов Иван Иванович
-                            </div>
-                            <div class="ambassador__city">Россия, Москва</div>
-                        </div>
-                        <div class="ambassador__sub">
-                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
-                                клуба</span>
-                            </div>
-                            <div class="ambassador__experience">
-                                Стаж: <span class="ambassador__experienceValue">2 года</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ambassadors__linkBlock linkBlock">
-                        <button data-modal="#try-squash"
-                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
-                            Попробовать
-                            сквош
-                        </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">Подробнее</a>
-                    </div>
+                <div class="slide__photo slidePromo slide__block"
+                     style="background-image: url('img/about_main.png')">
                 </div>
-                <div class="ambassadors__item ambassador">
-                    <div class="ambassador__img">
-                        <img src="img/amb2.png" alt="" class="ambassador__picture">
-                    </div>
-                    <div class="ambassador__content">
-                        <div class="ambassador__main">
-                            <div class="ambassador__name logoSymbol">
-                                Иванов Иван Иванович
-                            </div>
-                            <div class="ambassador__city">Россия, Москва</div>
-                        </div>
-                        <div class="ambassador__sub">
-                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
-                                клуба</span>
-                            </div>
-                            <div class="ambassador__experience">
-                                Стаж: <span class="ambassador__experienceValue">2 года</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ambassadors__linkBlock linkBlock">
-                        <button data-modal="#try-squash"
-                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
-                            Попробовать
-                            сквош
-                        </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
-                            Подробнее</a>
-                    </div>
-                </div>
-                <div class="ambassadors__item ambassador">
-                    <div class="ambassador__img">
-                        <img src="img/amb2.png" alt="" class="ambassador__picture">
-                    </div>
-                    <div class="ambassador__content">
-                        <div class="ambassador__main">
-                            <div class="ambassador__name logoSymbol">
-                                Иванов Иван Иванович
-                            </div>
-                            <div class="ambassador__city">Россия, Москва</div>
-                        </div>
-                        <div class="ambassador__sub">
-                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
-                                клуба</span>
-                            </div>
-                            <div class="ambassador__experience">
-                                Стаж: <span class="ambassador__experienceValue">2 года</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ambassadors__linkBlock linkBlock">
-                        <button data-modal="#try-squash"
-                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
-                            Попробовать
-                            сквош
-                        </button>
-                        <a  href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
-                            Подробнее</a>
-                    </div>
-                </div>
-                <div class="ambassadors__item ambassador">
-                    <div class="ambassador__img">
-                        <img src="img/amb2.png" alt="" class="ambassador__picture">
-                    </div>
-                    <div class="ambassador__content">
-                        <div class="ambassador__main">
-                            <div class="ambassador__name logoSymbol">
-                                Иванов Иван Иванович
-                            </div>
-                            <div class="ambassador__city">Россия, Москва</div>
-                        </div>
-                        <div class="ambassador__sub">
-                            <div class="ambassador___club">Клуб: <span class="ambassador__clubName">Название
-                                клуба</span>
-                            </div>
-                            <div class="ambassador__experience">
-                                Стаж: <span class="ambassador__experienceValue">2 года</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ambassadors__linkBlock linkBlock">
-                        <button data-modal="#try-squash"
-                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
-                            Попробовать
-                            сквош
-                        </button>
-                        <a href="/ambassador.html" class="linkBlock__item linkBlock__item--white ambassadors__link">
-                            Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="ambassadors__footer">
-                <div class="ambassadors__linkAll linkBlock">
-                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Показать ещё</a>
+                <div class="slide__footer slideFooter">
+                    <button class="slideFooter__more">Подробнее</button>
                 </div>
             </div>
         </div>
     </section>
     <section class="about">
-        <div class="about__block">
-            <div class="about__title aboutTitle">
-                    <span class="aboutTitle__text titleText">
-                       Что вы получаете, становясь <span class="red">амбассадором?</span>
-                    </span>
+        <div class="about__block about__block--grey">
+            <div class="about__title aboutTitle titleText">
+               С чего всё <br>
+                <span class="red">начиналось</span>
             </div>
             <div class="aboutDescription__content ">
                 <div class="logoSymbol">
                     <span class="aboutDescription__text aboutDescription__text--bold">
-                        Нужен текст о том, почему круто быть амбассадором, что они получают, сотрудничая с нами.
+                        Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты
                     </span>
                 </div>
                 <span class="aboutDescription__text">
                     Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
                 </span>
             </div>
-        </div>
-        <div class="about__block about__block--photo" style="background-image: url(img/ambassadors_about.png)">
-            <div class="about__linkBlock linkBlock"><a href="/about.html"
-                                                       class="linkBlock__item linkBlock__item--red">Читать
-                подробнее →</a>
+            <div class="aboutDescription__promo aboutDescriptionBlock">
+                <div class="aboutDescriptionBlock__item">
+                    <div class="aboutDescriptionBlock__main">4-5</div>
+                    <div class="aboutDescriptionBlock__text">тысяч человек</div>
+                </div>
+                <div class="aboutDescriptionBlock__item">
+                    <div class="aboutDescriptionBlock__main">100+</div>
+                    <div class="aboutDescriptionBlock__text">игровых кортов</div>
+                </div>
             </div>
         </div>
+        <div class="about__block about__block--photo" style="background-image: url(img/about.png)"></div>
+    </section>
+    <section class="orders innerWrapper">
+        <div class="wrapper">
+            <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
+            </div>
+            <div class="orders__container">
+                <div class="orders__item orderBlock">
+                    <div class="orderBlock__main">
+                        <div class="orderBlock__content">
+                            <div class="orderBlock__title">
+                                Хочу <span class="red">попробовать</span> сквош, где
+                                можно?
+                            </div>
+                            <div class="orderBlock__description">
+                                <div class="orderBlock__subTitle logoSymbol">
+                                    Найди удобный для себя клуб, напиши амбассадору — попробуй сквош!
+                                </div>
+                                <div class="orderBlock__text">
+                                    В рамках программы «Подари другу сквош» мы приглашаем на ознакомительную тренировку
+                                    любого знакомого, друга, подписчика. С нас – бесплатный корт и бесплатная
+                                    тренировка. От вас – честный пост в соцсетях (ФБ, Инстаграм или ВК) о тренировке с
+                                    хештегом #squash4friends.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderBlock__img">
+                            <img class="orderBlock__picture" src="img/women.png" alt="">
+                        </div>
+                    </div>
+                    <div class="orderBlock__CTA orderCTA">
+                        <div class="orderCTA__item linkBlock">
+                            <button
+                                    data-modal="#try-squash"
+                                    class="js-openModal linkBlock__item linkBlock__item--red orderCTA__link">Попробовать
+                                сквош &rarr;
+                            </button>
+                        </div>
+                        <div class="orderCTA__item orderCTA__item--min linkBlock">
+                            <a href="/clubs.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Карта
+                                клубов</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="orders__item orderBlock">
+                    <div class="orderBlock__main">
+                        <div class="orderBlock__content">
+                            <div class="orderBlock__title">
+                                Как стать <span class="red">амбассадором?</span>
+                            </div>
+                            <div class="orderBlock__description">
+                                <div class="orderBlock__subTitle logoSymbol">
+                                    Отправь заявку, чтобы стать амбассадором в своём городе!
+                                </div>
+                                <div class="orderBlock__text">
+                                    #squash4friends — волонтерское движение, несущее сквош в массы! прикол в том,
+                                    чтобы привлечь не конкретных людей, а расширить круг осведомленности об этом виде
+                                    спорта! Амбассадорами уже стали чемпион России <a class="instaLink red"
+                                                                                      href="https://www.instagram.com/vladtitov97/">@vladtitov97</a>
+                                    и владелец клуба «Москва» <a class="instaLink red"
+                                                                 href="https://www.instagram.com/ivnborodin/">@ivnborodin
+
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderBlock__img">
+                            <img class="orderBlock__picture" src="img/man.png" alt="">
+                        </div>
+                    </div>
+                    <div class="orderBlock__CTA orderCTA">
+                        <div class="orderCTA__item linkBlock">
+                            <button
+                                    data-modal="#order-ambassador"
+                                    class="js-openModal linkBlock__item linkBlock__item--red
+                                    orderCTA__link">Стать
+                                амбассадором
+                                &rarr;
+                            </button>
+                        </div>
+                        <div class="orderCTA__item orderCTA__item--min linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Все
+                                амбассадоры</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__block about__block--grey">
+            <div class="about__title aboutTitle titleText">
+                Наши ценности
+            </div>
+            <div class="aboutDescription__content ">
+                <div class="logoSymbol">
+                    <span class="aboutDescription__text aboutDescription__text--bold">
+                       Краткая выдержка из манифеста
+                    </span>
+                </div>
+                <span class="aboutDescription__text">
+                    Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
+                </span>
+            </div>
+            <div class="aboutDescription__promo aboutDescriptionBlock">
+                <div class="aboutDescriptionBlock__item">
+                    <div class="aboutDescriptionBlock__main">4-5</div>
+                    <div class="aboutDescriptionBlock__text">тысяч человек</div>
+                </div>
+                <div class="aboutDescriptionBlock__item">
+                    <div class="aboutDescriptionBlock__main">100+</div>
+                    <div class="aboutDescriptionBlock__text">игровых кортов</div>
+                </div>
+            </div>
+        </div>
+        <div class="about__block about__block--photo" style="background-image: url(img/storyItem_slider.png)"></div>
     </section>
     <section class="map" id="map">
         <div class="map__list mapList">
@@ -360,6 +317,147 @@
                         <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section class="articles innerWrapper">
+        <div class="wrapper">
+            <div class="articles__title titleText">Полезные статьи</div>
+            <div class="articles__container" id="articles-slider">
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_2.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol"> Довольно длинное название статьи в две строки</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <a class="linkBlock__item linkBlock__item--red article__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_2.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol"> Довольно длинное название статьи в две строки</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <button class="linkBlock__item linkBlock__item--red article__link">Подробнее</button>
+                    </div>
+                </div>
+                <div class="articles__item article">
+                    <div class="article__img">
+                        <img src="img/articles_1.png" alt="" class="article__picture">
+                    </div>
+                    <div class="article__content">
+                        <div class="article__header">
+                            <div class="article__counter">
+                                <span class="article__counterValue">12</span>
+                            </div>
+                            <div class="article__date">03 ноя 2019</div>
+                        </div>
+                        <div class="article__title logoSymbol">Название статьи</div>
+                        <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
+                            топ-игроки. Уже сейчас - чемпион России Влад Титов...
+                        </div>
+                    </div>
+                    <div class="article__linkBlock linkBlock">
+                        <a class="linkBlock__item linkBlock__item--red article__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__footer">
+                <div class="articles__linkAll linkBlock">
+                    <a class="linkBlock__item linkBlock__item--white">Все статьи &rarr;</a>
+                </div>
+                <div class="articles__paginationWrapper">
+                    <button class="slick-prev paginationBlock__item" data-slider="articles-slider"
+                            aria-label="Previous" type="button">&#11104;
+                    </button>
+                    <div class="articles__pagination paginationBlock"></div>
+                    <button data-slider="articles-slider" class="slick-next paginationBlock__item"
+                            aria-label="Next" type="button">&#10141;
+                    </button>
+                </div>
             </div>
         </div>
     </section>
