@@ -251,7 +251,10 @@ h1,h2,h3,h4,h5,h6 {
 .linkBlock {
     height: 60px;
 }
-
+.slideDescription__content .linkBlock {
+    width: max-content;
+    width: -moz-max-content;
+}
 .linkBlock__item {
     display: flex;
     justify-content: center;
@@ -424,11 +427,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .slideTitle__text {
-    padding: 0 14px;
+    padding: 0 0 0 14px;
     color: #31312E;
     letter-spacing: 3px;
 }
-
+.slideTitle--leftpad .slideTitle__text {
+    padding: 0 14px;
+}
 .slideTitle__text--red-white {
     color: #FBF8F6;
     background-color: #EB2E34;
