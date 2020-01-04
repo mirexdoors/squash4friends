@@ -895,8 +895,9 @@ h1,h2,h3,h4,h5,h6 {
 .articles__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: -20px;
 }
 
 .articles__item {
@@ -906,6 +907,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 33%;
     max-width: 382px;
     height: 528px;
+    margin-bottom: 50px;
 }
 
 .articles__item:nth-child(3) {
