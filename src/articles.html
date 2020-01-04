@@ -8,9 +8,6 @@
     <link rel="icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
     <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=60daab00-c1b5-4273-b4fc-87064659e905&lang=ru_RU"
-            type="text/javascript">
-    </script>
 </head>
 <body>
 <section class="topBar">
@@ -104,93 +101,12 @@
             <div class="wrapper">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                    <li class="breadcrumbs__item">Клубы</li>
+                    <li class="breadcrumbs__item">Статьи</li>
                 </ul>
                 <div class="pageTitle__title">
-                    <h1 class="titleText">Клубы</h1>
+                    <h1 class="titleText">Статьи</h1>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="map" id="map">
-        <div class="map__list mapList">
-            <div class="mapList__titleBlock">
-                <div class="mapList__title">Карта клубов</div>
-                <div class="mapList__selectBlock">
-                    <select class="mapList__select" name="map_country">
-                        <option class="option mapList__option">Россия</option>
-                        <option class="option mapList__option">Франция</option>
-                    </select>
-                    <select class="mapList__select" name="map_city">
-                        <option class="option mapList__option">Москва</option>
-                        <option class="option mapList__option">Новосибирск</option>
-                    </select>
-                </div>
-            </div>
-            <div class="mapList__listBlock mapClubs">
-                <ul class="mapClubs__container">
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">Название клуба</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule">Ежедневно 10:00—22:00</div>
-                        <div class="linkBlock mapClub__btnBlock">
-<a href="club.html" class="linkBlock__item linkBlock__item--red">Подробнее о клубе</a>
-                        </div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">Название клуба</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">«Москва»</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                    <li class="mapClubs__item mapClub">
-                        <div class="mapClub__title">«Москва»</div>
-                        <div class="mapClub__address">Шарикоподшипниковская 13 стр. 46</div>
-                        <div class="mapClub__metro">Волгоградский проспект</div>
-                        <div class="mapClub__schedule"> Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="textBlock innerWrapper">
-        <div class="wrapper">
-            <div class="titleText">Не нашли своего клуба?</div>
-            <div class="subTitle logoSymbol">Напишите нам на почту, либо заполните форму ниже и мы внесем его в список
-            </div>
-            <form class="textBlock__form form" method="post">
-                <div class="textBlock__fields">
-                <select class="select" name="country">
-                    <option value="Россия">Россия</option>
-                    <option value="Франция">Франция</option>
-                </select>
-                <select class="select" name="city">
-                    <option value="Москва">Москва</option>
-                    <option value="Новосибирск">Новосибирск</option>
-                </select>
-                <div class="inputWrapper"><input type="text" class="input required" placeholder="Название клуба"></div>
-                <div class="inputWrapper"><input type="text" class="input required" placeholder="ФИО"></div>
-                <div class="inputWrapper"><input type="tel" class="input required" placeholder="Телефон"></div>
-                <div class="inputWrapper"><input type="email" class="input required" placeholder="Email"></div>
-                </div>
-                <div class="textBlock__footer">
-                    <div class="linkBlock textBlock__linkBlock">
-                        <button type="submit" class="linkBlock__item linkBlock__item--red">Отправить заявку
-                            &rarr;
-                        </button>
-                    </div>
-                    <div class="textBlock__footerText">Нажимая на кнопку, вы принимаете условия Политики
-                        конфиденциальности
-                    </div>
-                </div>
-            </form>
         </div>
     </section>
     <footer class="footer">
