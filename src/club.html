@@ -112,25 +112,96 @@
             </div>
         </div>
     </section>
-    <section class="club wrapper">
-        <div class="club__pictureBlock">
-            <div class="club__sliderBlock">
-                <div class="club__slider" id="club-slider">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
-                    <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+    <div class="wrapper columnWrapper">
+        <section class="club mainColumn">
+            <div class="club__pictureBlock">
+                <div class="club__sliderBlock">
+                    <div class="club__slider" id="club-slider">
+                        <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                        <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                        <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                        <img class="clubSlider__itemImage" src="img/club_detail.png" alt="" title="">
+                    </div>
+                    <div class="clubSlider__paginationWrapper">
+                        <button class="slick-prev paginationBlock__item" data-slider="club-slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>
+                        <div class="clubSlider__pagination paginationBlock"></div>
+                        <button data-slider="club-slider" class="slick-next paginationBlock__item"
+                                aria-label="Next" type="button">&#10141;
+                        </button>
+                    </div>
                 </div>
-                <div class="clubSlider__paginationWrapper">
-                    <button class="slick-prev paginationBlock__item" data-slider="club-slider"
-                            aria-label="Previous" type="button">&#11104;
-                    </button>
-                    <div class="clubSlider__pagination paginationBlock"></div>
-                    <button data-slider="club-slider" class="slick-next paginationBlock__item"
-                            aria-label="Next" type="button">&#10141;
+            </div>
+
+            <div class="club__contacts">
+                <div class="club__instagram">
+                    <a class="red club__instaLink" href="https://www.instagram.com/squashclub.moscow/">@squashclub
+                        .moscow</a>
+                </div>
+                <div class="club__address">
+                    Шарикоподшипниковская 13 стр. 46
+                </div>
+                <div class="club__metro">
+                    Волгоградский проспект
+                </div>
+                <div class="club__info">
+                    <div class="club__phone">+7 (495) 118-30-50<br>+7(905) 714-33-04</div>
+                    <div class="club__schedule">Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
+                </div>
+                <ul class="club__socials">
+                    <li class="club__socialItem">
+                        <a href="https://vk.com">
+                            <img class="club__socialImg" src="img/vk.png">
+                        </a>
+                    </li>
+                    <li class="club__socialItem">
+                        <a href="https://facebook.com">
+                            <img class="club__socialImg" src="img/fb.png">
+                        </a>
+                    </li>
+                    <li class="club__socialItem">
+                        <a href="https://instagram.com">
+                            <img class="club__socialImg" src="img/ig.png">
+                        </a>
+                    </li>
+                    <li class="club__socialItem">
+                        <a href="https://youtube.com">
+                            <img class="club__socialImg" src="img/yt.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="club__descriptionWrapper">
+                <div class="club__descriptionTitle">Описание клуба</div>
+                <div class="club__description typography">
+                    <p> Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
+                        важные задания по разработке существенных финансовых и административных <span
+                                class="red"><b>условий</b>
+                    </span>.</p>
+                    <ul>
+                        <li>Таким образом постоянный количественный рост и сфера нашей активности требуют определения и
+                            уточнения систем массового участия.
+                        </li>
+                        <li>Разнообразный и богатый опыт сложившаяся структура организации в значительной степени
+                            обуславливает создание направлений прогрессивного развития.
+                        </li>
+                        <li>Повседневная практика показывает, что новая модель организационной деятельности представляет
+                            собой интересный эксперимент
+                        </li>
+                    </ul>
+                    <p>Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
+                        важные задания по разработке существенных финансовых и административных условий.</p>
+                </div>
+                <div class="club__linkBlock linkBlock">
+                    <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
+                        Попробовать  сквош здесь
                     </button>
                 </div>
             </div>
+        </section>
+        <aside class="asideColumn ">
             <div class="club__promo">
                 <div class="club__promoBlock">
                     <div class="club__promoText">Хочу <span class="red">попробовать</span> сквош, где можно?</div>
@@ -158,75 +229,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </aside>
+    </div>
 
-        <div class="club__contacts">
-            <div class="club__instagram">
-                <a class="red club__instaLink" href="https://www.instagram.com/squashclub.moscow/">@squashclub
-                    .moscow</a>
-            </div>
-            <div class="club__address">
-                Шарикоподшипниковская 13 стр. 46
-            </div>
-            <div class="club__metro">
-                Волгоградский проспект
-            </div>
-            <div class="club__info">
-                <div class="club__phone">+7 (495) 118-30-50<br>+7(905) 714-33-04</div>
-                <div class="club__schedule">Пн—Пт 7:00—23:00<br>Сб—Вс 8:00—22:00</div>
-            </div>
-            <ul class="club__socials">
-                <li class="club__socialItem">
-                    <a href="https://vk.com">
-                        <img class="club__socialImg" src="img/vk.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://facebook.com">
-                        <img class="club__socialImg" src="img/fb.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://instagram.com">
-                        <img class="club__socialImg" src="img/ig.png">
-                    </a>
-                </li>
-                <li class="club__socialItem">
-                    <a href="https://youtube.com">
-                        <img class="club__socialImg" src="img/yt.png">
-                    </a>
-                </li>
-            </ul>
-        </div>
 
-        <div class="club__descriptionWrapper">
-            <div class="club__descriptionTitle">Описание клуба</div>
-            <div class="club__description typography">
-                <p> Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
-                    важные задания по разработке существенных финансовых и административных <span
-                            class="red"><b>условий</b>
-                    </span>.</p>
-                <ul>
-                    <li>Таким образом постоянный количественный рост и сфера нашей активности требуют определения и
-                        уточнения систем массового участия.
-                    </li>
-                    <li>Разнообразный и богатый опыт сложившаяся структура организации в значительной степени
-                        обуславливает создание направлений прогрессивного развития.
-                    </li>
-                    <li>Повседневная практика показывает, что новая модель организационной деятельности представляет
-                        собой интересный эксперимент
-                    </li>
-                </ul>
-                <p>Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять
-                    важные задания по разработке существенных финансовых и административных условий.</p>
-            </div>
-            <div class="club__linkBlock linkBlock">
-                <button data-modal="#try-squash" class="js-openModal linkBlock__item linkBlock__item--red">
-                    Попробовать  сквош здесь
-                </button>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
         <div class="footer__nav">
             <div class="wrapper">

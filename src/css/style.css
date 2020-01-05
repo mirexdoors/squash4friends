@@ -35,7 +35,9 @@ body {
 body.darken {
     overflow-y: hidden;
 }
-
+p {
+    margin-top: 0;
+}
 .topBar {
     position: relative;
     z-index: 99999;
@@ -177,7 +179,16 @@ h1,h2,h3,h4,h5,h6 {
     content: '|';
     margin: 0 3px;
 }
-
+.columnWrapper {
+    display: flex;
+}
+.mainColumn {
+    width: 55%;
+    margin-right: 12px;
+}
+.asideColumn {
+    width: 43%;
+}
 .social {
     display: flex;
     justify-content: space-between;
@@ -1367,12 +1378,12 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
 }
 .club__sliderBlock {
-    width: 60%;
+    width: 100%;
 }
 .club__promo {
     display: flex;
     flex-direction: column;
-    width: 39%;
+    width: 100%;
 }
 .club__promoBlock {
     position: relative;
