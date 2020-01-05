@@ -1481,3 +1481,44 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: flex-end;
     margin-top: 20px;
 }
+
+/*wiki page start*/
+.wiki {
+    padding-bottom: 80px;
+}
+.wiki__details {
+    padding-top: calc(50px - 1em);
+}
+.wiki__detail {
+    margin-bottom: 10px;
+}
+.detail__summary {
+    position: relative;
+    padding: 15px 30px 20px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #31312E;
+    background: #E4E3E0;
+    cursor: pointer;
+}
+.detail__summary:after {
+    position: absolute;
+    content: '+';
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 34px;
+    color: #EB2E34;
+}
+.open .detail__summary:after {
+    content: '✖';
+    font-size: 24px;
+}
+.detail__item {
+    display: none;
+    margin-top: 6px;
+    padding: 25px 20px 40px;
+    background: #FBF8F6;
+    border: 1px solid #E4E3E0;
+}
