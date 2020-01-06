@@ -31,6 +31,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     color: #666666;
+    background: #FBF8F6;
 }
 body.darken {
     overflow-y: hidden;
@@ -54,7 +55,7 @@ p {
     font-size: 16px;
     line-height: 19px;
 }
-ul {
+ul, ol, blockquote {
     margin: 0;
     padding: 0;
 }
@@ -111,15 +112,70 @@ h1,h2,h3,h4,h5,h6 {
 .typography ul {
     list-style: none;
 }
-.typography ul li {
+.typography li {
+    display: flex;
     margin-bottom: 12px;
 }
 .typography ul li::before {
     content: "\2022";
     color: red;
     font-weight: bold;
-    display: inline-block;
+    margin-right: 12px;
     width: 1em;
+}
+.typography ol {
+    list-style-type: none;
+    counter-reset: num;
+}
+.typography ol li::before {
+    content: counter(num) '. ';
+    counter-increment: num;
+    margin-right: 12px;
+    color: #EB2E34;
+}
+.typography h3 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: #31312E;
+}
+.typography blockquote {
+    padding-left: 20px;
+    border-left: 4px solid #EB2E34;
+    font-style: italic;
+}
+.typography table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.typography th {
+    white-space: nowrap;
+    font-weight: bold;
+    background: #E4E3E0;
+}
+.typography td {
+    border: 1px solid #E4E3E0;
+}
+.typography th, .typography td {
+    padding: 16px 20px;
+    text-align: left;
+}
+.typography h4 {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.typography a {
+    font-weight: bold;
+    color: #EB2E34;
+    text-decoration-line: none;
+}
+.typography a:hover, .typography a:active {
+    text-decoration-line: underline;
+    color: #B72429;
 }
 /*toolbar start*/
 .toolbar {
@@ -570,6 +626,9 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 3px;
     margin-bottom: 20px;
     color: #31312E;
+}
+.titleText.titleText--article {
+    font-size: 50px;
 }
 .titleText--white {
     color: #FBF8F6;
@@ -1521,4 +1580,12 @@ h1,h2,h3,h4,h5,h6 {
     padding: 25px 20px 40px;
     background: #FBF8F6;
     border: 1px solid #E4E3E0;
+}
+
+/*article page*/
+.content {
+    padding-bottom: 80px;
+}
+.content__image {
+    width: 100%;
 }
