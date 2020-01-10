@@ -182,7 +182,8 @@
                                 </div>
                             </div>
                             <div class="slidePromo__linkBlock linkBlock">
-                                <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                                <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все амбассадоры
+                                    &rarr;</a>
                             </div>
 
                         </div>
@@ -229,7 +230,8 @@
                                 </div>
                             </div>
                             <div class="slidePromo__linkBlock linkBlock">
-                                <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все амбассадоры &rarr;</a>
+                                <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все амбассадоры
+                                    &rarr;</a>
                             </div>
 
                         </div>
@@ -306,7 +308,7 @@
     <section class="about">
         <div class="about__block about__block--grey">
             <div class="about__title aboutTitle titleText">
-                        Кто мы и почему <br>
+                Кто мы и почему <br>
                 <span class="red">любим сквош</span>
             </div>
             <div class="aboutDescription__content ">
@@ -379,18 +381,53 @@
         <div class="wrapper">
             <div class="ambassadors__title titleText">Амбассадоры</div>
             <div class="ambassadors__filter  filter">
-                <select class="select ambassadors__select filter__select" name="country" size="1">
-                    <option class="option filter__option ambassadors__option" selected>
-                        Россия
-                    </option>
-                    <option class="option filter__option ambassadors__option">Украина</option>
-                </select>
-                <select class="select ambassadors__select filter__select" name="city">
-                    <option class="filter__option option">Выберите город</option>
-                    <option class="filter__option option">Москва</option>
-                    <option class="filter__option option">Санкт-Петербург</option>
-                    <option class="filter__option option">Новосибирск</option>
-                </select>
+                <div class="selectBox">
+                    <select class="select ambassadors__select filter__select" name="country">
+                        <option class="option filter__option ambassadors__option" selected>
+                            Россия
+                        </option>
+                        <option class="option filter__option ambassadors__option">Украина</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value">
+                                <img class="selectBox__pseudoImage"
+                                     src="./img/russian.png">Россия
+                            </div>
+                        </div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage"
+                                         src="./img/russian.png">Россия
+                                </div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage"
+                                         src="./img/ua.png">Украина
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <select class="select ambassadors__select filter__select" name="city">
+                        <option class="filter__option option">Выберите город</option>
+                        <option class="filter__option option">Москва</option>
+                        <option class="filter__option option">Санкт-Петербург</option>
+                        <option class="filter__option option">Новосибирск</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div
+                                class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">Выберите город</div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem">Москва</li>
+                            <li class="selectBox__pseudoItem">Санкт-Петербург</li>
+                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="ambassadors__container ambassadors__container-slider" id="ambassador-slider">
                 <div class="ambassadors__item ambassador">
@@ -544,7 +581,8 @@
             </div>
             <div class="ambassadors__footer">
                 <div class="ambassadors__linkAll linkBlock">
-                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Все амбассадоры &rarr;</a>
+                    <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Все амбассадоры
+                        &rarr;</a>
                 </div>
 
                 <div class="ambassadors__paginationWrapper">
@@ -640,7 +678,8 @@
                             </button>
                         </div>
                         <div class="orderCTA__item orderCTA__item--min linkBlock">
-                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Все амбассадоры</a>
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white orderCTA__link">Все
+                                амбассадоры</a>
                         </div>
                     </div>
                 </div>
@@ -653,14 +692,40 @@
             <div class="mapList__titleBlock">
                 <div class="mapList__title">Карта клубов</div>
                 <div class="mapList__selectBlock">
-                    <select class="mapList__select" name="map_country">
-                        <option class="option mapList__option">Россия</option>
-                        <option class="option mapList__option">Франция</option>
-                    </select>
-                    <select class="mapList__select" name="map_city">
-                        <option class="option mapList__option">Москва</option>
-                        <option class="option mapList__option">Новосибирск</option>
-                    </select>
+                    <div class="selectBox">
+                        <select class="select mapList__select" name="map_country">
+                            <option class="option mapList__option">Россия</option>
+                            <option class="option mapList__option">Украина</option>
+                        </select>
+                        <div class="selectBox__pseudo">
+                            <div class="selectBox__pseudoCurrent js-pseudo-select">
+                                <img class="selectBox__pseudoImage" src="./img/russian.png">Россия
+                            </div>
+                            <ul class="selectBox__pseudoList">
+                                <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                       src="./img/russian.png">Россия
+                                </li>
+                                <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                       src="./img/ua.png">Украина
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="selectBox">
+                        <select class="select mapList__select" name="map_city">
+                            <option class="option mapList__option">Москва</option>
+                            <option class="option mapList__option">Новосибирск</option>
+                        </select>
+                        <div class="selectBox__pseudo">
+                            <div class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">Выберите
+                                город</div>
+                            <ul class="selectBox__pseudoList">
+                                <li class="selectBox__pseudoItem">Москва</li>
+                                <li class="selectBox__pseudoItem">Санкт-Петербург</li>
+                                <li class="selectBox__pseudoItem">Новосибирск</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mapList__listBlock mapClubs">
@@ -715,7 +780,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -736,7 +801,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -757,7 +822,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -778,7 +843,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -799,7 +864,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -820,7 +885,7 @@
                         </div>
                     </div>
                     <div class="article__linkBlock linkBlock">
-                        <a  href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
+                        <a href="/article.html" class="linkBlock__item linkBlock__item--red article__link">Подробнее
                         </a>
                     </div>
                 </div>
@@ -965,14 +1030,38 @@
 
             <div class="modalForm__title">Стать амбассадором</div>
             <div class="modalForm__selectBox">
-                <select name="country" class="select modalForm__select">
-                    <option value="Россия">Россия</option>
-                    <option value="Россия">Франция</option>
-                </select>
-                <select name="city" class="select modalForm__select">
-                    <option value="Россия">Москва</option>
-                    <option value="Россия">Новосибирск</option>
-                </select>
+                <div class="selectBox">
+                    <select name="country" class="select selectBox__select modalForm__select">
+                        <option value="Россия">Россия</option>
+                        <option value="Украина">Украина</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select"><img class="selectBox__pseudoImage"
+                                                                   src="./img/russian.png">Россия
+                        </div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                   src="./img/russian.png">Россия
+                            </li>
+                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                   src="./img/ua.png">Украина
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <select name="city" class="select modalForm__select">
+                        <option value="Москва">Москва</option>
+                        <option value="Новосибирск">Новосибирск</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">Москва</div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem">Москва</li>
+                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modalForm__fields">
@@ -1004,19 +1093,52 @@
 
             <div class="modalForm__title">Попробовать сквош</div>
             <div class="modalForm__selectBox">
-                <select name="country" class="select modalForm__select">
-                    <option value="Россия">Россия</option>
-                    <option value="Россия">Франция</option>
-                </select>
-                <select name="city" class="select modalForm__select">
-                    <option value="Россия">Москва</option>
-                    <option value="Россия">Новосибирск</option>
-                </select>
-                <select name="city" class="select modalForm__select">
-                    <option value="">Выберите клуб</option>
-                    <option value="Россия">Сквош-клуб "Москва"</option>
-                    <option value="Россия">Сквош-клуб "Москва"</option>
-                </select>
+                <div class="selectBox">
+                    <select name="country" class="select modalForm__select">
+                        <option value="Россия">Россия</option>
+                        <option value="Россия">Украина</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select"><img class="selectBox__pseudoImage"
+                                                                   src="./img/russian.png">Россия
+                        </div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                   src="./img/russian.png">Россия
+                            </li>
+                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                                                                   src="./img/ua.png">Украина
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <select name="city" class="select modalForm__select">
+                        <option value="Россия">Москва</option>
+                        <option value="Россия">Новосибирск</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">Москва</div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem">Москва</li>
+                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <select name="city" class="select modalForm__select">
+                        <option value="">Выберите клуб</option>
+                        <option value="Сквош-клуб Москва">Сквош-клуб "Москва"</option>
+                        <option value="Сквош-клуб Москва">Сквош-клуб "Москва"</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">Сквош-клуб "Москва"</div>
+                        <ul class="selectBox__pseudoList">
+                            <li class="selectBox__pseudoItem">Сквош-клуб "Москва"</li>
+                            <li class="selectBox__pseudoItem">Сквош-клуб "Москва"</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modalForm__fields">
