@@ -395,7 +395,7 @@
                                      src="./img/russian.png">Россия
                             </div>
                         </div>
-                        <ul class="selectBox__pseudoList">
+                        <ul class="selectBox__pseudoList js-pseudo-options">
                             <li class="selectBox__pseudoItem">
                                 <div class="selectBox__value">
                                     <img class="selectBox__pseudoImage"
@@ -420,11 +420,19 @@
                     </select>
                     <div class="selectBox__pseudo">
                         <div
-                                class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">Выберите город</div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem">Москва</li>
-                            <li class="selectBox__pseudoItem">Санкт-Петербург</li>
-                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                                class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">
+                            Выберите город
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Москва</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Санкт-Петербург</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Новосибирск</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -451,8 +459,8 @@
                         </div>
                     </div>
                     <div class="ambassadors__linkBlock linkBlock">
-                        <button type="submit"
-                                class="linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
+                        <button type="submit" data-modal="#try-squash"
+                                class="js-openModal linkBlock__item linkBlock__item--red ambassadors__link ambassadors__link--wide">
                             Попробовать
                             сквош
                         </button>
@@ -699,14 +707,22 @@
                         </select>
                         <div class="selectBox__pseudo">
                             <div class="selectBox__pseudoCurrent js-pseudo-select">
-                                <img class="selectBox__pseudoImage" src="./img/russian.png">Россия
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage" src="./img/russian.png">Россия
+                                </div>
                             </div>
-                            <ul class="selectBox__pseudoList">
-                                <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
-                                                                       src="./img/russian.png">Россия
+                            <ul class="selectBox__pseudoList js-pseudo-options">
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">
+                                        <img class="selectBox__pseudoImage"
+                                             src="./img/russian.png">Россия
+                                    </div>
                                 </li>
-                                <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
-                                                                       src="./img/ua.png">Украина
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">
+                                        <img class="selectBox__pseudoImage"
+                                             src="./img/ua.png">Украина
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -717,12 +733,20 @@
                             <option class="option mapList__option">Новосибирск</option>
                         </select>
                         <div class="selectBox__pseudo">
-                            <div class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">Выберите
-                                город</div>
-                            <ul class="selectBox__pseudoList">
-                                <li class="selectBox__pseudoItem">Москва</li>
-                                <li class="selectBox__pseudoItem">Санкт-Петербург</li>
-                                <li class="selectBox__pseudoItem">Новосибирск</li>
+                            <div class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">
+                                Выберите
+                                город
+                            </div>
+                            <ul class="selectBox__pseudoList js-pseudo-options">
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Москва</div>
+                                </li>
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Санкт-Петербург</div>
+                                </li>
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Новосибирск</div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -1036,15 +1060,21 @@
                         <option value="Украина">Украина</option>
                     </select>
                     <div class="selectBox__pseudo">
-                        <div class="selectBox__pseudoCurrent js-pseudo-select"><img class="selectBox__pseudoImage"
-                                                                   src="./img/russian.png">Россия
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value"><img class="selectBox__pseudoImage"
+                                                               src="./img/russian.png">Россия
+                            </div>
                         </div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value"><img class="selectBox__pseudoImage"
                                                                    src="./img/russian.png">Россия
+                                </div>
                             </li>
-                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value"><img class="selectBox__pseudoImage"
                                                                    src="./img/ua.png">Украина
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -1055,10 +1085,16 @@
                         <option value="Новосибирск">Новосибирск</option>
                     </select>
                     <div class="selectBox__pseudo">
-                        <div class="selectBox__pseudoCurrent js-pseudo-select">Москва</div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem">Москва</li>
-                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value">Москва</div>
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Москва</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Новосибирск</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1099,15 +1135,21 @@
                         <option value="Россия">Украина</option>
                     </select>
                     <div class="selectBox__pseudo">
-                        <div class="selectBox__pseudoCurrent js-pseudo-select"><img class="selectBox__pseudoImage"
-                                                                   src="./img/russian.png">Россия
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value"><img class="selectBox__pseudoImage"
+                                                               src="./img/russian.png">Россия
+                            </div>
                         </div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value"><img class="selectBox__pseudoImage"
                                                                    src="./img/russian.png">Россия
+                                </div>
                             </li>
-                            <li class="selectBox__pseudoItem"><img class="selectBox__pseudoImage"
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value"><img class="selectBox__pseudoImage"
                                                                    src="./img/ua.png">Украина
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -1118,10 +1160,16 @@
                         <option value="Россия">Новосибирск</option>
                     </select>
                     <div class="selectBox__pseudo">
-                        <div class="selectBox__pseudoCurrent js-pseudo-select">Москва</div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem">Москва</li>
-                            <li class="selectBox__pseudoItem">Новосибирск</li>
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value">Москва</div>
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Москва</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Новосибирск</div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1132,10 +1180,18 @@
                         <option value="Сквош-клуб Москва">Сквош-клуб "Москва"</option>
                     </select>
                     <div class="selectBox__pseudo">
-                        <div class="selectBox__pseudoCurrent js-pseudo-select">Сквош-клуб "Москва"</div>
-                        <ul class="selectBox__pseudoList">
-                            <li class="selectBox__pseudoItem">Сквош-клуб "Москва"</li>
-                            <li class="selectBox__pseudoItem">Сквош-клуб "Москва"</li>
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div
+                                    class="selectBox__value">Сквош-клуб "Москва"
+                            </div>
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Сквош-клуб "Москва"</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Сквош-клуб "Москва"</div>
+                            </li>
                         </ul>
                     </div>
                 </div>

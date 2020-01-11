@@ -1,4 +1,5 @@
 import './css/style.css';
+import './css/media.css';
 import './js/slider';
 import './js/searchBox';
 import './js/modal';
