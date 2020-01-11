@@ -16,9 +16,17 @@ $(`#insta-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.instagram__pagination`),
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
 });
 
 $(`#ambassador-slider`).slick({
@@ -27,9 +35,17 @@ $(`#ambassador-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.ambassadors__pagination`),
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
 });
 
 $(`#articles-slider`).slick({
