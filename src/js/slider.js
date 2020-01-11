@@ -4,8 +4,8 @@ import 'slick-carousel';
 $(`#main-slider`).slick({
   dots: true,
   appendDots: $(`.slider__paginationContainer`),
-  arrows: false,
-  autoplay: true,
+  arrows: true,
+  autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
@@ -27,7 +27,7 @@ $(`#ambassador-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.ambassadors__pagination`),
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
