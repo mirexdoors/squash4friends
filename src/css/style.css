@@ -41,9 +41,11 @@ body.darken {
 p {
     margin-top: 0;
 }
+
 .slick-arrow {
-    display: none!important;
+    display: none !important;
 }
+
 .topBar {
     position: relative;
     z-index: 99999;
@@ -330,9 +332,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
     background: inherit;
 }
+
 .navigation__text--mobile, .navigation__item--mobileMenu {
     display: none;
 }
+
 .navigation__link--white {
     color: #FBF8F6;
 }
@@ -423,10 +427,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 110px;
     padding-left: 135px;
 }
+
 .slide__photo {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .slide__footer {
     position: absolute;
     bottom: 0;
@@ -755,18 +761,17 @@ h1, h2, h3, h4, h5, h6 {
 .ambassadors__item {
     display: flex;
     flex-direction: column;
-    margin-right: 8px;
     max-width: 382px;
+    margin-right: 12px;
+    width: auto!important;
     height: 506px;
     margin-bottom: 40px;
 }
-
-.ambassadors__item:last-child:nth-child(3n+3) {
-    margin-right: 0;
+.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item {
+    width: calc(33.3333333% - 8px)!important;
+    margin-right: 12px;
 }
-
-.ambassadors__container-slider .ambassadors__item {
-    width: calc(33% - 6px);
+.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item:nth-child(3n+3), .ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item:last-child {
     margin-right: 0;
 }
 
@@ -824,18 +829,23 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin-bottom: 30px;
 }
+
 .mapList__selectBlock .selectBox {
     margin-bottom: 6px;
 }
+
 .selectBox {
     margin-right: 6px;
 }
+
 .selectBox .select, .selectBox__pseudoList {
     display: none;
 }
+
 .selectBox__pseudoList.isOpen {
     display: block;
 }
+
 .selectBox__pseudo {
     position: relative;
 }
@@ -843,13 +853,15 @@ h1, h2, h3, h4, h5, h6 {
 .selectBox__pseudoList {
     position: absolute;
     width: 100%;
-    border:  2px solid #D3D2CC;
+    border: 2px solid #D3D2CC;
     list-style-type: none;
     z-index: 10;
 }
+
 .selectBox__pseudoList, .selectBox__pseudoItem {
     margin-top: -2px;
 }
+
 .selectBox__pseudoItem {
     width: 100%;
     height: 54px;
@@ -862,9 +874,11 @@ h1, h2, h3, h4, h5, h6 {
     background: #FBF8F6;
     color: #666666;
 }
+
 .selectBox__pseudoItem:hover {
     color: #B72429;
 }
+
 .selectBox__pseudoCurrent {
     position: relative;
     display: flex;
@@ -883,12 +897,15 @@ h1, h2, h3, h4, h5, h6 {
     background: #FBF8F6;
     cursor: pointer;
 }
-.modalForm__selectBox .selectBox__pseudoCurrent, .mapList__selectBlock  .selectBox__pseudoCurrent {
-    width:100%;
+
+.modalForm__selectBox .selectBox__pseudoCurrent, .mapList__selectBlock .selectBox__pseudoCurrent {
+    width: 100%;
 }
+
 .selectBox__pseudoCurrent.selectBox__pseudoCurrent--placeholder {
     color: #888;
 }
+
 .selectBox__pseudoCurrent::after {
     content: ' \25BE';
 }
@@ -1159,13 +1176,21 @@ h1, h2, h3, h4, h5, h6 {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
-    width: 33%;
+    width: auto !important;
     max-width: 382px;
     height: 528px;
     margin-bottom: 50px;
+    margin-right: 12px;
+}
+.articles__container:not(.slick-slider) .articles__item {
+    width: calc(33.33333% - 8px) !important;
+    margin-right: 0;
+}
+.articles__item .article__img {
+    background-color: #E4E3E0;
 }
 
-.articles__item:nth-child(3) {
+.articles__item:nth-child(3n+3) {
     margin-right: 0;
 }
 
@@ -1276,15 +1301,17 @@ h1, h2, h3, h4, h5, h6 {
 .instagram__item {
     width: 285px;
     height: auto;
-    padding-right:  8px;
+    padding-right: 8px;
 }
 
 .instagram__item:nth-child(4) {
     margin-right: 0;
 }
+
 .instagram__image {
     width: 100%;
 }
+
 .instagram__paginationWrapper, .ambassadors__paginationWrapper, .articles__paginationWrapper {
     display: flex;
     position: relative;
@@ -1296,6 +1323,7 @@ h1, h2, h3, h4, h5, h6 {
 .seo__description {
     margin-left: 14px;
 }
+
 /*footerNav start*/
 .footer__nav {
     background: #3F3F3F;

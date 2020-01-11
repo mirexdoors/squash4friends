@@ -5,7 +5,7 @@ $(`#main-slider`).slick({
   dots: true,
   appendDots: $(`.slider__paginationContainer`),
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
@@ -16,7 +16,7 @@ $(`#insta-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.instagram__pagination`),
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
   responsive: [
@@ -54,7 +54,7 @@ $(`#articles-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.articles__pagination`),
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
