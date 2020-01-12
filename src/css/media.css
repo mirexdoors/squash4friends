@@ -14,13 +14,16 @@
     .slideDescription__verticalImage {
         display: none !important;
     }
+
     .orderBlock__img, .navigation__text {
         display: none;
     }
+
     .navigation__text.navigation__text--mobile {
         display: inline;
         letter-spacing: 3px;
     }
+
     .slidePromo__container {
         right: 40px;
     }
@@ -56,9 +59,11 @@
     .slick-slide {
         padding-right: 8px;
     }
+
     #main-slider .slick-slide {
         padding-right: 0;
     }
+
     .ambassadors__item {
         margin-bottom: 0;
     }
@@ -70,6 +75,7 @@
     .map__list {
         left: 40px;
     }
+
     .modalForm {
         top: 20px;
     }
@@ -79,9 +85,11 @@
     .wrapper {
         margin: 0 40px;
     }
+
     .innerWrapper {
         padding: 60px 0;
     }
+
     .navigation__text, .navigation__item:not(.navigation__item--mobile), .slideFooter__more, .instagram__logo {
         display: none;
     }
@@ -130,32 +138,69 @@
     .slide__block, .slideTitle {
         width: 100%;
     }
+
     .slide__description {
         padding-top: 60px;
         padding-left: 30px;
     }
+
     .slideDescription__content {
         padding-top: 25px;
     }
+
     .slidePromo {
         height: 454px;
     }
+
     .slidePromo__container {
         left: 50%;
     }
+
     .slide__person {
         left: 5%;
         bottom: -20%;
     }
+
     .about {
         flex-wrap: wrap;
     }
+
     .about__block {
         width: 100%;
         padding: 60px 44px;
     }
+
     .about__block--photo {
         height: 480px;
+    }
+    .ambassadors__item:nth-child(even) {
+margin-right: 0;
+    }
+    .orders__title {
+        width: 100%;
+        padding: 0 150px;
+    }
+
+    .orders__item {
+        display: flex!important;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 295px;
+    }
+    .orderBlock__main {
+        height: auto;
+    }
+    .orderBlock__title {
+        min-height: auto;
+    }
+    .orders__paginationWrapper {
+        display: flex;
+        justify-content: center;
+        padding: 31px 0 10px 0;
+    }
+    .orders__paginationWrapper .paginationBlock__container button,  .orders__paginationWrapper .paginationBlock__item {
+        color: #FBF8F6;
     }
 }
 

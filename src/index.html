@@ -604,7 +604,7 @@
         <div class="wrapper">
             <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
             </div>
-            <div class="orders__container">
+            <div class="orders__container" id="orders-slider">
                 <div class="orders__item orderBlock">
                     <div class="orderBlock__main">
                         <div class="orderBlock__content">
@@ -684,6 +684,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="orders__paginationWrapper">
+                <button class="slick-prev paginationBlock__item" data-slider="orders-slider"
+                        aria-label="Previous" type="button">&#11104;
+                </button>
+                <div class="orders__pagination paginationBlock"></div>
+                <button data-slider="orders-slider" class="slick-next paginationBlock__item"
+                        aria-label="Next" type="button">&#10141;
+                </button>
             </div>
         </div>
     </section>

@@ -54,9 +54,26 @@ $(`#articles-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.articles__pagination`),
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
+});
+$(`#orders-slider`).slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  appendDots: $(`.orders__pagination`),
+  arrows: false,
+  autoplay: true,
+  speed: 500,
+  mobileFirst: true,
+  dotsClass: `paginationBlock__container`,
+  responsive: [
+    {
+      breakpoint: 1023,
+      settings: `unslick`,
+    },
+  ],
 });
 
 $(`#club-slider`).slick({
