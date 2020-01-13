@@ -5,7 +5,8 @@ $(`#main-slider`).slick({
   dots: true,
   appendDots: $(`.slider__paginationContainer`),
   arrows: true,
-  autoplay: true,
+  autoplay: false,
+  fade: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
