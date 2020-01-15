@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 .toolbar {
     display: flex;
     justify-content: space-between;
-    padding: 7px;
+    padding: 7px 14px;
     background: #333333;
 }
 
@@ -406,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*slider start*/
 .slider {
+    position: relative;
     width: 100%;
     height: 667px;
     display: flex;
@@ -597,12 +598,10 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     z-index: 999;
 }
-#main-slider .slick-slide {
-    height: 667px;
+#main-slider {
+    overflow: unset!important;
 }
-#main-slider .slick-list {
-    overflow: unset;
-}
+
 .slidePagination {
     width: auto;
     color: #FBF8F6;
@@ -611,7 +610,7 @@ h1, h2, h3, h4, h5, h6 {
 .slider .slider__pagination {
     position: absolute;
     bottom: 40px;
-    right: 135px;
+    right: calc(50% - 1170px / 2);
     display: flex;
     z-index: 999;
 }
@@ -650,7 +649,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.paginationBlock__item:hover, .paginationBlock__container .slick-active {
+.paginationBlock__item:hover, .paginationBlock__container .slick-active,  .paginationBlock__container .active {
     color: #FBF8F6;
     padding-bottom: 3px;
     border-radius: 50%;

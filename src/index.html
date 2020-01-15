@@ -129,73 +129,90 @@
         <div class="slider__block slider__block--gallery" style="background-image:
         url('img/moskva.png')">
             <div id="main-slider">
-            <div class="slide">
-                <div class="slidePromo__container">
-                    <div class="slidePromo__descriptionWrapper">
-                        <div class="sliderPromo__triangle"></div>
-                        <div class="slidePromo__description slidePromoDescription">
-                            <div class="logoSymbol">
-                                <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                <div class="slide">
+                    <div class="slidePromo__container">
+                        <div class="slidePromo__descriptionWrapper">
+                            <div class="sliderPromo__triangle"></div>
+                            <div class="slidePromo__description slidePromoDescription">
+                                <div class="logoSymbol">
+                                    <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                </div>
+                                <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
                             </div>
-                            <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
                         </div>
+                        <div class="slidePromo__linkBlock linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
+                                амбассадоры &rarr;</a>
+                        </div>
+
                     </div>
-                    <div class="slidePromo__linkBlock linkBlock">
-                        <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
-                            амбассадоры &rarr;</a>
+                    <img class="slide__personImage" src="img/slider_person.png" alt="">
+
+                </div>
+                <div class="slide">
+                    <div class="slidePromo__container">
+                        <div class="slidePromo__descriptionWrapper">
+                            <div class="sliderPromo__triangle"></div>
+                            <div class="slidePromo__description slidePromoDescription">
+                                <div class="logoSymbol">
+                                    <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                </div>
+                                <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                            </div>
+                        </div>
+                        <div class="slidePromo__linkBlock linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
+                                амбассадоры &rarr;</a>
+                        </div>
+
                     </div>
 
                 </div>
-                <img class="slide__personImage" src="img/slider_person.png" alt="">
-
-            </div>
-            <div class="slide">
-                <div class="slidePromo__container">
-                    <div class="slidePromo__descriptionWrapper">
-                        <div class="sliderPromo__triangle"></div>
-                        <div class="slidePromo__description slidePromoDescription">
-                            <div class="logoSymbol">
-                                <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                <div class="slide">
+                    <div class="slidePromo__container">
+                        <div class="slidePromo__descriptionWrapper">
+                            <div class="sliderPromo__triangle"></div>
+                            <div class="slidePromo__description slidePromoDescription">
+                                <div class="logoSymbol">
+                                    <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
+                                </div>
+                                <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
                             </div>
-                            <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
+                        </div>
+                        <div class="slidePromo__linkBlock linkBlock">
+                            <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
+                                амбассадоры &rarr;</a>
                         </div>
                     </div>
-                    <div class="slidePromo__linkBlock linkBlock">
-                        <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
-                            амбассадоры &rarr;</a>
-                    </div>
-
+                    <img class="slide__personImage" src="img/slider_person.png" alt="">
                 </div>
-                <img class="slide__personImage" src="img/slider_person.png" alt="">
-
             </div>
-            <div class="slide">
-                <div class="slidePromo__container">
-                    <div class="slidePromo__descriptionWrapper">
-                        <div class="sliderPromo__triangle"></div>
-                        <div class="slidePromo__description slidePromoDescription">
-                            <div class="logoSymbol">
-                                <span class="slidePromoDescription__text slidePromoDescription__text--bold">Иван Бородин</span>
-                            </div>
-                            <span class="slidePromoDescription__text">Мы хотим, чтобы в том числе с моей помощью об этой игре узнал миллион человек.</span>
-                        </div>
-                    </div>
-                    <div class="slidePromo__linkBlock linkBlock">
-                        <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
-                            амбассадоры &rarr;</a>
-                    </div>
-                </div>
-                <img class="slide__personImage" src="img/slider_person.png" alt="">
-            </div>
-        </div>
         </div>
 
         <div class="slider__pagination">
-            <button class="slick-prev paginationBlock__item" aria-label="Previous" type="button"
-                    data-slider="main-slider">&#11104;
+            <button class="paginationBlock__item" aria-label="Previous" type="button"
+                    id="main-slider-prev">&#11104;
             </button>
-            <div class="slider__paginationContainer"></div>
-            <button class="slick-next paginationBlock__item" data-slider="main-slider" aria-label="Next"
+            <div class="slider__paginationContainer">
+                <ul class="paginationBlock__container js-paginationBlock">
+                    <li role="presentation" class="paginationBlock__item active" data-index="0">
+                        <button type="button" role="tab"
+                                aria-label="2 of 4" tabindex="-1">1
+                        </button>
+                    </li>
+                    <li role="presentation" class="paginationBlock__item" data-index="1">
+                        <button type="button" role="tab"
+                                aria-label="2 of 4" tabindex="-1">2
+                        </button>
+                    </li>
+                    <li role="presentation" class="paginationBlock__item" data-index="2">
+                        <button type="button" role="tab"
+                                aria-label="2 of 4" tabindex="-1">3
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button id="main-slider-next" class="paginationBlock__item" aria-label="Next"
                     type="button">&#10141;
             </button>
         </div>

@@ -1,14 +1,42 @@
 import $ from 'jquery';
 import 'slick-carousel';
 
-$(`#main-slider`).slick({
-  dots: true,
-  appendDots: $(`.slider__paginationContainer`),
-  arrows: true,
-  autoplay: false,
-  fade: true,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
+const simpleslider = require(`simple-slider`);
+
+function setPagination() {
+  const index = mainSlider.currentIndex();
+  $(`.js-paginationBlock  li.active`).removeClass(`active`);
+  $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
+};
+
+const mainSlider = simpleslider.getSlider({
+  container: document.getElementById(`main-slider`),
+  prop: `opacity`,
+  unit: ``,
+  init: 0,
+  show: 1,
+  end: 0,
+  onChange: setPagination,
+});
+
+if (document.getElementById(`main-slider-prev`)) {
+  document.getElementById(`main-slider-prev`).addEventListener(`click`, () => {
+    mainSlider.prev();
+  });
+}
+if (document.getElementById(`main-slider-next`)) {
+  document.getElementById(`main-slider-next`).addEventListener(`click`, () => {
+    mainSlider.next();
+  });
+}
+
+$(`.js-paginationBlock`).on(`click`, `li`, function () {
+  const index = $(this).data(`index`);
+  mainSlider.change(index);
+  $(`.js-paginationBlock  li.active`).removeClass(`active`);
+  $(this).addClass(`active`);
+  mainSlider.pause();
+  setTimeout(mainSlider.resume(), 500);
 });
 
 $(`#insta-slider`).slick({
