@@ -1,4 +1,4 @@
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1599px) {
     .wrapper {
         max-width: 1290px;
         margin: 0 auto;
@@ -12,6 +12,19 @@
 
     .about__block {
         padding: 80px 105px 80px calc(50% - 1290px / 2);
+    }
+
+    .slider .slider__pagination {
+        right: calc(50% - 1290px / 2);
+    }
+    .slidePromo__container {
+        right: 28%;
+    }
+    .map__list {
+        left: calc(50% - 1290px / 2);
+    }
+    .seo.innerWrapper {
+        padding-bottom: 100px;
     }
 }
 @media screen and (max-width: 1279px) {
