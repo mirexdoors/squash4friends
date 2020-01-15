@@ -64,7 +64,7 @@ $(`#ambassador-slider`).slick({
   slidesToScroll: 1,
   appendDots: $(`.ambassadors__pagination`),
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
   responsive: [

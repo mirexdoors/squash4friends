@@ -1,4 +1,4 @@
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
     .wrapper {
         max-width: 1290px;
         margin: 0 auto;
@@ -29,6 +29,7 @@
 }
 @media screen and (max-width: 1279px) {
     .wrapper {
+        max-width: none;
         margin: 0 40px;
     }
 
@@ -52,13 +53,11 @@
         display: inline;
         letter-spacing: 3px;
     }
-
+    .slide__description {
+        margin-left: 40px;
+    }
     .slidePromo__container {
         right: 40px;
-    }
-
-    .slide__description {
-        padding-left: 50px;
     }
 
     .slidePromo__descriptionWrapper {
@@ -70,11 +69,13 @@
     }
 
     .slideDescription__content {
-        padding: 14px 70px 14px 14px;
+        padding: 14px 0 14px 14px;
     }
-
+    .slide__personImage {
+        left: -105px;
+    }
     .slide__footer {
-        padding: 40px 50px;
+        padding-left: 0;
     }
 
     .slider .slider__pagination {
