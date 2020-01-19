@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 .counter__item {
     border-radius: 26px;
     background: #1C1C1A;
-    padding: 3px 8px;
+    padding: 3px 10px;
 }
 
 .counter__itemDigit {
@@ -323,9 +323,22 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: flex-start;
 }
-.navigation__item:first-child .navigation__link {
+.navigation__item:first-child:not(.navigation__item--footer) .navigation__link {
     padding-left: 22px;
     padding-right:  14px;
+}
+.navigation__block {
+    width: 100%;
+}
+.navigation__block .navigation__link {
+    padding: 0;
+    justify-content: center;
+}
+.footer .navigation__link span {
+    height: 100%;
+}
+.footer .navigation__link .logoSymbol--link::before {
+    left: -12px;
 }
 .navigation__item:last-child  .navigation__link {
     padding-right: 30px;
@@ -348,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
-.navigation__text--mobile,  .navigation__item.navigation__item--menu {
+.navigation__text--mobile,  .navigation__item.navigation__item--menu, .footer .navigation__item--footer {
     display: none;
 }
 
@@ -526,8 +539,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .slidePromo__descriptionWrapper {
     display: flex;
-    width: 400px;
-    height: 132px;
+    width: 368px;
+    height: 126px;
 }
 
 .slidePromo__container {
@@ -542,13 +555,12 @@ h1, h2, h3, h4, h5, h6 {
 .sliderPromo__triangle {
     width: 0;
     height: 0;
-    padding-right: 20px;
-    border-bottom: 132px solid #FBF8F6;
-    border-left: 25px solid transparent;
+    border-bottom: 126px solid #FBF8F6;
+    border-left: 23px solid transparent;
 }
 
 .slidePromo__description {
-    padding: 16px 15px;
+    padding: 16px 28px;
     background: #FBF8F6;
 }
 
@@ -588,11 +600,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
-    width: 400px;
+    width: 380px;
 }
 
 .slideTitle__text {
-    padding: 0 14px 0 14px;
     color: #31312E;
     letter-spacing: 3px;
 }
@@ -603,6 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slideTitle__text--red-white {
     color: #FBF8F6;
+    padding: 0 14px;
     background-color: #EB2E34;
 }
 
@@ -1452,7 +1464,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-right: 30px;
 }
-
+.footerCounter__item:last-child {
+    margin-right: 0;
+}
 .footerCounter__image {
     margin-right: 8px;
 }
@@ -1562,7 +1576,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 400px;
     margin: auto;
     background: #FBF8F6;
-    z-index: 99;
+    z-index: 99999;
 }
 
 .modalForm h2 {

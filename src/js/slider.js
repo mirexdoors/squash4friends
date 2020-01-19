@@ -5,7 +5,7 @@ const simpleslider = require(`simple-slider`);
 
 function setPagination() {
   const index = mainSlider.currentIndex();
-  $(`.js-paginationBlock  li.active`).removeClass(`active`);
+  $(`.js-paginationBlock li.active`).removeClass(`active`);
   $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
 };
 
@@ -33,7 +33,7 @@ if (document.getElementById(`main-slider-next`)) {
 $(`.js-paginationBlock`).on(`click`, `li`, function () {
   const index = $(this).data(`index`);
   mainSlider.change(index);
-  $(`.js-paginationBlock  li.active`).removeClass(`active`);
+  $(`.js-paginationBlock li.active`).removeClass(`active`);
   $(this).addClass(`active`);
   mainSlider.pause();
   setTimeout(mainSlider.resume(), 500);
@@ -55,6 +55,12 @@ $(`#insta-slider`).slick({
         slidesToShow: 3,
       },
     },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
   ],
 });
 
@@ -69,7 +75,7 @@ $(`#ambassador-slider`).slick({
   dotsClass: `paginationBlock__container`,
   responsive: [
     {
-      breakpoint: 1023,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
       },
@@ -86,7 +92,16 @@ $(`#articles-slider`).slick({
   autoplay: false,
   speed: 500,
   dotsClass: `paginationBlock__container`,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
 });
+
 $(`#orders-slider`).slick({
   dots: true,
   slidesToShow: 1,
@@ -113,6 +128,7 @@ $(`#club-slider`).slick({
   speed: 500,
   dotsClass: `paginationBlock__container`,
 });
+
 $(`#story-slider`).slick({
   dots: true,
   appendDots: $(`.storySlider__pagination`),
