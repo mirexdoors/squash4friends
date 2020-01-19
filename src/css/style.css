@@ -319,11 +319,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation {
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: flex-start;
 }
-
+.navigation__item:first-child .navigation__link {
+    padding-left: 22px;
+    padding-right:  14px;
+}
+.navigation__item:last-child  .navigation__link {
+    padding-right: 30px;
+}
 .navigation__link {
     font-family: Bebas Neue, sans-serif;
     display: flex;
@@ -332,15 +338,17 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration-line: none;
     color: #666666;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 0 20px;
+    padding-left: 30px;
     border: 0;
     background: inherit;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
-.navigation__text--mobile, .navigation__item--mobileMenu {
+.navigation__text--mobile,  .navigation__item.navigation__item--menu {
     display: none;
 }
 
@@ -360,11 +368,13 @@ h1, h2, h3, h4, h5, h6 {
 .feedback {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
 }
 
-.feedback__item {
+.menu .feedback__item {
+    font-size: 20px;
     width: 50%;
+    white-space: nowrap;
 }
 
 .linkBlock {
