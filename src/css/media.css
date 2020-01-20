@@ -237,9 +237,11 @@
     .navigation__item:last-child .navigation__link {
         padding-right: 45px;
     }
+
     .footerCounter__container {
         justify-content: space-between;
     }
+
     .footerCounter__item {
         margin-right: 16px;
     }
@@ -261,13 +263,16 @@
     .navigation__item.navigation__item--mobileMenu, .navigation__item.navigation__item--menu, .footer .navigation__item--footer {
         display: flex;
     }
-    .footer .navigation__item:nth-child(2)  .navigation__link {
+
+    .footer .navigation__item:nth-child(2) .navigation__link {
         padding-left: 0;
     }
+
     .navigation__item--footer {
         height: 60px;
         justify-content: center;
     }
+
     .navigation__item--menu .navigation__link {
         padding-left: 18px;
     }
@@ -392,7 +397,7 @@
         height: 480px;
     }
 
-    #ambassador-slider .slick-slide, #articles-slider .slick-slide{
+    #ambassador-slider .slick-slide, #articles-slider .slick-slide {
         width: 354px !important;
     }
 
@@ -456,35 +461,45 @@
         left: 0;
         width: 100%;
     }
+
     .map {
         height: 654px;
     }
+
     .mapList__listBlock {
         display: none;
     }
+
     .mapList__selectBlock {
         flex-direction: row;
     }
+
     .mapList__selectBlock .selectBox {
         width: 50%;
-        margin-bottom:0;
-    }
-    .mapList__select:first-child, .selectBox__pseudoCurrent  {
         margin-bottom: 0;
     }
+
+    .mapList__select:first-child, .selectBox__pseudoCurrent {
+        margin-bottom: 0;
+    }
+
     .mapList__titleBlock {
         padding-bottom: 25px;
     }
+
     .articles__item {
         height: 508px;
     }
+
     #articles-slider.articles__container {
         max-height: 508px;
     }
+
     #articles-slider .slick-slide.slick-active {
         margin-left: 10px;
         margin-right: -5px;
     }
+
     .seo.innerWrapper {
         padding-bottom: 70px;
     }
@@ -499,36 +514,46 @@
     .innerWrapper {
         padding: 50px 0;
     }
+
     .toolbar__counter, .feedback__item:first-child, .sliderPromo__triangle, .slidePromo__descriptionWrapper {
         display: none;
     }
+
     .toolbar__helpers {
         width: 100%;
     }
+
     .feedback {
         width: auto;
     }
+
     .menu .feedback__item {
         width: 100%;
     }
+
     .footerCounter__container {
         flex-wrap: wrap;
     }
+
     .slideTitle {
         font-size: 50px;
     }
+
     .slide__description {
         padding-top: 50px;
         margin: 0 20px;
         width: 100%;
     }
+
     .slidePromo__linkBlock {
         width: auto;
     }
+
     #main-slider .slide {
         display: flex;
         justify-content: center;
     }
+
     .slidePromo__container {
         top: 269px;
         left: 0;
@@ -537,6 +562,7 @@
         max-width: 210px;
         z-index: 1000;
     }
+
     .slider .slider__pagination {
         display: flex;
         justify-content: center;
@@ -544,6 +570,7 @@
         right: 0;
         margin: auto;
     }
+
     .about__linkBlock {
         left: 0;
         right: 0;
@@ -551,79 +578,164 @@
         max-width: 212px;
         bottom: 40px;
     }
+
     #insta-slider .slick-slide {
-        width: 220px!important;
+        width: 220px !important;
     }
+
+    #insta-slider .slick-slide.slick-active {
+        margin-right: -5px;
+    }
+
     .instagram__item {
-        width: 215px!important;
+        width: 215px !important;
     }
+
     .instagram__feed {
         max-height: 215px;
     }
-    .instagram__footer {
-        align-items: flex-start;
-        flex-direction: column-reverse;
+
+    .instagram__linkBlock, .ambassadors__linkAll, .articles__linkAll {
+        margin-top: 30px;
     }
-    .instagram__paginationWrapper {
-        margin-bottom: 30px;
-    }
+
     .ambassadors__filter {
         flex-direction: column;
+        margin-bottom: 25px;
     }
+
+    .ambassadors__item {
+        height: 544px;
+        margin-left: 10px;
+    }
+
+    #ambassador-slider .slick-slide, #articles-slider .slick-slide {
+        width: 440px !important;
+    }
+
+    #articles-slider .slick-slide.slick-active, #ambassador-slider .slick-slide.slick-active {
+        margin-right: -81px;
+    }
+
+    .ambassadors__container-slider {
+        max-height: 544px;
+    }
+
+    .articles__footer, .ambassadors__footer, .instagram__footer {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
     .footer__navContainer {
         flex-wrap: wrap;
     }
-    .footer__navContainer  .menu__block {
+
+    .footer__navContainer .menu__block {
         height: auto;
     }
-   .footer  .navigation {
+
+    .footer .navigation {
         padding-top: 20px;
         flex-wrap: wrap;
         width: 100%;
     }
+
     .footer__navContainer .navigation__item {
         padding-bottom: 20px;
     }
+
     .navigation__item:last-child .navigation__link {
         padding: 0;
     }
-    .navigation__item:nth-child(5) .navigation__link  {
+
+    .navigation__item:nth-child(5) .navigation__link {
         padding-right: 30px;
     }
+
     .footer .toolbar__helper {
         margin-left: 0;
         margin-bottom: 20px;
     }
+
     .footerCounter {
         padding-top: 35px;
         padding-bottom: 31px;
     }
+
     .footerCounter__item {
         width: 50%;
         margin-right: 0;
         margin-bottom: 14px;
     }
+
     .social__item:first-child {
         margin-left: 0;
     }
+
     .orders.innerWrapper {
         padding-top: 50px;
         padding-bottom: 60px;
     }
+
     .orders__title {
         padding: 0;
     }
+
     .orders__item {
         height: 450px;
     }
+
     .orderCTA {
         flex-wrap: wrap;
     }
+
     .orderCTA__item {
         width: 100%;
+    }
+
+    .modalForm--insta .modalForm__left {
+        display: none;
+    }
+
+    .modalForm.modalForm--insta {
+        width: 288px;
+    }
+
+    .modalForm__close {
+        top: 25px;
+        right: 15px;
+    }
+
+    .modalForm__close span:before, .modalForm__close span:after {
+        background: #EB2E34;
+    }
+
+    .modalForm__right__subTitle {
+        margin-bottom: 22px;
+    }
+
+    .modalForm__rightText {
+        padding: 0 18px;
+        margin-bottom: 30px;
+    }
+
+    .modalForm h2 {
+        font-size: 22px;
+    }
+    .titleText {
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 479px) {
+    .wrapper {
+        margin: 0 16px;
+    }
 
+    .innerWrapper {
+        padding: 40px 0;
+    }
+    .feedback {
+        display: none;
+    }
 }

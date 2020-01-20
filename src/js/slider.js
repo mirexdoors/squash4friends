@@ -50,15 +50,15 @@ $(`#insta-slider`).slick({
   dotsClass: `paginationBlock__container`,
   responsive: [
     {
-      breakpoint: 1023,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
       breakpoint: 767,
       settings: {
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
       },
     },
   ],
@@ -80,6 +80,12 @@ $(`#ambassador-slider`).slick({
         slidesToShow: 2,
       },
     },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
   ],
 });
 
@@ -97,6 +103,12 @@ $(`#articles-slider`).slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
       },
     },
   ],
