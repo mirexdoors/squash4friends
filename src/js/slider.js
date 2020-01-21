@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import 'slick-carousel';
+import 'lightslider/dist/css/lightslider.min.css';
 
+window.$ = window.jQuery = require(`jquery`);
+require(`lightslider`);
 const simpleslider = require(`simple-slider`);
 
 function setPagination() {
@@ -39,97 +42,155 @@ $(`.js-paginationBlock`).on(`click`, `li`, function () {
   setTimeout(mainSlider.resume(), 500);
 });
 
-$(`#insta-slider`).slick({
-  dots: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  appendDots: $(`.instagram__pagination`),
-  arrows: false,
-  autoplay: false,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
+$(`#insta-slider`).lightSlider({
+  item: 4,
+  autoWidth: false,
+  slideMove: 1, // slidemove will be 1 if loop is true
+  slideMargin: 10,
+
+  mode: `slide`,
+  useCSS: true,
+  cssEasing: `ease`,
+  easing: `linear`,
+
+  speed: 400,
+  auto: false,
+  pauseOnHover: false,
+  loop: true,
+  slideEndAnimation: true,
+  pause: 2000,
+
+  keyPress: false,
+  controls: true,
+  prevHtml: ``,
+  nextHtml: ``,
+
+  rtl: false,
+  adaptiveHeight: false,
+  vertical: false,
+  pager: true,
+  enableTouch: true,
+  enableDrag: true,
+  freeMove: true,
+  swipeThreshold: 40,
   responsive: [
     {
-      breakpoint: 479,
+      breakpoint: 1023,
       settings: {
-        slidesToShow: 1,
+        item: 3,
       },
     },
     {
       breakpoint: 767,
       settings: {
-        slidesToShow: 2,
+        item: 2,
+      },
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        item: 1,
+        slideMargin: 0,
+      },
+    },
+  ],
+});
+
+
+$(`#ambassador-slider`).lightSlider({
+  item: 3,
+  autoWidth: false,
+  slideMove: 1, // slidemove will be 1 if loop is true
+  slideMargin: 12,
+
+  mode: `slide`,
+  useCSS: true,
+  cssEasing: `ease`,
+  easing: `linear`,
+
+  speed: 400,
+  auto: false,
+  pauseOnHover: false,
+  loop: true,
+  slideEndAnimation: true,
+  pause: 2000,
+
+  keyPress: false,
+  controls: true,
+  prevHtml: ``,
+  nextHtml: ``,
+
+  rtl: false,
+  adaptiveHeight: false,
+  vertical: false,
+  pager: true,
+  enableTouch: true,
+  enableDrag: true,
+  freeMove: true,
+  swipeThreshold: 40,
+  responsive: [
+    {
+      breakpoint: 1279,
+      settings: {
+        slideMargin: 10,
       },
     },
     {
       breakpoint: 1023,
       settings: {
-        slidesToShow: 3,
-      },
-    },
-  ],
-});
-
-$(`#ambassador-slider`).slick({
-  dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  appendDots: $(`.ambassadors__pagination`),
-  arrows: false,
-  autoplay: false,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
+        item: 2,
+        slideMargin: 10,
       },
     },
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 1,
+        item: 1,
+        slideMargin: 0,
       },
     },
     {
       breakpoint: 479,
       settings: {
-        slidesToShow: 1,
+        item: 1,
+        slideMargin: 0,
       },
     },
   ],
 });
 
-$(`#articles-slider`).slick({
-  dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  appendDots: $(`.articles__pagination`),
-  arrows: false,
-  autoplay: false,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
-  responsive: [
-    {
-      breakpoint: 479,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-  ],
+$(`#articles-slider`).lightSlider({
+  item: 3,
+  autoWidth: false,
+  slideMove: 1, // slidemove will be 1 if loop is true
+  slideMargin: 12,
+
+  mode: `slide`,
+  useCSS: true,
+  cssEasing: `ease`,
+  easing: `linear`,
+
+  speed: 400,
+  auto: false,
+  pauseOnHover: false,
+  loop: true,
+  slideEndAnimation: true,
+  pause: 2000,
+
+  keyPress: false,
+  controls: true,
+  prevHtml: ``,
+  nextHtml: ``,
+
+  rtl: false,
+  adaptiveHeight: false,
+  vertical: false,
+  pager: true,
+  enableTouch: true,
+  enableDrag: true,
+  freeMove: true,
+  swipeThreshold: 40,
+  responsive: [],
 });
 
 $(`#orders-slider`).slick({
