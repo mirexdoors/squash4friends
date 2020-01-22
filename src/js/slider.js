@@ -42,7 +42,7 @@ $(`.js-paginationBlock`).on(`click`, `li`, function () {
   setTimeout(mainSlider.resume(), 500);
 });
 
-$(`#insta-slider`).lightSlider({
+const insta_slider = $(`#insta-slider`).lightSlider({
   item: 4,
   autoWidth: false,
   slideMove: 1, // slidemove will be 1 if loop is true
@@ -52,16 +52,15 @@ $(`#insta-slider`).lightSlider({
   useCSS: true,
   cssEasing: `ease`,
   easing: `linear`,
-
   speed: 400,
-  auto: false,
+  auto: true,
   pauseOnHover: false,
   loop: true,
   slideEndAnimation: true,
   pause: 2000,
 
   keyPress: false,
-  controls: true,
+  controls: false,
   prevHtml: ``,
   nextHtml: ``,
 
@@ -94,6 +93,26 @@ $(`#insta-slider`).lightSlider({
       },
     },
   ],
+  onSliderLoad: function (slider) {
+    const parent = slider.parents(`.instagram`);
+    const pagination = parent.find(`.lSPager`);
+    const pagWidth = pagination.width() + 36;
+    pagination.before(`<button style="right:` + pagWidth + `px" class="slick-prev paginationBlock__item" data-slider="insta_slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>`);
+    pagination.parent().append(`<button data-slider="insta_slider" class="slick-next paginationBlock__item"
+    aria-label="Next" type="button">&#10141;</button>`);
+
+    parent.find(`.slick-prev`).on(`click`, function () {
+      slider.goToPrevSlide();
+    });
+
+    parent.find(`.slick-next`).on(`click`, function () {
+      slider.goToNextSlide();
+    });
+  },
+  onBeforeSlide: function (el) {
+  },
 });
 
 
@@ -116,7 +135,7 @@ $(`#ambassador-slider`).lightSlider({
   pause: 2000,
 
   keyPress: false,
-  controls: true,
+  controls: false,
   prevHtml: ``,
   nextHtml: ``,
 
@@ -145,8 +164,8 @@ $(`#ambassador-slider`).lightSlider({
     {
       breakpoint: 767,
       settings: {
-        item: 1,
-        slideMargin: 0,
+        item: 2,
+        slideMargin: 10,
       },
     },
     {
@@ -178,7 +197,7 @@ $(`#articles-slider`).lightSlider({
   pause: 2000,
 
   keyPress: false,
-  controls: true,
+  controls: false,
   prevHtml: ``,
   nextHtml: ``,
 
@@ -190,7 +209,35 @@ $(`#articles-slider`).lightSlider({
   enableDrag: true,
   freeMove: true,
   swipeThreshold: 40,
-  responsive: [],
+  responsive: [
+    {
+      breakpoint: 1279,
+      settings: {
+        slideMargin: 10,
+      },
+    },
+    {
+      breakpoint: 1023,
+      settings: {
+        item: 2,
+        slideMargin: 10,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        item: 2,
+        slideMargin: 10,
+      },
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        item: 1,
+        slideMargin: 0,
+      },
+    },
+  ],
 });
 
 $(`#orders-slider`).slick({
@@ -227,13 +274,4 @@ $(`#story-slider`).slick({
   autoplay: true,
   speed: 500,
   dotsClass: `paginationBlock__container`,
-});
-$(`.slick-prev`).on(`click`, function () {
-  const sliderSelector = `#` + $(this).data(`slider`);
-  $(sliderSelector).slick(`slickPrev`);
-});
-
-$(`.slick-next`).on(`click`, function () {
-  const sliderSelector = `#` + $(this).data(`slider`);
-  $(sliderSelector).slick(`slickNext`);
 });
