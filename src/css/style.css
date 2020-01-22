@@ -54,13 +54,18 @@ button {
     position: relative;
     z-index: 99999;
 }
-
+.topBar.sticky {
+    position: sticky;
+    top: 0;
+}
 .header {
     position: sticky;
     top: 0;
     z-index: 9999;
 }
-
+.header.sticky {
+    top: 41px;
+}
 .pageTitle {
     padding-bottom: 50px;
 }
@@ -221,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 .toolbar {
     display: flex;
     justify-content: space-between;
-    padding: 7px 14px;
+    padding: 8px 14px;
     background: #333333;
 }
 
@@ -368,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
-.navigation__text--mobile, .navigation__item.navigation__item--menu, .footer .navigation__item--footer {
+.navigation__text--mobile, .navigation__item.navigation__item--menu, .footer .navigation__item--footer, .navigation--mobile {
     display: none;
 }
 
@@ -458,7 +463,9 @@ button.paginationBlock__item {
     height: 667px;
     display: flex;
 }
-
+.slider__pagination button.paginationBlock__item {
+    position: static;
+}
 .slider__block--description {
     position: relative;
 }
@@ -1388,9 +1395,10 @@ button.paginationBlock__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.instagram__linkBlock, .ambassadors__linkAll, .articles__linkAll {
     margin-top: 30px;
 }
-
 /*articles end*/
 
 /*instagram start*/
@@ -1521,7 +1529,7 @@ button.paginationBlock__item {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 35px 218px;
+    padding: 35px 0;
     background: #333333;
 }
 

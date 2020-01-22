@@ -42,7 +42,7 @@ $(`.js-paginationBlock`).on(`click`, `li`, function () {
   setTimeout(mainSlider.resume(), 500);
 });
 
-const insta_slider = $(`#insta-slider`).lightSlider({
+$(`#insta-slider`).lightSlider({
   item: 4,
   autoWidth: false,
   slideMove: 1, // slidemove will be 1 if loop is true
@@ -97,10 +97,20 @@ const insta_slider = $(`#insta-slider`).lightSlider({
     const parent = slider.parents(`.instagram`);
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 36;
-    pagination.before(`<button style="right:` + pagWidth + `px" class="slick-prev paginationBlock__item" data-slider="insta_slider"
+    let style = `right:` + pagWidth + `px`;
+    if (window.innerWidth < 768) {
+      style = ``;
+    }
+    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
                                 aria-label="Previous" type="button">&#11104;
                         </button>`);
-    pagination.parent().append(`<button data-slider="insta_slider" class="slick-next paginationBlock__item"
+
+    if (window.innerWidth < 768) {
+      style = `left: ` + pagWidth + `px`;
+    } else {
+      style = ``;
+    }
+    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
     aria-label="Next" type="button">&#10141;</button>`);
 
     parent.find(`.slick-prev`).on(`click`, function () {
@@ -110,8 +120,6 @@ const insta_slider = $(`#insta-slider`).lightSlider({
     parent.find(`.slick-next`).on(`click`, function () {
       slider.goToNextSlide();
     });
-  },
-  onBeforeSlide: function (el) {
   },
 });
 
@@ -176,6 +184,30 @@ $(`#ambassador-slider`).lightSlider({
       },
     },
   ],
+  onSliderLoad: function (slider) {
+    const parent = slider.parents(`.ambassadors`);
+    const pagination = parent.find(`.lSPager`);
+    const pagWidth = pagination.width() + 36;
+    let style = `right:` + pagWidth + `px`;
+    if (window.innerWidth < 768) {
+      style = ``;
+    }
+    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>`);
+
+    if (window.innerWidth < 768) {
+      style = `left: ` + pagWidth + `px`;
+    } else {
+      style = ``;
+    }
+    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
+    aria-label="Next" type="button">&#10141;</button>`);
+
+    parent.find(`.slick-next`).on(`click`, function () {
+      slider.goToNextSlide();
+    });
+  },
 });
 
 $(`#articles-slider`).lightSlider({
@@ -238,26 +270,101 @@ $(`#articles-slider`).lightSlider({
       },
     },
   ],
+  onSliderLoad: function (slider) {
+    const parent = slider.parents(`.articles`);
+    const pagination = parent.find(`.lSPager`);
+    const pagWidth = pagination.width() + 36;
+
+    let style = `right:` + pagWidth + `px`;
+    if (window.innerWidth < 768) {
+      style = ``;
+    }
+    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>`);
+
+    if (window.innerWidth < 768) {
+      style = `left: ` + pagWidth + `px`;
+    } else {
+      style = ``;
+    }
+    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
+    aria-label="Next" type="button">&#10141;</button>`);
+
+    parent.find(`.slick-prev`).on(`click`, function () {
+      slider.goToPrevSlide();
+    });
+
+    parent.find(`.slick-next`).on(`click`, function () {
+      slider.goToNextSlide();
+    });
+  },
 });
 
-$(`#orders-slider`).slick({
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  appendDots: $(`.orders__pagination`),
-  arrows: false,
-  autoplay: true,
-  speed: 500,
-  mobileFirst: true,
-  dotsClass: `paginationBlock__container`,
-  responsive: [
-    {
-      breakpoint: 1023,
-      settings: `unslick`,
+if (window.innerWidth < 1024) {
+  $(`#orders-slider`).lightSlider({
+    item: 1,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 12,
+
+    mode: `slide`,
+    useCSS: true,
+    cssEasing: `ease`,
+    easing: `linear`,
+
+    speed: 400,
+    auto: false,
+    pauseOnHover: false,
+    loop: true,
+    slideEndAnimation: true,
+    pause: 2000,
+    currentPagerPosition: 'middle',
+    keyPress: false,
+    controls: false,
+
+    rtl: false,
+    adaptiveHeight: false,
+    vertical: false,
+    pager: true,
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+    responsive: [
+      {
+        breakpoint: 479,
+        settings: {
+          slideMargin: 0,
+        },
+      },
+    ],
+    onSliderLoad: function (slider) {
+      const parent = slider.parents(`.orders`);
+      const pagination = parent.find(`.lSPager`);
+      const pagWidth = (pagination.width()/2)  + 26;
+
+      let style = `left: calc(50% - ` + pagWidth + `px)`;
+      pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
+                                aria-label="Previous" type="button">&#11104;
+                        </button>`);
+
+
+        style = `right: calc(50% - ` + pagWidth + `px)`;
+
+      pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
+    aria-label="Next" type="button">&#10141;</button>`);
+
+      parent.find(`.slick-prev`).on(`click`, function () {
+        slider.goToPrevSlide();
+      });
+
+      parent.find(`.slick-next`).on(`click`, function () {
+        slider.goToNextSlide();
+      });
     },
-  ],
-});
-
+  });
+}
 $(`#club-slider`).slick({
   dots: true,
   appendDots: $(`.clubSlider__pagination`),
