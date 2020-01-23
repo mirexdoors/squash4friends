@@ -62,25 +62,60 @@
 <header class="header">
     <div class="menu">
         <nav class="menu__block navigation nav">
-            <div class="navigation__item navigation__item--red ">
+            <div class="navigation__item navigation__item--red navigation__item--mobileMenu">
                 <div class="logoSymbol logoSymbol--link logoSymbol--white">
-                    <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                    <a class="navigation__link navigation__link--white" href="/"><span class="navigation__text">
+                        squash4friends</span><span class="navigation__text navigation__text--mobile">
+                        s4f</span></a>
                 </div>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item navigation__item--mobile navigation__item--menu">
+                <button class="navigation__link js-burger"><span></span>Меню</button>
+            </div>
+            <div class="navigation__item">
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/about.html">О нас</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+        </nav>
+        <nav class="menu__block navigation navigation--mobile js-navigation nav">
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+            <div class="navigation__item navigation__item--feedback navigation__item--feedback--480">
+                <button data-modal="#order-ambassador"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                    амбассадором
+                </button>
+            </div>
+            <div class="navigation__item navigation__item--feedback">
+                <button data-modal="#try-squash"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                    Попробовать
+                    сквош
+                </button>
             </div>
         </nav>
         <div class="feedback menu__block linkBlock">
@@ -96,36 +131,33 @@
     </div>
 </header>
 <main>
-    <section class="slider">
+    <section class="simplepage">
 
-        <div class="slider__item">
-            <div class="slide">
-                <div class="slide__description slideDescription slide__block">
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                        <li class="breadcrumbs__item">404</li>
-                    </ul>
-                    <div class="slide__title slideTitle">
-                        <span class="slideTitle__text">Страница<br></span>
-                              <span class="slideTitle__text">не найдена</span>
-                    </div>
-                    <div class="slideDescription__content ">
-                        <div class="logoSymbol"> <span
-                                class="slideDescription__text slideDescription__text--bold"> Неправильно набран адрес или такой страницы на сайте больше не существует.
+        <div class="simplepage__block simplepage__block--text">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                <li class="breadcrumbs__item">404</li>
+            </ul>
+            <div class="slide__title slideTitle">
+                <span class="slideTitle__text">Страница<br></span>
+                <span class="slideTitle__text">не найдена</span>
+            </div>
+            <div class="simplepage__content ">
+                <div class="logoSymbol"> <span
+                        class="simplepage__text"> Неправильно набран адрес или такой страницы на сайте больше не существует.
                             <br>
                             <br>
                             Вы можете вернуться назад или перейти на главную, нажав на кнопку ниже.</span></div>
 
-                        <div class="linkBlock slide__linkBlock"><a href="/"
-                                                  class="linkBlock__item linkBlock__item--red">Перейти на главную &rarr;
-                        </a></div>
+                <div class="linkBlock simplepage__linkBlock"><a href="/"
+                                                           class="linkBlock__item linkBlock__item--red">Перейти на
+                    главную &rarr;
+                </a></div>
 
-                    </div>
-                </div>
-                <div class="slide__photo slidePromo slide__block"
-                     style="background-image: url('img/404.png')">
-                </div>
             </div>
+        </div>
+        <div class="simplepage__block"
+             style="background-image: url('img/404.png')">
         </div>
     </section>
     <footer class="footer">

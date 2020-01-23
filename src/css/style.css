@@ -9,7 +9,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Bebas Neue';
     src: url('../fonts/BebasNeueBold.eot');
@@ -54,18 +53,22 @@ button {
     position: relative;
     z-index: 99999;
 }
+
 .topBar.sticky {
     position: sticky;
     top: 0;
 }
+
 .header {
     position: sticky;
     top: 0;
     z-index: 9999;
 }
+
 .header.sticky {
     top: 41px;
 }
+
 .pageTitle {
     padding-bottom: 50px;
 }
@@ -105,12 +108,16 @@ h1, h2, h3, h4, h5, h6 {
     content: ':';
     position: absolute;
     left: -12px;
-    top: -5%;
+    top: -6px;
     color: #EB2E34;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     padding-right: 8px;
+}
+
+.ambassador__name.logoSymbol:before, .article__title.logoSymbol:before, .orderBlock__subTitle.logoSymbol:before, .instagram__description.logoSymbol:before {
+    top: -2px;
 }
 
 .aboutDescription__content .logoSymbol::before {
@@ -119,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logoSymbol--link::before {
     left: 10px;
-    top: 15px;
+    top: 11px;
 }
 
 .logoSymbol--white::before {
@@ -463,9 +470,11 @@ button.paginationBlock__item {
     height: 667px;
     display: flex;
 }
+
 .slider__pagination button.paginationBlock__item {
     position: static;
 }
+
 .slider__block--description {
     position: relative;
 }
@@ -883,7 +892,6 @@ button.paginationBlock__item {
 
 .ambassadors__container {
     display: flex;
-    margin-bottom: 40px;
 }
 
 .ambassadors__container-slider {
@@ -1311,7 +1319,6 @@ button.paginationBlock__item {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 .articles__item {
@@ -1396,9 +1403,11 @@ button.paginationBlock__item {
     justify-content: space-between;
     align-items: center;
 }
+
 .instagram__linkBlock, .ambassadors__linkAll, .articles__linkAll {
     margin-top: 30px;
 }
+
 /*articles end*/
 
 /*instagram start*/
@@ -1426,13 +1435,11 @@ button.paginationBlock__item {
     z-index: 10;
 }
 
-
 .instagram__feed {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-height: 285px;
-    margin-bottom: 30px;
     list-style-type: none;
 }
 
@@ -2038,4 +2045,38 @@ button.paginationBlock__item {
 
 .content__image {
     width: 100%;
+}
+
+/* simple page block*/
+.simplepage {
+    width: 100%;
+    display: flex;
+}
+
+.simplepage__block {
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.simplepage__block--text {
+    padding-right: 120px;
+    padding-left: calc(50% - 1170px / 2);
+}
+
+.simplepage__linkBlock {
+    width: 230px;
+}
+
+.simplepage__text {
+    display: flex;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.simplepage__content {
+    margin-bottom: 190px;
 }

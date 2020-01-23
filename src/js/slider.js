@@ -12,15 +12,18 @@ function setPagination() {
   $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
 };
 
-const mainSlider = simpleslider.getSlider({
-  container: document.getElementById(`main-slider`),
-  prop: `opacity`,
-  unit: ``,
-  init: 0,
-  show: 1,
-  end: 0,
-  onChange: setPagination,
-});
+if (document.getElementById(`main-slider`)) {
+  const mainSlider = simpleslider.getSlider({
+    container: document.getElementById(`main-slider`),
+    prop: `opacity`,
+    unit: ``,
+    init: 0,
+    show: 1,
+    end: 0,
+    onChange: setPagination,
+  });
+}
+
 
 if (document.getElementById(`main-slider-prev`)) {
   document.getElementById(`main-slider-prev`).addEventListener(`click`, () => {

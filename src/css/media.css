@@ -28,6 +28,7 @@
 
     .ambassadors__item {
         width: 422px !important;
+        max-width: 422px;
     }
 
     .ambassador__main {
@@ -57,6 +58,11 @@
     .seo.innerWrapper {
         padding-bottom: 100px;
     }
+
+    .simplepage__block--text {
+        padding-left: calc(50% - 1290px / 2);
+    }
+
 }
 
 @media screen and (max-width: 1279px) {
@@ -64,6 +70,7 @@
         max-width: none;
         margin: 0 40px;
     }
+
 
     .innerWrapper {
         padding: 70px 0;
@@ -75,6 +82,14 @@
 
     .feedback__item {
         padding: 0 24px;
+    }
+
+    .simplepage__block--text {
+        padding-left: 40px;
+    }
+
+    .simplepage__content {
+        margin-bottom: 50px;
     }
 
     .slideDescription__verticalImage {
@@ -233,7 +248,9 @@
     .innerWrapper {
         padding: 60px 0;
     }
-
+    .logoSymbol--link::before {
+        left: 10px;
+    }
     .searchBox__container {
         padding: 35px 30px;
     }
@@ -322,6 +339,19 @@
 
     .feedback {
         width: 55%;
+    }
+
+    .simplepage {
+        flex-wrap: wrap;
+    }
+
+    .simplepage__block {
+        width: 100%;
+        min-height: 424px;
+    }
+
+    .simplepage__block--text {
+        padding: 0 30px;
     }
 
     .slider {
@@ -419,7 +449,6 @@
     .ambassadors__item {
         height: 546px;
     }
-
 
     .orders.innerWrapper {
         padding-bottom: 70px;
@@ -529,6 +558,7 @@
     .navigation.navigation--mobile.open {
         display: flex;
     }
+
     .orders .lSPager.lSpg {
         bottom: -43px;
     }
@@ -538,6 +568,7 @@
     .wrapper {
         margin: 0 20px;
     }
+
     .searchBox__container {
         padding: 35px 20px;
     }
@@ -580,6 +611,10 @@
         flex-wrap: wrap;
     }
 
+    .simplepage__block--text {
+        padding: 0 20px;
+    }
+
     .slideTitle {
         font-size: 50px;
     }
@@ -594,6 +629,7 @@
         width: 100%;
         padding: 25px 0 0 14px;
     }
+
     .slidePromo__linkBlock {
         width: auto;
     }
@@ -639,6 +675,10 @@
     .ambassadors__filter {
         flex-direction: column;
         margin-bottom: 25px;
+    }
+
+    .ambassadors__container {
+        height: auto !important;
     }
 
     .ambassadors__item {
@@ -824,6 +864,7 @@
     .searchBox__container {
         padding: 35px 16px;
     }
+
     .innerWrapper {
         padding: 40px 0;
     }
@@ -834,6 +875,10 @@
 
     .titleText {
         margin-bottom: 20px;
+    }
+
+    .simplepage__block--text {
+        padding: 0 16px;
     }
 
     .navigation.navigation--mobile .navigation__item--feedback {
