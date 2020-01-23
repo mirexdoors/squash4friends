@@ -341,6 +341,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 14px;
 }
 
+.navigation__link.active:not(.navigation__link--white), .navigation__link:not(.navigation__link--white):hover {
+    border-bottom: 5px solid #EB2E34;;
+}
+
 .navigation__block {
     width: 100%;
 }
@@ -358,10 +362,6 @@ h1, h2, h3, h4, h5, h6 {
     left: -12px;
 }
 
-.navigation__item:last-child .navigation__link {
-    padding-right: 30px;
-}
-
 .navigation__link {
     font-family: Bebas Neue, sans-serif;
     display: flex;
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 30px;
+    margin-left: 30px;
     border: 0;
     background: inherit;
     cursor: pointer;
@@ -386,6 +386,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation__link--white {
     color: #FBF8F6;
+    padding-left: 30px;
+    margin-left: 0;
 }
 
 .navigation__item {

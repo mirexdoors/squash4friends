@@ -63,25 +63,60 @@
 <header class="header">
     <div class="menu">
         <nav class="menu__block navigation nav">
-            <div class="navigation__item navigation__item--red ">
+            <div class="navigation__item navigation__item--red navigation__item--mobileMenu">
                 <div class="logoSymbol logoSymbol--link logoSymbol--white">
-                    <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                    <a class="navigation__link navigation__link--white" href="/"><span class="navigation__text">
+                        squash4friends</span><span class="navigation__text navigation__text--mobile">
+                        s4f</span></a>
                 </div>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item navigation__item--mobile navigation__item--menu">
+                <button class="navigation__link js-burger"><span></span>Меню</button>
+            </div>
+            <div class="navigation__item">
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/about.html">О нас</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
+                <a class="navigation__link active" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+        </nav>
+        <nav class="menu__block navigation navigation--mobile js-navigation nav">
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
                 <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+            <div class="navigation__item navigation__item--feedback navigation__item--feedback--480">
+                <button data-modal="#order-ambassador"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                    амбассадором
+                </button>
+            </div>
+            <div class="navigation__item navigation__item--feedback">
+                <button data-modal="#try-squash"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                    Попробовать
+                    сквош
+                </button>
             </div>
         </nav>
         <div class="feedback menu__block linkBlock">
@@ -336,6 +371,13 @@
     </section>
     <footer class="footer">
         <div class="footer__nav">
+            <div class="navigation__item navigation__item--red navigation__item--footer">
+                <div class="navigation__block">
+                    <a
+                            class="navigation__link navigation__link--white" href="/"><span
+                            class=" logoSymbol logoSymbol--link logoSymbol--white"></span>squash4friends</a>
+                </div>
+            </div>
             <div class="wrapper">
                 <div class="footer__navContainer">
                     <nav class="menu__block navigation nav">
