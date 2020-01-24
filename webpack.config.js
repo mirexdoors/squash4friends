@@ -22,7 +22,7 @@ module.exports = (env, options) => {
   const config = {
     entry: `./src/index.js`,
     output: {
-      filename: isProd ? `[name].[contenthash].js` : `[name].js`,
+      filename: isProd ? `[name].js` : `[name].js`,
       publicPath: ``,
       path: path.join(__dirname, `public`),
     },
@@ -56,7 +56,7 @@ module.exports = (env, options) => {
         });
       }),
       new MiniCssExtractPlugin({
-        filename: isProd ? `css/[name].[contenthash].css` : `css/[name].css`,
+        filename: isProd ? `css/[name].css` : `css/[name].css`,
       }),
     ],
     devtool: `source-map`,

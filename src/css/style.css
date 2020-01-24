@@ -51,7 +51,7 @@ button {
 
 .topBar {
     position: relative;
-    z-index: 99999;
+    z-index: 999;
 }
 
 .topBar.sticky {
@@ -62,7 +62,7 @@ button {
 .header {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 900;
 }
 
 .header.sticky {
@@ -341,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 14px;
 }
 
-.navigation__link.active:not(.navigation__link--white), .navigation__link:not(.navigation__link--white):hover {
+.header .navigation__link.active:not(.navigation__link--white), .footer .navigation__link--white.active, .footer .navigation__item:not(.navigation__item--red) .navigation__link--white:hover, .navigation__link:not(.navigation__link--white):hover {
     border-bottom: 5px solid #EB2E34;;
 }
 
@@ -373,11 +373,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: 30px;
+    padding: 0 15px;
     border: 0;
     background: inherit;
     cursor: pointer;
     white-space: nowrap;
+}
+
+.header .navigation__item:nth-child(3) .navigation__link, .footer .navigation__item:nth-child(2) .navigation__link {
+    margin-left: 15px;
 }
 
 .navigation__text--mobile, .navigation__item.navigation__item--menu, .footer .navigation__item--footer, .navigation--mobile {
@@ -386,8 +390,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation__link--white {
     color: #FBF8F6;
-    padding-left: 30px;
+
     margin-left: 0;
+}
+
+.header .navigation__link--white {
+    padding-left: 30px;
 }
 
 .navigation__item {
@@ -1609,7 +1617,7 @@ button.paginationBlock__item {
     width: 400px;
     margin: auto;
     background: #FBF8F6;
-    z-index: 99999;
+    z-index: 999;
 }
 
 .modalForm h2 {
