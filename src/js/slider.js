@@ -6,43 +6,41 @@ window.$ = window.jQuery = require(`jquery`);
 require(`lightslider`);
 const simpleslider = require(`simple-slider`);
 
-function setPagination() {
-  const index = mainSlider.currentIndex();
-  $(`.js-paginationBlock li.active`).removeClass(`active`);
-  $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
-};
-
 if (document.getElementById(`main-slider`)) {
-  const mainSlider = simpleslider.getSlider({
+  const mainSlider = window.mainSlider = simpleslider.getSlider({
     container: document.getElementById(`main-slider`),
     prop: `opacity`,
     unit: ``,
     init: 0,
     show: 1,
     end: 0,
-    onChange: setPagination,
+    onChange: () => {
+      const index = mainSlider.currentIndex();
+      $(`.js-paginationBlock li.active`).removeClass(`active`);
+      $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
+    },
   });
 }
 
 
 if (document.getElementById(`main-slider-prev`)) {
   document.getElementById(`main-slider-prev`).addEventListener(`click`, () => {
-    mainSlider.prev();
+    window.mainSlider.prev();
   });
 }
 if (document.getElementById(`main-slider-next`)) {
   document.getElementById(`main-slider-next`).addEventListener(`click`, () => {
-    mainSlider.next();
+    window.mainSlider.next();
   });
 }
 
 $(`.js-paginationBlock`).on(`click`, `li`, function () {
   const index = $(this).data(`index`);
-  mainSlider.change(index);
+  window.mainSlider.change(index);
   $(`.js-paginationBlock li.active`).removeClass(`active`);
   $(this).addClass(`active`);
-  mainSlider.pause();
-  setTimeout(mainSlider.resume(), 500);
+  window.mainSlider.pause();
+  setTimeout(window.mainSlider.resume(), 500);
 });
 
 $(`#insta-slider`).lightSlider({
