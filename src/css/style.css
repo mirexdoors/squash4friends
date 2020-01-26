@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
-.header .navigation__item:nth-child(3) .navigation__link, .footer .navigation__item:nth-child(2) .navigation__link {
+.header .navigation:not(.navigation--mobile) .navigation__item:nth-child(3) .navigation__link, .footer .navigation__item:nth-child(2) .navigation__link {
     margin-left: 15px;
 }
 

@@ -590,7 +590,9 @@
     .navigation.navigation--mobile .navigation__item--feedback--480 {
         display: flex;
     }
-
+     .footer .navigation__item:nth-child(2) .navigation__link {
+         margin-left: 0;
+     }
     .toolbar__counter, .feedback .feedback__item:first-child, .sliderPromo__triangle, .slidePromo__descriptionWrapper {
         display: none;
     }
