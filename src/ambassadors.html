@@ -119,18 +119,61 @@
     <section class="ambassadors innerWrapper">
         <div class="wrapper">
             <div class="ambassadors__filter  filter">
-                <select class="select ambassadors__select filter__select" name="country" size="1">
-                    <option class="option filter__option ambassadors__option" selected>
-                        Россия
-                    </option>
-                    <option class="option filter__option ambassadors__option">Украина</option>
-                </select>
-                <select class="select ambassadors__select filter__select" name="city">
-                    <option class="filter__option option">Выберите город</option>
-                    <option class="filter__option option">Москва</option>
-                    <option class="filter__option option">Санкт-Петербург</option>
-                    <option class="filter__option option">Новосибирск</option>
-                </select>
+                <div class="selectBox">
+                    <select class="select ambassadors__select filter__select" name="country">
+                        <option class="option filter__option ambassadors__option" selected>
+                            Россия
+                        </option>
+                        <option class="option filter__option ambassadors__option">Украина</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div class="selectBox__pseudoCurrent js-pseudo-select">
+                            <div class="selectBox__value">
+                                <img class="selectBox__pseudoImage"
+                                     src="./img/russian.png">Россия
+                            </div>
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage"
+                                         src="./img/russian.png">Россия
+                                </div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage"
+                                         src="./img/ua.png">Украина
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <select class="select ambassadors__select filter__select" name="city">
+                        <option class="filter__option option">Выберите город</option>
+                        <option class="filter__option option">Москва</option>
+                        <option class="filter__option option">Санкт-Петербург</option>
+                        <option class="filter__option option">Новосибирск</option>
+                    </select>
+                    <div class="selectBox__pseudo">
+                        <div
+                                class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">
+                            Выберите город
+                        </div>
+                        <ul class="selectBox__pseudoList js-pseudo-options">
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Москва</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Санкт-Петербург</div>
+                            </li>
+                            <li class="selectBox__pseudoItem">
+                                <div class="selectBox__value">Новосибирск</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="ambassadors__container">
                 <div class="ambassadors__item ambassador">
@@ -283,8 +326,8 @@
                     </div>
                 </div>
             </div>
-            <div class="ambassadors__footer">
-                <div class="ambassadors__linkAll linkBlock">
+            <div class="ambassadors__footer ambassadors__footer--list">
+                <div class="ambassadors__linkAll linkBlock ambassadors__linkAll--list">
                     <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--white">Показать ещё</a>
                 </div>
             </div>
@@ -309,9 +352,9 @@
             </div>
         </div>
         <div class="about__block about__block--photo" style="background-image: url(img/ambassadors_about.png)">
-            <div class="about__linkBlock linkBlock"><a href="/about.html"
-                                                       class="linkBlock__item linkBlock__item--red">Читать
-                подробнее →</a>
+            <div class="about__linkBlock linkBlock"><button data-modal="#order-ambassador"
+                                                       class="js-openModal  linkBlock__item linkBlock__item--red">Стать амбассадором
+                →</button>
             </div>
         </div>
     </section>
@@ -320,14 +363,56 @@
             <div class="mapList__titleBlock">
                 <div class="mapList__title">Карта клубов</div>
                 <div class="mapList__selectBlock">
-                    <select class="mapList__select" name="map_country">
-                        <option class="option mapList__option">Россия</option>
-                        <option class="option mapList__option">Франция</option>
-                    </select>
-                    <select class="mapList__select" name="map_city">
-                        <option class="option mapList__option">Москва</option>
-                        <option class="option mapList__option">Новосибирск</option>
-                    </select>
+                    <div class="selectBox">
+                        <select class="select mapList__select" name="map_country">
+                            <option class="option mapList__option">Россия</option>
+                            <option class="option mapList__option">Украина</option>
+                        </select>
+                        <div class="selectBox__pseudo">
+                            <div class="selectBox__pseudoCurrent js-pseudo-select">
+                                <div class="selectBox__value">
+                                    <img class="selectBox__pseudoImage" src="./img/russian.png">Россия
+                                </div>
+                            </div>
+                            <ul class="selectBox__pseudoList js-pseudo-options">
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">
+                                        <img class="selectBox__pseudoImage"
+                                             src="./img/russian.png">Россия
+                                    </div>
+                                </li>
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">
+                                        <img class="selectBox__pseudoImage"
+                                             src="./img/ua.png">Украина
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="selectBox">
+                        <select class="select mapList__select" name="map_city">
+                            <option class="option mapList__option">Москва</option>
+                            <option class="option mapList__option">Новосибирск</option>
+                        </select>
+                        <div class="selectBox__pseudo">
+                            <div class="selectBox__pseudoCurrent js-pseudo-select selectBox__pseudoCurrent--placeholder">
+                                Выберите
+                                город
+                            </div>
+                            <ul class="selectBox__pseudoList js-pseudo-options">
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Москва</div>
+                                </li>
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Санкт-Петербург</div>
+                                </li>
+                                <li class="selectBox__pseudoItem">
+                                    <div class="selectBox__value">Новосибирск</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mapList__listBlock mapClubs">
