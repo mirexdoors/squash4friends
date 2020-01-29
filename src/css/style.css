@@ -501,7 +501,7 @@ button.paginationBlock__item {
 }
 
 .slide__description {
-    margin: 0 105px 0 calc(100% - 1170px / 2);
+    margin: 0 140px 0 calc(100% - 1170px / 2);
     padding-top: 110px;
     padding-bottom: 40px;
 }
@@ -640,7 +640,17 @@ button.paginationBlock__item {
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 80px;
     width: 380px;
+}
+.slider:not(.slider--ambassador) .slideTitle {
+    line-height: normal;
+}
+.slider--ambassador .slideTitle {
+    width: 100%;
+}
+.slider--ambassador .slide__description {
+    padding-top:0;
 }
 
 .slideTitle__text {
@@ -649,7 +659,7 @@ button.paginationBlock__item {
 }
 
 .slideTitle--leftpad .slideTitle__text {
-    padding: 0 14px;
+    padding: 0 0 0 14px;
 }
 
 .slideTitle__text--red-white {
@@ -659,7 +669,7 @@ button.paginationBlock__item {
 }
 
 .slideDescription__content {
-    padding: 14px;
+    padding: 14px 0 14px 14px;
     color: #666666;
 }
 
@@ -953,9 +963,10 @@ button.paginationBlock__item {
     height: auto;
 }
 
-.ambassador__line {
+.slide__divider {
     width: 100%;
     min-height: 4px;
+    margin: 15px 0;
     background: #E4E3E0;
 }
 
@@ -1784,6 +1795,7 @@ button.paginationBlock__item {
 /*breadcrumbs start*/
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 50px;
     list-style-type: none;
@@ -1791,11 +1803,12 @@ button.paginationBlock__item {
 
 .slider .breadcrumbs {
     padding-left: 14px;
-    margin-top: -65px;
+
 }
 
 .breadcrumbs__item {
     color: #888888;
+    white-space: nowrap;
 }
 
 .breadcrumbs__link {
@@ -1982,12 +1995,24 @@ button.paginationBlock__item {
 
 /*ambassador detail page*/
 .ambassadorStory {
-    padding: 80px 150px;
     background: #E4E3E0;
 }
+.ambassadorStory.innerWrapper {
+    padding-bottom: 106px;
+}
 
+.ambassadorStory .lSPager.lSpg,.ambassadorStory   button.paginationBlock__item {
+    bottom: -46px;
+}
 .storyItem__content {
-    padding-right: 25px;
+    margin-right: 105px;
+    padding-left: 14px;
+}
+.storyItem__slider {
+    height: 100%;
+}
+.storyItem__content .titleText {
+    padding-left: 0;
 }
 
 .storyItem__content, .storyItem__picture {
@@ -1997,7 +2022,9 @@ button.paginationBlock__item {
 .ambassadorStory__wrapper {
     width: 100%;
 }
-
+.storyItem__picture {
+    position: relative;
+}
 .ambassadorStory__item {
     display: flex;
     width: 100%;

@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import 'slick-carousel';
 import 'lightslider/dist/css/lightslider.min.css';
 
 window.$ = window.jQuery = require(`jquery`);
@@ -17,7 +16,7 @@ if (document.getElementById(`main-slider`)) {
     onChange: () => {
       const index = mainSlider.currentIndex();
       $(`.js-paginationBlock li.active`).removeClass(`active`);
-      $(`.js-paginationBlock  li[data-index="${index}"]`).addClass(`active`);
+      $(`.js-paginationBlock  li[data-index="` + index + `"]`).addClass(`active`);
     },
   });
 }
@@ -46,7 +45,7 @@ $(`.js-paginationBlock`).on(`click`, `li`, function () {
 $(`#insta-slider`).lightSlider({
   item: 4,
   autoWidth: false,
-  slideMove: 1, // slidemove will be 1 if loop is true
+  slideMove: 1,
   slideMargin: 10,
 
   mode: `slide`,
@@ -69,8 +68,8 @@ $(`#insta-slider`).lightSlider({
   adaptiveHeight: false,
   vertical: false,
   pager: true,
-  enableTouch: true,
-  enableDrag: true,
+  enableTouch: false,
+  enableDrag: false,
   freeMove: true,
   swipeThreshold: 40,
   responsive: [
@@ -94,41 +93,37 @@ $(`#insta-slider`).lightSlider({
       },
     },
   ],
-  onSliderLoad: function (slider) {
+  onSliderLoad: (slider) => {
     const parent = slider.parents(`.instagram`);
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 36;
-    let style = `right:` + pagWidth + `px`;
+    let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
-                                aria-label="Previous" type="button">&#11104;
-                        </button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: ` + pagWidth + `px`;
+      style = `left: ${pagWidth}px`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
-    aria-label="Next" type="button">&#10141;</button>`);
-
-    parent.find(`.slick-prev`).on(`click`, function () {
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+    parent.find(`.slick-prev`).on(`click`, () => {
       slider.goToPrevSlide();
     });
 
-    parent.find(`.slick-next`).on(`click`, function () {
+    parent.find(`.slick-next`).on(`click`, () => {
       slider.goToNextSlide();
     });
   },
 });
 
-
+//
 $(`#ambassador-slider`).lightSlider({
   item: 3,
   autoWidth: false,
-  slideMove: 1, // slidemove will be 1 if loop is true
+  slideMove: 1,
   slideMargin: 12,
 
   mode: `slide`,
@@ -137,7 +132,7 @@ $(`#ambassador-slider`).lightSlider({
   easing: `linear`,
 
   speed: 400,
-  auto: false,
+  auto: true,
   pauseOnHover: false,
   loop: true,
   slideEndAnimation: true,
@@ -152,8 +147,8 @@ $(`#ambassador-slider`).lightSlider({
   adaptiveHeight: false,
   vertical: false,
   pager: true,
-  enableTouch: true,
-  enableDrag: true,
+  enableTouch: false,
+  enableDrag: false,
   freeMove: true,
   swipeThreshold: 40,
   responsive: [
@@ -185,28 +180,29 @@ $(`#ambassador-slider`).lightSlider({
       },
     },
   ],
-  onSliderLoad: function (slider) {
+  onSliderLoad: (slider) => {
     const parent = slider.parents(`.ambassadors`);
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 36;
-    let style = `right:` + pagWidth + `px`;
+    let style = `right:${pagWidth}px`;
+
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
-                                aria-label="Previous" type="button">&#11104;
-                        </button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: ` + pagWidth + `px`;
+      style = `left:${pagWidth}px`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
-    aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
 
-    parent.find(`.slick-next`).on(`click`, function () {
+    parent.find(`.slick-next`).on(`click`, () => {
       slider.goToNextSlide();
+    });
+    parent.find(`.slick-prev`).on(`click`, () => {
+      slider.goToPrevSlide();
     });
   },
 });
@@ -223,7 +219,7 @@ $(`#articles-slider`).lightSlider({
   easing: `linear`,
 
   speed: 400,
-  auto: false,
+  auto: true,
   pauseOnHover: false,
   loop: true,
   slideEndAnimation: true,
@@ -238,8 +234,8 @@ $(`#articles-slider`).lightSlider({
   adaptiveHeight: false,
   vertical: false,
   pager: true,
-  enableTouch: true,
-  enableDrag: true,
+  enableTouch: false,
+  enableDrag: false,
   freeMove: true,
   swipeThreshold: 40,
   responsive: [
@@ -271,32 +267,29 @@ $(`#articles-slider`).lightSlider({
       },
     },
   ],
-  onSliderLoad: function (slider) {
+  onSliderLoad: (slider) => {
     const parent = slider.parents(`.articles`);
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 36;
 
-    let style = `right:` + pagWidth + `px`;
+    let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
-                                aria-label="Previous" type="button">&#11104;
-                        </button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: ` + pagWidth + `px`;
+      style = `left:${pagWidth}px`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
-    aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
 
-    parent.find(`.slick-prev`).on(`click`, function () {
+    parent.find(`.slick-prev`).on(`click`, () => {
       slider.goToPrevSlide();
     });
 
-    parent.find(`.slick-next`).on(`click`, function () {
+    parent.find(`.slick-next`).on(`click`, () => {
       slider.goToNextSlide();
     });
   },
@@ -306,7 +299,7 @@ if (window.innerWidth < 1024) {
   $(`#orders-slider`).lightSlider({
     item: 1,
     autoWidth: false,
-    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMove: 1,
     slideMargin: 12,
 
     mode: `slide`,
@@ -315,12 +308,12 @@ if (window.innerWidth < 1024) {
     easing: `linear`,
 
     speed: 400,
-    auto: false,
+    auto: true,
     pauseOnHover: false,
     loop: true,
     slideEndAnimation: true,
     pause: 2000,
-    currentPagerPosition: 'middle',
+    currentPagerPosition: `middle`,
     keyPress: false,
     controls: false,
 
@@ -328,8 +321,8 @@ if (window.innerWidth < 1024) {
     adaptiveHeight: false,
     vertical: false,
     pager: true,
-    enableTouch: true,
-    enableDrag: true,
+    enableTouch: false,
+    enableDrag: false,
     freeMove: true,
     swipeThreshold: 40,
     responsive: [
@@ -340,46 +333,99 @@ if (window.innerWidth < 1024) {
         },
       },
     ],
-    onSliderLoad: function (slider) {
+    onSliderLoad: (slider) => {
       const parent = slider.parents(`.orders`);
       const pagination = parent.find(`.lSPager`);
-      const pagWidth = (pagination.width()/2)  + 26;
+      const pagWidth = (pagination.width() / 2) + 26;
 
-      let style = `left: calc(50% - ` + pagWidth + `px)`;
-      pagination.before(`<button style="` + style + `" class="slick-prev paginationBlock__item" data-slider="insta_slider"
-                                aria-label="Previous" type="button">&#11104;
-                        </button>`);
+      let style = `left: calc(50% - ${pagWidth}px)`;
+      pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
 
 
-        style = `right: calc(50% - ` + pagWidth + `px)`;
+      style = `right: calc(50% - ${pagWidth}px)`;
 
-      pagination.parent().append(`<button style="` + style + `" data-slider="insta_slider" class="slick-next paginationBlock__item"
-    aria-label="Next" type="button">&#10141;</button>`);
+      pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
 
-      parent.find(`.slick-prev`).on(`click`, function () {
+      parent.find(`.slick-prev`).on(`click`, () => {
         slider.goToPrevSlide();
       });
 
-      parent.find(`.slick-next`).on(`click`, function () {
+      parent.find(`.slick-next`).on(`click`, () => {
         slider.goToNextSlide();
       });
     },
   });
 }
-$(`#club-slider`).slick({
-  dots: true,
-  appendDots: $(`.clubSlider__pagination`),
-  arrows: false,
-  autoplay: true,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
-});
+// $(`#club-slider`).slick({
+//   dots: true,
+//   appendDots: $(`.clubSlider__pagination`),
+//   arrows: false,
+//   autoplay: true,
+//   speed: 500,
+//   dotsClass: `paginationBlock__container`,
+// });
 
-$(`#story-slider`).slick({
-  dots: true,
-  appendDots: $(`.storySlider__pagination`),
-  arrows: false,
-  autoplay: true,
-  speed: 500,
-  dotsClass: `paginationBlock__container`,
+$(`#story_slider`).lightSlider({
+  item: 1,
+  autoWidth: false,
+  slideMove: 1,
+  slideMargin: 12,
+
+  mode: `slide`,
+  useCSS: true,
+  cssEasing: `ease`,
+  easing: `linear`,
+
+  speed: 400,
+  auto: false,
+  pauseOnHover: false,
+  loop: true,
+  slideEndAnimation: true,
+  pause: 2000,
+  currentPagerPosition: `middle`,
+  keyPress: false,
+  controls: false,
+
+  rtl: false,
+  adaptiveHeight: false,
+  vertical: false,
+  pager: true,
+  enableTouch: false,
+  enableDrag: false,
+  freeMove: true,
+  swipeThreshold: 40,
+  responsive: [
+    {
+      breakpoint: 479,
+      settings: {
+        slideMargin: 0,
+      },
+    },
+  ],
+  onSliderLoad: (slider) => {
+    const parent = slider.parents(`.ambassadorStory`);
+    const pagination = parent.find(`.lSPager`);
+    const pagWidth = pagination.width() + 49;
+
+    let style = `right:${pagWidth}px`;
+    if (window.innerWidth < 1024) {
+      style = `left: calc(50% - ${pagWidth}px / 2)`;
+    }
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
+
+    if (window.innerWidth > 1023) {
+      style = `left:${pagWidth}px`;
+    } else {
+      style = `right: calc(50% - ${pagWidth}px / 2)`;
+    }
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+
+    parent.find(`.slick-prev`).on(`click`, () => {
+      slider.goToPrevSlide();
+    });
+
+    parent.find(`.slick-next`).on(`click`, () => {
+      slider.goToNextSlide();
+    });
+  },
 });

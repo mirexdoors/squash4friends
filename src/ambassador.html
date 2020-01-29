@@ -97,37 +97,37 @@
     </div>
 </header>
 <main>
-    <section class="slider">
-
-        <div class="slider__item">
-            <div class="slide">
-
-                <div class="slide__description slideDescription slide__block">
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ambassadors.html">
-                            Амбассадоры</a></li>
-                        <li class="breadcrumbs__item">Иван Бородин</li>
-                    </ul>
-                    <div class="slide__title slideTitle">
-                        <span class="slideTitle__text">Иван Бородин</span>
-                    </div>
-                    <div class="slideDescription__content ">
-                        <div class="logoSymbol"> <span
-                                class="slideDescription__text slideDescription__text--bold">Россия, Москва</span></div>
-                        <span class="slideDescription__text">
-                                Клуб: <span class="bold">"Москва"</span>
-                                <br>
-                                Стаж: <span class="bold">3 года</span>
-                            </span>
-                        <div class="slideDescription__delimiter"></div>
-                        2-4 строчки о человеке: Повседневная практика показывает, что дальнейшее развитие различных форм
-                        деятельности способствует подготовки и реализации дальнейших направлений развития.
-                    </div>
-                    <img class="slideDescription__verticalImage" src="img/squash4friends.png">
+    <section class="slider slider--ambassador">
+        <div class="slider__block slider__block--description">
+            <div class="slide__description slideDescription slide__block">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Амбассадоры</a></li>
+                    <li class="breadcrumbs__item">Иван Бородин</li>
+                </ul>
+                <div class="slide__title slideTitle slideTitle--leftpad">
+                   <span class="slideTitle__text">Иван Бородин</span>
                 </div>
-                <div class="slide__photo slidePromo slide__block"
-                     style="background-image: url('img/moskva.png')">
+                <div class="slideDescription__content ">
+                    <div class="logoSymbol"> <span
+                            class="slideDescription__text slideDescription__text--bold">Россия, Москва</span></div>
+                    <span class="slideDescription__text">Клуб: <span class="slideDescription__text--bold">Москва</span></span>
+                    <br>
+                    <span class="slideDescription__text">Стаж:
+                        <span class="slideDescription__text--bold">2 года</span></span>
+                    <div class="slide__divider"></div>
+                    <span class="slideDescription__text">2-4 строчки о человеке: Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития</span>
+                </div>
+
+
+                <div class="slide__footer">
+                    <button class="slideFooter__more">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider__block slider__block--gallery" style="background-image:
+        url('img/moskva.png')">
+                <div class="slide">
                     <div class="slidePromo__container">
                         <div class="slidePromo__descriptionWrapper">
                             <div class="sliderPromo__triangle"></div>
@@ -142,28 +142,26 @@
                             <a href="/ambassadors.html" class="linkBlock__item linkBlock__item--red">Все
                                 амбассадоры &rarr;</a>
                         </div>
+
                     </div>
-                    <div class="slidePromo__overlay"></div>
-                </div>
-                <div class="slide__footer slideFooter">
-                    <button class="slideFooter__more">Подробнее</button>
-                </div>
-                <div class="slide__person">
                     <img class="slide__personImage" src="img/slider_person.png" alt="">
+
                 </div>
-            </div>
         </div>
     </section>
-    <section class="ambassadorStory">
+
+
+    <section class="ambassadorStory innerWrapper">
         <div class="wrapper">
             <div class="ambassadorStory__item storyItem">
                 <div class="storyItem__content">
-                    <div class="storyItem__contentTitle titleText">мой путь <br><span class="red">в сквоше</span>
+                    <div class="storyItem__contentTitle titleText">мой путь <span class="red">в сквоше</span>
                     </div>
-                    <div class="logoSymbol storyItem__subText">
-                            <span class="bold">Студенты и предприниматели, профессоры и спортсмены,
+                    <div class="storyItem__subText">
+                        <div class="logoSymbol">  <span class="bold">Студенты и предприниматели, профессоры и спортсмены,
                             топ-менеджеры и
-                                журналисты.</span>
+                                журналисты.</span></div>
+
                     </div>
                     <div class="storyItem__text">
                         Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все
@@ -178,22 +176,12 @@
                     </div>
                 </div>
                 <div class="storyItem__picture">
-                    <div class="storyItem__slider"  id="story-slider">
+                    <div class="storyItem__slider"  id="story_slider">
                         <img src="img/storyItem_slider.png" alt="">
                         <img src="img/storyItem_slider.png" alt="">
                         <img src="img/storyItem_slider.png" alt="">
                         <img src="img/storyItem_slider.png" alt="">
                     </div>
-                    <div class="storySlider__paginationWrapper">
-                        <button class="slick-prev paginationBlock__item" data-slider="story-slider"
-                                aria-label="Previous" type="button">&#11104;
-                        </button>
-                        <div class="storySlider__pagination paginationBlock"></div>
-                        <button data-slider="story-slider" class="slick-next paginationBlock__item"
-                                aria-label="Next" type="button">&#10141;
-                        </button>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -202,7 +190,7 @@
         <div class="wrapper">
             <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
             </div>
-            <div class="orders__container">
+            <div class="orders__container" id="orders-slider">
                 <div class="orders__item orderBlock">
                     <div class="orderBlock__main">
                         <div class="orderBlock__content">
@@ -271,7 +259,7 @@
                             <button
                                     data-modal="#order-ambassador"
                                     class="js-openModal linkBlock__item linkBlock__item--red
-                                    orderCTA__link">Стать
+                                        orderCTA__link">Стать
                                 амбассадором
                                 &rarr;
                             </button>
@@ -459,17 +447,6 @@
                     <a href="/ambassadors.html" class="linkBlock__item linkBlock__item&#45;&#45;white">Все амбассадоры
                         &rarr;</a>
                 </div>
-
-                <div class="ambassadors__paginationWrapper">
-                    <button class="slick-prev paginationBlock__item" data-slider="ambassador-slider"
-                            aria-label="Previous" type="button">&#11104;
-                    </button>
-                    <div class="ambassadors__pagination paginationBlock"></div>
-                    <button data-slider="ambassador-slider" class="slick-next paginationBlock__item"
-                            aria-label="Next" type="button">&#10141;
-                    </button>
-                </div>
-
             </div>
         </div>
     </section>
