@@ -184,7 +184,7 @@
 
     .ambassadors__container-slider {
         max-height: 566px;
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;*/
     }
 
     .ambassadors__linkBlock {
@@ -970,7 +970,7 @@
 
     .lSPager.lSpg {
         right: auto;
-        left: 29px;
+        left: 26px;
         bottom: -55px;
     }
 

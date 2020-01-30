@@ -664,7 +664,7 @@ button.paginationBlock__item {
 
 .slideTitle__text--red-white {
     color: #FBF8F6;
-    padding: 0 14px;
+    padding: 0 14px!important;
     background-color: #EB2E34;
 }
 
@@ -726,7 +726,7 @@ button.paginationBlock__item {
 
 .lSPager.lSpg {
     position: absolute;
-    right: 36px;
+    right:26px;
     bottom: -73px;
     margin-top: 0 !important;
     display: inline-block;
@@ -790,7 +790,6 @@ button.paginationBlock__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
     border: 0;
     outline: none;
     color: #666666;

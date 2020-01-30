@@ -96,7 +96,7 @@ $(`#insta-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.instagram`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 36;
+    const pagWidth = pagination.width() + 16;
     let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
       style = ``;
@@ -104,7 +104,7 @@ $(`#insta-slider`).lightSlider({
     pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: ${pagWidth}px`;
+      style = `left: calc(${pagWidth}px + 10px)`;
     } else {
       style = ``;
     }
@@ -183,7 +183,7 @@ $(`#ambassador-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.ambassadors`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 36;
+    const pagWidth = pagination.width() + 16;
     let style = `right:${pagWidth}px`;
 
     if (window.innerWidth < 768) {
@@ -192,7 +192,7 @@ $(`#ambassador-slider`).lightSlider({
     pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left:${pagWidth}px`;
+      style = `left: calc(${pagWidth}px + 10px)`;
     } else {
       style = ``;
     }
@@ -270,7 +270,7 @@ $(`#articles-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.articles`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 36;
+    const pagWidth = pagination.width() + 16;
 
     let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
@@ -279,7 +279,7 @@ $(`#articles-slider`).lightSlider({
     pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left:${pagWidth}px`;
+      style = `left: calc(${pagWidth}px + 10px)`;
     } else {
       style = ``;
     }
