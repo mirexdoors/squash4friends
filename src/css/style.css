@@ -731,7 +731,9 @@ button.paginationBlock__item {
     margin-top: 0 !important;
     display: inline-block;
 }
-
+.ambassadorStory .lSPager.lSpg {
+    right: 26px;
+}
 .lSPager.lSpg > li a {
     width: auto !important;
     height: auto !important;

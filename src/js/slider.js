@@ -407,14 +407,14 @@ $(`#story_slider`).lightSlider({
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 49;
 
-    let style = `right:${pagWidth}px`;
+    let style = `right: calc(${pagWidth}px - 33px)`;
     if (window.innerWidth < 1024) {
       style = `left: calc(50% - ${pagWidth}px / 2)`;
     }
     pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
 
     if (window.innerWidth > 1023) {
-      style = `left:${pagWidth}px`;
+      style = `right: 0`;
     } else {
       style = `right: calc(50% - ${pagWidth}px / 2)`;
     }
