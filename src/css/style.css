@@ -147,7 +147,9 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration-line: none;
     font-weight: bold;
 }
-
+.typography {
+    overflow-x: auto;
+}
 .typography ul {
     list-style: none;
 }
@@ -937,17 +939,21 @@ button.paginationBlock__item {
     left: 0;
     top: 0;
 }
-.ambassadors__container:not(.ambassadors__container-slider) {
+.articles.articles--list {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.ambassadors__container:not(.ambassadors__container-slider), .articles__container:not(#articles-slider) {
     flex-wrap: wrap;
     margin-bottom: -50px;
 }
 
-.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item {
+.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item, .articles__container:not(#articles-slider) .articles__item {
     width: calc(33.3333333% - 8px);
     margin-right: 12px;
     margin-bottom: 50px;
 }
-.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item:nth-child(3n+3) {
+.ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item:nth-child(3n+3), .articles__container:not(#articles-slider) .articles__item:nth-child(3n+3) {
     margin-right: 0;
 }
 .ambassador__main, .ambassador__sub {
@@ -1355,10 +1361,12 @@ button.paginationBlock__item {
     justify-content: space-between;
     width: 100%;
 }
-
+.articles__container:not(#articles-slider) {
+    flex-wrap: wrap;
+}
 .articles__item {
     position: relative;
-    width: 382px !important;
+    width: 382px;
     height: 528px;
 }
 
@@ -1415,6 +1423,8 @@ button.paginationBlock__item {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+    color: inherit;
+    text-decoration-line: none;
 }
 
 .article__preview {
@@ -1909,7 +1919,10 @@ button.paginationBlock__item {
     flex-direction: column;
     width: 100%;
 }
-
+.js-fixPromo.fixed {
+    position: fixed;
+    top: 60px;
+}
 .club__promoBlock {
     position: relative;
     display: flex;

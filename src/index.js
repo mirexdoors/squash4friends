@@ -6,6 +6,7 @@ import './js/modal';
 import './js/spoiler';
 import './js/select';
 import './js/burger';
+import './js/aside';
 import {init} from './js/map';
 
 document.addEventListener(`DOMContentLoaded`, () => {

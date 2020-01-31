@@ -62,25 +62,60 @@
 <header class="header">
     <div class="menu">
         <nav class="menu__block navigation nav">
-            <div class="navigation__item navigation__item--red ">
+            <div class="navigation__item navigation__item--red navigation__item--mobileMenu">
                 <div class="logoSymbol logoSymbol--link logoSymbol--white">
-                    <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                    <a class="navigation__link navigation__link--white" href="/"><span class="navigation__text">
+                        squash4friends</span><span class="navigation__text navigation__text--mobile">
+                        s4f</span></a>
                 </div>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item navigation__item--mobile navigation__item--menu">
+                <button class="navigation__link js-burger"><span></span>Меню</button>
+            </div>
+            <div class="navigation__item">
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/about.html">О нас</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+        </nav>
+        <nav class="menu__block navigation navigation--mobile js-navigation nav">
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+            <div class="navigation__item navigation__item--feedback navigation__item--feedback--480">
+                <button data-modal="#order-ambassador"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                    амбассадором
+                </button>
+            </div>
+            <div class="navigation__item navigation__item--feedback">
+                <button data-modal="#try-squash"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                    Попробовать
+                    сквош
+                </button>
             </div>
         </nav>
         <div class="feedback menu__block linkBlock">
@@ -110,12 +145,14 @@
         </div>
     </section>
 
-    <section class="articles innerWrapper">
+    <section class="articles articles--list">
         <div class="wrapper">
             <div class="articles__container">
                 <div class="articles__item article">
                     <div class="article__img">
-                        <img src="img/articles_1.png" alt="" class="article__picture">
+                        <a href="#" class="articles__itemLink">
+                            <img src="img/articles_1.png" alt="" class="article__picture">
+                        </a>
                     </div>
                     <div class="article__content">
                         <div class="article__header">
@@ -124,7 +161,7 @@
                             </div>
                             <div class="article__date">03 ноя 2019</div>
                         </div>
-                        <div class="article__title logoSymbol">Название статьи</div>
+                        <a href="#" class="article__title logoSymbol">Название статьи</a>
                         <div class="article__preview">Краткий текст в три строки: со временем амбассадорами становятся и
                             топ-игроки. Уже сейчас - чемпион России Влад Титов...
                         </div>
@@ -250,6 +287,13 @@
 
     <footer class="footer">
         <div class="footer__nav">
+            <div class="navigation__item navigation__item--red navigation__item--footer">
+                <div class="navigation__block">
+                    <a
+                            class="navigation__link navigation__link--white" href="/"><span
+                            class=" logoSymbol logoSymbol--link logoSymbol--white"></span>squash4friends</a>
+                </div>
+            </div>
             <div class="wrapper">
                 <div class="footer__navContainer">
                     <nav class="menu__block navigation nav">
@@ -344,12 +388,6 @@
         </div>
     </footer>
     <section class="searchBox">
-        <div class="searchBox__container">
-            <div class="searchBox__title">Поиск по сайту</div>
-            <div class="searchBox__inputWrapper"><input type="text" placeholder="Начните набирать"
-                                                        class="searchBox__input"></div>
-        </div>
-    </section>
 
     <form class="modalForm form" id="order-ambassador" style="display: none;">
         <div class="modalForm__close js-formClose">
