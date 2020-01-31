@@ -96,19 +96,19 @@ $(`#insta-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.instagram`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 16;
+    const pagWidth = pagination.width() + 26;
     let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&larr;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: calc(${pagWidth}px + 10px)`;
+      style = `left: calc(${pagWidth}px)`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
     parent.find(`.slick-prev`).on(`click`, () => {
       slider.goToPrevSlide();
     });
@@ -183,20 +183,20 @@ $(`#ambassador-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.ambassadors`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 16;
+    const pagWidth = pagination.width() + 26;
     let style = `right:${pagWidth}px`;
 
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&larr;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: calc(${pagWidth}px + 10px)`;
+      style = `left: calc(${pagWidth}px)`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
 
     parent.find(`.slick-next`).on(`click`, () => {
       slider.goToNextSlide();
@@ -270,20 +270,20 @@ $(`#articles-slider`).lightSlider({
   onSliderLoad: (slider) => {
     const parent = slider.parents(`.articles`);
     const pagination = parent.find(`.lSPager`);
-    const pagWidth = pagination.width() + 16;
+    const pagWidth = pagination.width() + 26;
 
     let style = `right:${pagWidth}px`;
     if (window.innerWidth < 768) {
       style = ``;
     }
-    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&larr;</button>`);
 
     if (window.innerWidth < 768) {
-      style = `left: calc(${pagWidth}px + 10px)`;
+      style = `left: calc(${pagWidth}px)`;
     } else {
       style = ``;
     }
-    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
 
     parent.find(`.slick-prev`).on(`click`, () => {
       slider.goToPrevSlide();
@@ -339,12 +339,12 @@ if (window.innerWidth < 1024) {
       const pagWidth = (pagination.width() / 2) + 26;
 
       let style = `left: calc(50% - ${pagWidth}px)`;
-      pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&#11104;</button>`);
+      pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item"  aria-label="Previous" type="button">&larr;</button>`);
 
 
       style = `right: calc(50% - ${pagWidth}px)`;
 
-      pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+      pagination.parent().append(`<button style="${style}" class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
 
       parent.find(`.slick-prev`).on(`click`, () => {
         slider.goToPrevSlide();
@@ -411,14 +411,14 @@ $(`#story_slider`).lightSlider({
     if (window.innerWidth < 1024) {
       style = `left: calc(50% - ${pagWidth}px / 2)`;
     }
-    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&#11104;</button>`);
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&larr;</button>`);
 
     if (window.innerWidth > 1023) {
       style = `right: 0`;
     } else {
       style = `right: calc(50% - ${pagWidth}px / 2)`;
     }
-    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&#10141;</button>`);
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
 
     parent.find(`.slick-prev`).on(`click`, () => {
       slider.goToPrevSlide();

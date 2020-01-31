@@ -292,6 +292,14 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .about__block .linkBlock__item {
+        width: max-content;
+        width: -moz-max-content;
+    }
+    .typography h3 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
     .wrapper {
         margin: 0 30px;
     }
@@ -1016,7 +1024,9 @@
     .wrapper {
         margin: 0 16px;
     }
-
+    .slideTitle__text--red-white {
+        padding-top: 3px;
+    }
     .searchBox__container {
         padding: 35px 16px;
     }
