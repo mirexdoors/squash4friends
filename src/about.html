@@ -66,25 +66,60 @@
 <header class="header">
     <div class="menu">
         <nav class="menu__block navigation nav">
-            <div class="navigation__item navigation__item--red ">
+            <div class="navigation__item navigation__item--red navigation__item--mobileMenu">
                 <div class="logoSymbol logoSymbol--link logoSymbol--white">
-                    <a class="navigation__link navigation__link--white" href="/">squash4friends</a>
+                    <a class="navigation__link navigation__link--white" href="/"><span class="navigation__text">
+                        squash4friends</span><span class="navigation__text navigation__text--mobile">
+                        s4f</span></a>
                 </div>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item navigation__item--mobile navigation__item--menu">
+                <button class="navigation__link js-burger"><span></span>Меню</button>
+            </div>
+            <div class="navigation__item">
                 <a class="navigation__link" href="/clubs.html">Клубы</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/about.html">О нас</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
             </div>
-            <div class="navigation__item ">
+            <div class="navigation__item">
                 <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+        </nav>
+        <nav class="menu__block navigation navigation--mobile js-navigation nav">
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+            <div class="navigation__item navigation__item--feedback navigation__item--feedback--480">
+                <button data-modal="#order-ambassador"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                    амбассадором
+                </button>
+            </div>
+            <div class="navigation__item navigation__item--feedback">
+                <button data-modal="#try-squash"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                    Попробовать
+                    сквош
+                </button>
             </div>
         </nav>
         <div class="feedback menu__block linkBlock">
@@ -100,49 +135,48 @@
     </div>
 </header>
 <main>
-    <section class="slider">
-
-        <div class="slider__item">
-            <div class="slide">
-                <div class="slide__description slideDescription slide__block">
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                        <li class="breadcrumbs__item">О нас</li>
-                    </ul>
-                    <div class="slide__title slideTitle">
-                        <span class="slideTitle__text">О нас</span>
-                    </div>
-                    <div class="slideDescription__content ">
-                        <div class="logoSymbol"> <span
-                                class="slideDescription__text slideDescription__text--bold">Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты.</span></div>
-
-                        Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
-                    </div>
+    <section class="simplepage">
+        <div class="simplepage__block simplepage__block--text">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                <li class="breadcrumbs__item">О нас</li>
+            </ul>
+            <div class="slide__title slideTitle">
+                <span class="slideTitle__text">О нас</span>
+            </div>
+            <div class="simplepage__content ">
+                <div class="logoSymbol">
+                    <span class="simplepage__text simplepage__text--bold">Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты.</span>
                 </div>
-                <div class="slide__photo slidePromo slide__block"
-                     style="background-image: url('img/about_main.png')">
-                </div>
-                <div class="slide__footer slideFooter">
-                    <button class="slideFooter__more">Подробнее</button>
+                <div>
+                    <span
+                        class="simplepage__text">Мы очень разные, но всех их объединяет игра,
+                    эмоции, азарт,
+                    общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны</span>
                 </div>
             </div>
+            <div class="simplepage__contentFooter">
+                <button class="slideFooter__more">Подробнее</button>
+            </div>
+        </div>
+        <div class="simplepage__block"
+             style="background-image: url('img/about_main.png')">
         </div>
     </section>
     <section class="about">
         <div class="about__block about__block--grey">
             <div class="about__title aboutTitle titleText">
-               С чего всё <br>
-                <span class="red">начиналось</span>
+                С чего всё <span class="red">начиналось</span>
             </div>
             <div class="aboutDescription__content ">
                 <div class="logoSymbol">
-                    <span class="aboutDescription__text aboutDescription__text--bold">
-                        Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты
-                    </span>
+                        <span class="aboutDescription__text aboutDescription__text--bold">
+                            Студенты и предприниматели, профессоры и спортсмены, топ-менеджеры и журналисты
+                        </span>
                 </div>
                 <span class="aboutDescription__text">
-                    Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
-                </span>
+                        Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
+                    </span>
             </div>
             <div class="aboutDescription__promo aboutDescriptionBlock">
                 <div class="aboutDescriptionBlock__item">
@@ -161,7 +195,7 @@
         <div class="wrapper">
             <div class="orders__title titleText titleText--white titleText--center">Как стать частью squash4friends
             </div>
-            <div class="orders__container">
+            <div class="orders__container" id="orders-slider">
                 <div class="orders__item orderBlock">
                     <div class="orderBlock__main">
                         <div class="orderBlock__content">
@@ -230,7 +264,7 @@
                             <button
                                     data-modal="#order-ambassador"
                                     class="js-openModal linkBlock__item linkBlock__item--red
-                                    orderCTA__link">Стать
+                                        orderCTA__link">Стать
                                 амбассадором
                                 &rarr;
                             </button>
@@ -259,15 +293,10 @@
                     Мы очень разные, но всех их объединяет игра, эмоции, азарт, общение, мозги, хорошая форма и все вот это. Четыре года назад нас было 300-400 человек. Мы хотим больше, больше друзей в нашей любимой игре, и мы зовём вас поиграть с нами. Если не пробовали, любой амбассадор абсолютно бесплатно с удовольствием проведёт вам сквош-ликбез в одном из крупнейших клубов страны.
                 </span>
             </div>
-            <div class="aboutDescription__promo aboutDescriptionBlock">
-                <div class="aboutDescriptionBlock__item">
-                    <div class="aboutDescriptionBlock__main">4-5</div>
-                    <div class="aboutDescriptionBlock__text">тысяч человек</div>
-                </div>
-                <div class="aboutDescriptionBlock__item">
-                    <div class="aboutDescriptionBlock__main">100+</div>
-                    <div class="aboutDescriptionBlock__text">игровых кортов</div>
-                </div>
+            <div class="aboutDescription__link linkBlock">
+                <a href="/manifest/"  target="_blank" class="linkBlock__item linkBlock__item--red">
+                    Читать манифест
+                </a>
             </div>
         </div>
         <div class="about__block about__block--photo" style="background-image: url(img/storyItem_slider.png)"></div>
@@ -570,8 +599,9 @@
     <section class="searchBox">
         <div class="searchBox__container">
             <div class="searchBox__title">Поиск по сайту</div>
-            <div class="searchBox__inputWrapper"><input type="text" placeholder="Начните набирать"
-                                                        class="searchBox__input"></div>
+            <div class="searchBox__inputWrapper">
+                <input type="text" placeholder="Начните набирать"
+                 class="searchBox__input"></div>
         </div>
     </section>
 

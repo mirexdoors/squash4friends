@@ -32,7 +32,9 @@ body {
     color: #666666;
     background: #FBF8F6;
 }
-
+button {
+    outline: none!important;
+}
 body.darken {
     overflow-y: hidden;
 }
@@ -666,7 +668,7 @@ button.paginationBlock__item {
 
 .slideTitle__text--red-white {
     color: #FBF8F6;
-    padding: 7px  14px 0 14px!important;
+    padding: 8px  14px 0 14px!important;
     background-color: #EB2E34;
 }
 
@@ -1819,7 +1821,6 @@ button.paginationBlock__item {
 
 .breadcrumbs__item {
     color: #888888;
-    white-space: nowrap;
 }
 
 .breadcrumbs__link {
@@ -2116,17 +2117,23 @@ button.paginationBlock__item {
     width: 100%;
     display: flex;
 }
-
+.simplepage .breadcrumbs, .simplepage .slide__title, .simplepage .simplepage__content, .aboutDescription__link  {
+    padding-left: 14px;
+}
 .simplepage__block {
     width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 667px;
 }
 
 .simplepage__block--text {
+    display: flex;
+    flex-direction: column;
     padding-right: 120px;
     padding-left: calc(50% - 1170px / 2);
+    padding-bottom: 40px;
 }
 
 .simplepage__linkBlock {
@@ -2135,12 +2142,20 @@ button.paginationBlock__item {
 
 .simplepage__text {
     display: flex;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
 }
-
+.simplepage__text.simplepage__text--bold {
+    font-weight: bold;
+}
 .simplepage__content {
-    margin-bottom: 190px;
+    margin-top: 15px;
+}
+.simplepage__contentFooter {
+    margin-top: auto;
+}
+.aboutDescription__link {
+    width: fit-content;
+    width: -moz-fit-content;
 }

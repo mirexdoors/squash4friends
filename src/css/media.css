@@ -289,6 +289,12 @@
         width: 100%;
         height: auto;
     }
+    .simplepage__block {
+        height: 647px;
+    }
+    .simplepage__block:not(.simplepage__block--text) {
+        background-image: url('../img/about_1024.png') !important;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -404,11 +410,6 @@
 
     .simplepage {
         flex-wrap: wrap;
-    }
-
-    .simplepage__block {
-        width: 100%;
-        min-height: 424px;
     }
 
     .simplepage__block--text {
@@ -685,6 +686,17 @@
 
     .storyItem__subText, .storyItem__text {
         width: 72%;
+    }
+    .simplepage__contentFooter {
+        display: none;
+    }
+    .simplepage__block {
+        height: auto;
+        width: 100%;
+    }
+    .simplepage__block:not(.simplepage__block--text) {
+        height: 425px;
+        background-image: url('../img/aboyt_768.png') !important;
     }
 }
 
@@ -1018,6 +1030,10 @@
     .ambassadorStory.innerWrapper {
         padding-bottom: 96px;
     }
+    .simplepage__block:not(.simplepage__block--text) {
+        height: 425px;
+        background-image: url('../img/about_480.png') !important;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -1137,5 +1153,9 @@
 
     .orders.innerWrapper {
         padding-bottom: 106px;
+    }
+    .simplepage__block:not(.simplepage__block--text) {
+        height: 425px;
+        background-image: url('../img/about_320.png') !important;
     }
 }
