@@ -1271,7 +1271,8 @@ button.paginationBlock__item {
 }
 
 .mapClubs__container {
-    height: 459px;
+    height: auto;
+    max-height: 459px;
     overflow-y: auto;
     list-style-type: none;
 }
