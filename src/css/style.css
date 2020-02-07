@@ -1285,11 +1285,13 @@ button.paginationBlock__item {
     cursor: pointer;
 }
 
-.mapClub__title, .baloon__title {
+.mapClub__title, .baloon__title,.mapClub__title:active, .mapClub__title:visited, .baloon__title:active, .baloon__title:visited  {
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+    color: inherit;
+    text-decoration-line: none;
 }
 
 .mapClub__address, .baloon__address {
@@ -1342,7 +1344,7 @@ button.paginationBlock__item {
 }
 
 .clubPhone, .clubSchedule {
-    width: calc(50% - 15px);
+    width: calc(50% - 7px);
 }
 
 .baloon__socials {

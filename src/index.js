@@ -7,10 +7,10 @@ import './js/spoiler';
 import './js/select';
 import './js/burger';
 import './js/aside';
-import {init} from './js/map';
+//import {init} from './js/map';
 
 document.addEventListener(`DOMContentLoaded`, () => {
-  if (document.getElementById(`map`)) {
-    ymaps.ready(init);
-  }
+  // if (document.getElementById(`map`)) {
+  //   ymaps.ready(init);
+  // }
 });
