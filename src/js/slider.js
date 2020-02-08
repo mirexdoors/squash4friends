@@ -356,14 +356,68 @@ if (window.innerWidth < 1024) {
     },
   });
 }
-// $(`#club-slider`).slick({
-//   dots: true,
-//   appendDots: $(`.clubSlider__pagination`),
-//   arrows: false,
-//   autoplay: true,
-//   speed: 500,
-//   dotsClass: `paginationBlock__container`,
-// });
+
+$(`#club-slider`).lightSlider({
+  item: 1,
+  autoWidth: false,
+  slideMove: 1,
+  slideMargin: 12,
+
+  mode: `slide`,
+  useCSS: true,
+  cssEasing: `ease`,
+  easing: `linear`,
+
+  speed: 400,
+  auto: false,
+  pauseOnHover: false,
+  loop: true,
+  slideEndAnimation: true,
+  pause: 2000,
+  currentPagerPosition: `middle`,
+  keyPress: false,
+  controls: false,
+
+  rtl: false,
+  adaptiveHeight: false,
+  vertical: false,
+  pager: true,
+  enableTouch: false,
+  enableDrag: false,
+  freeMove: true,
+  swipeThreshold: 40,
+  responsive: [
+    {
+      breakpoint: 479,
+      settings: {
+        slideMargin: 0,
+      },
+    },
+  ],
+  onSliderLoad: (slider) => {
+    const parent = slider.parents(`.club__sliderBlock`);
+    const pagination = parent.find(`.lSPager`);
+    const pagWidth = pagination.width() + 26;
+
+    let style = `left: 0; bottom:-47px`;
+
+    pagination.before(`<button style="${style}" class="slick-prev paginationBlock__item" aria-label="Previous" type="button">&larr;</button>`);
+
+
+      style = `left: ${pagWidth}px; bottom:-47px`;
+
+    pagination.parent().append(`<button style="${style}"  class="slick-next paginationBlock__item" aria-label="Next" type="button">&rarr;</button>`);
+
+    parent.find(`.slick-prev`).on(`click`, () => {
+      slider.goToPrevSlide();
+    });
+
+    parent.find(`.slick-next`).on(`click`, () => {
+      slider.goToNextSlide();
+    });
+  },
+});
+
 
 $(`#story_slider`).lightSlider({
   item: 1,

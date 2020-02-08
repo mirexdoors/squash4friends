@@ -734,6 +734,11 @@ button.paginationBlock__item {
     margin-top: 0 !important;
     display: inline-block;
 }
+.club__sliderBlock .lSPager.lSpg {
+    right: unset;
+    left: 26px;
+    bottom: -47px;
+}
 .ambassadorStory .lSPager.lSpg {
     right: 26px;
 }
@@ -859,6 +864,9 @@ button.paginationBlock__item {
     line-height: 80px;
     letter-spacing: 3px;
     color: #31312E;
+}
+.h3 {
+    padding-bottom: 30px;
 }
 .h1.slideTitle--leftpad {
     padding-left: 0;
@@ -1853,33 +1861,38 @@ button.paginationBlock__item {
 
 /*breadcrumbs end*/
 .subTitle {
+    margin-top: 20px;
+    margin-left: 14px;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
 }
 
 /*textblock start*/
 .textBlock {
     width: 100%;
 }
-
 .textBlock__form {
-
+    margin-left: 14px;
 }
-
 .textBlock__fields {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 698px;
     margin: 30px 0 35px 0;
 }
 
-.textBlock__form .inputWrapper, .textBlock__form select {
-    width: calc(50% - 10px);
+.textBlock__form .inputWrapper {
+    width: calc(50% - 5px);
+    height: 54px;
     margin-right: 10px;
     margin-bottom: 6px;
 }
-
+.textBlock__form .inputWrapper:nth-of-type(even) {
+    margin-right: 0;
+}
+.textBlock__fields .selectBox__pseudoCurrent {
+    width: 100%;
+}
 .textBlock__footer {
     display: flex;
     align-items: center;
@@ -1887,9 +1900,13 @@ button.paginationBlock__item {
 }
 
 .textBlock__linkBlock {
-    width: 35%;
+    width: 211px;
+    margin-right: 30px;
 }
-
+.textBlock__linkBlock .linkBlock__item {
+    width: 100%;
+    padding: 0;
+}
 .inputWrapper {
     position: relative;
 }
@@ -1982,7 +1999,8 @@ button.paginationBlock__item {
 }
 
 .club__contacts {
-    margin: 50px 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .club__instagram, .club__info, .club__metro {
@@ -2019,11 +2037,14 @@ button.paginationBlock__item {
 .club__socialImg {
     width: 100%;
 }
-
+.club__linkBlock {
+    margin-top: calc(30px - 1em);
+}
 .club__descriptionTitle {
     font-weight: bold;
     font-size: 24px;
     line-height: 26px;
+    color: #31312e;
 }
 
 /*ambassador detail page*/
