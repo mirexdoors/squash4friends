@@ -6,6 +6,7 @@ $(`.js-openModal`).on(`click`, function () {
         $(`${modalId}`).fadeIn();
         $(`.darkenMask`).show();
         $(`body`).addClass(`darken`);
+        $(`body`).addClass(`darken--mobile`);
         window.isDarken = true;
     }
 });
@@ -15,6 +16,7 @@ $(`.js-formClose`).on(`click`, function () {
     form.fadeOut();
     $(`.darkenMask`).hide();
     $(`body`).removeClass(`darken`);
+    $(`body`).removeClass(`darken--mobile`);
 });
 
 $(`.form`).on(`submit`, function (e) {
@@ -37,6 +39,7 @@ $(`.form`).on(`submit`, function (e) {
             this.reset();
             $(`.darkenMask`).show();
             $(`body`).addClass(`darken`);
+            $(`body`).addClass(`darken--mobile`);
         }
         $(`#success`).fadeIn();
 

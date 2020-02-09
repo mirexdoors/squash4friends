@@ -35,8 +35,8 @@ body {
 button {
     outline: none!important;
 }
-body.darken {
-    overflow-y: hidden;
+body.darken .topBar {
+    display: none;
 }
 
 p {
@@ -64,7 +64,7 @@ button {
 .header {
     position: sticky;
     top: 0;
-    z-index: 900;
+    z-index: 94;
 }
 
 .header.sticky {
@@ -719,7 +719,7 @@ button.paginationBlock__item {
     bottom: 40px;
     right: calc(50% - 1170px / 2);
     display: flex;
-    z-index: 500;
+    z-index: 90;
 }
 
 .lSSlideOuter {
@@ -1674,7 +1674,7 @@ button.paginationBlock__item {
 /*modal forms*/
 .modalForm {
     position: fixed;
-    top: 40px;
+    top: 20px;
     left: 0;
     right: 0;
     width: 400px;
@@ -1747,7 +1747,9 @@ button.paginationBlock__item {
 .modalForm__text {
     margin: 20px auto 0 auto;
 }
-
+.modalForm--message .modalForm__text {
+    margin-top: 0;
+}
 .modalForm__submit {
     width: 100%;
 }
