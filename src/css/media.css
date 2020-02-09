@@ -99,7 +99,9 @@
         font-size: 22px;
         line-height: 24px;
     }
-
+    .ambassadors--inner.innerWrapper {
+        padding-top: 40px;
+    }
     .pageTitle__subTitle {
         width: 50%;
     }
@@ -809,7 +811,16 @@
     .mainColumn {
         padding-bottom: 50px;
     }
-
+    .ambassadors--inner.innerWrapper {
+        padding-top: 30px;
+    }
+ .ambassadors__filter {
+        max-width: 323px;
+    }
+    .ambassadors--inner .ambassadors__filter {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .textBlock__form .inputWrapper {
         width: 342px;
         margin-right: 0;

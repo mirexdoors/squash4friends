@@ -933,7 +933,9 @@ button.paginationBlock__item {
     background-image: url("../img/bg.png");
     background-color: #E4E3E0;
 }
-
+.ambassadors--inner.innerWrapper {
+    padding-top: 50px;
+}
 .ambassadors__container {
     display: flex;
 }
@@ -1030,7 +1032,9 @@ button.paginationBlock__item {
     margin-bottom: 30px;
     margin-top: 20px;
 }
-
+.ambassadors--inner .ambassadors__filter {
+    margin-top: 0;
+}
 .mapList__selectBlock .selectBox {
     margin-bottom: 6px;
 }
