@@ -32,9 +32,11 @@ body {
     color: #666666;
     background: #FBF8F6;
 }
+
 button {
-    outline: none!important;
+    outline: none !important;
 }
+
 body.darken .topBar {
     display: none;
 }
@@ -150,9 +152,11 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration-line: none;
     font-weight: bold;
 }
+
 .typography {
     overflow-x: auto;
 }
+
 .typography ul {
     list-style: none;
 }
@@ -351,9 +355,11 @@ h1, h2, h3, h4, h5, h6 {
 .header .navigation__link.active:not(.navigation__link--white), .footer .navigation__link--white.active, .footer .navigation__item:not(.navigation__item--red) .navigation__link--white:hover, .navigation__link:not(.navigation__link--white):hover {
     border-bottom: 5px solid #EB2E34;;
 }
+
 .navigation__item--menu .navigation__link {
-    border: 0!important;
+    border: 0 !important;
 }
+
 .navigation__block {
     width: 100%;
 }
@@ -646,14 +652,17 @@ button.paginationBlock__item {
 .slideTitle {
     width: 380px;
 }
+
 .slider:not(.slider--ambassador) .slideTitle {
     line-height: normal;
 }
+
 .slider--ambassador .slideTitle {
     width: 100%;
 }
+
 .slider--ambassador .slide__description {
-    padding-top:0;
+    padding-top: 0;
 }
 
 .slideTitle__text {
@@ -667,7 +676,7 @@ button.paginationBlock__item {
 
 .slideTitle__text--red-white {
     color: #FBF8F6;
-    padding: 8px  14px 0 14px!important;
+    padding: 8px 14px 0 14px !important;
     background-color: #EB2E34;
 }
 
@@ -729,19 +738,22 @@ button.paginationBlock__item {
 
 .lSPager.lSpg {
     position: absolute;
-    right:26px;
+    right: 26px;
     bottom: -73px;
     margin-top: 0 !important;
     display: inline-block;
 }
+
 .club__sliderBlock .lSPager.lSpg {
     right: unset;
     left: 26px;
     bottom: -47px;
 }
+
 .ambassadorStory .lSPager.lSpg {
     right: 26px;
 }
+
 .lSPager.lSpg > li a {
     width: auto !important;
     height: auto !important;
@@ -865,22 +877,28 @@ button.paginationBlock__item {
     letter-spacing: 3px;
     color: #31312E;
 }
+
 .h3 {
     padding-bottom: 30px;
 }
+
 .h1.slideTitle--leftpad {
     padding-left: 0;
 }
+
 .titleText.h2 {
     font-size: 50px;
     line-height: 50px;
 }
+
 .about__title {
     width: 90%;
 }
+
 .aboutTitle__text.titleText {
     padding-left: 0;
 }
+
 .titleText.titleText--article {
     font-size: 50px;
 }
@@ -933,9 +951,11 @@ button.paginationBlock__item {
     background-image: url("../img/bg.png");
     background-color: #E4E3E0;
 }
+
 .ambassadors--inner.innerWrapper {
     padding-top: 50px;
 }
+
 .ambassadors__container {
     display: flex;
 }
@@ -952,17 +972,21 @@ button.paginationBlock__item {
     max-width: 382px;
     height: 506px;
 }
-.pageTitle .pageTitle__subTitle, .pageTitle .breadcrumbs, .about__title  {
+
+.pageTitle .pageTitle__subTitle, .pageTitle .breadcrumbs, .about__title {
     padding-left: 14px;
 }
+
 .pageTitle__subTitle.logoSymbol:before {
     left: 0;
     top: 0;
 }
+
 .articles.articles--list {
     padding-bottom: 100px;
     padding-top: 50px;
 }
+
 .ambassadors__container:not(.ambassadors__container-slider), .articles__container:not(#articles-slider) {
     flex-wrap: wrap;
     margin-bottom: -50px;
@@ -973,9 +997,11 @@ button.paginationBlock__item {
     margin-right: 12px;
     margin-bottom: 50px;
 }
+
 .ambassadors__container:not(.ambassadors__container-slider) .ambassadors__item:nth-child(3n+3), .articles__container:not(#articles-slider) .articles__item:nth-child(3n+3) {
     margin-right: 0;
 }
+
 .ambassador__main, .ambassador__sub {
     padding: 16px 32px;
     background: #FBF8F6;
@@ -1032,6 +1058,7 @@ button.paginationBlock__item {
     margin-bottom: 30px;
     margin-top: 20px;
 }
+
 .ambassadors--inner .ambassadors__filter {
     margin-top: 0;
 }
@@ -1298,7 +1325,8 @@ button.paginationBlock__item {
     cursor: pointer;
 }
 
-.mapClub__title, .baloon__title,.mapClub__title:active, .mapClub__title:visited, .baloon__title:active, .baloon__title:visited  {
+.mapClub__title, .baloon__title, .mapClub__title:active, .mapClub__title:visited, .baloon__title:active, .baloon__title:visited {
+    display: block;
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 18px;
@@ -1387,11 +1415,13 @@ button.paginationBlock__item {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 35px!important;
+    margin-top: 35px !important;
 }
+
 .articles__container:not(#articles-slider) {
     flex-wrap: wrap;
 }
+
 .articles__item {
     position: relative;
     width: 382px;
@@ -1407,9 +1437,11 @@ button.paginationBlock__item {
     height: 100%;
     max-height: 258px;
 }
+
 .storyItem__subText {
     margin-top: 20px;
 }
+
 .article {
     background: #FBF8F6;
 }
@@ -1688,6 +1720,11 @@ button.paginationBlock__item {
     z-index: 999;
 }
 
+.modalForm.modalForm--message {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .modalForm h2 {
     margin: 0;
     font-weight: bold;
@@ -1743,7 +1780,17 @@ button.paginationBlock__item {
     line-height: 19px;
     color: #666666;
 }
+@-webkit-keyframes autofill {
+    to {
+        color: inherit;
+        background: transparent;
+    }
+}
 
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
 .modalForm__input {
     width: 100%;
     margin-bottom: 6px;
@@ -1752,9 +1799,11 @@ button.paginationBlock__item {
 .modalForm__text {
     margin: 20px auto 0 auto;
 }
+
 .modalForm--message .modalForm__text {
     margin-top: 0;
 }
+
 .modalForm__submit {
     width: 100%;
 }
@@ -1878,9 +1927,11 @@ button.paginationBlock__item {
 .textBlock {
     width: 100%;
 }
+
 .textBlock__form {
     margin-left: 14px;
 }
+
 .textBlock__fields {
     display: flex;
     flex-wrap: wrap;
@@ -1894,12 +1945,15 @@ button.paginationBlock__item {
     margin-right: 10px;
     margin-bottom: 6px;
 }
+
 .textBlock__form .inputWrapper:nth-of-type(even) {
     margin-right: 0;
 }
+
 .textBlock__fields .selectBox__pseudoCurrent {
     width: 100%;
 }
+
 .textBlock__footer {
     display: flex;
     align-items: center;
@@ -1910,10 +1964,12 @@ button.paginationBlock__item {
     width: 211px;
     margin-right: 30px;
 }
+
 .textBlock__linkBlock .linkBlock__item {
     width: 100%;
     padding: 0;
 }
+
 .inputWrapper {
     position: relative;
 }
@@ -1962,10 +2018,12 @@ button.paginationBlock__item {
     flex-direction: column;
     width: 100%;
 }
+
 .js-fixPromo.fixed {
     position: fixed;
     top: 60px;
 }
+
 .club__promoBlock {
     position: relative;
     display: flex;
@@ -2044,9 +2102,11 @@ button.paginationBlock__item {
 .club__socialImg {
     width: 100%;
 }
+
 .club__linkBlock {
     margin-top: calc(30px - 1em);
 }
+
 .club__descriptionTitle {
     font-weight: bold;
     font-size: 24px;
@@ -2058,20 +2118,24 @@ button.paginationBlock__item {
 .ambassadorStory {
     background: #E4E3E0;
 }
+
 .ambassadorStory.innerWrapper {
     padding-bottom: 106px;
 }
 
-.ambassadorStory .lSPager.lSpg,.ambassadorStory   button.paginationBlock__item {
+.ambassadorStory .lSPager.lSpg, .ambassadorStory button.paginationBlock__item {
     bottom: -46px;
 }
+
 .storyItem__content {
     margin-right: 105px;
     padding-left: 14px;
 }
+
 .storyItem__slider {
     height: 100%;
 }
+
 .storyItem__content .titleText {
     padding-left: 0;
 }
@@ -2083,9 +2147,11 @@ button.paginationBlock__item {
 .ambassadorStory__wrapper {
     width: 100%;
 }
+
 .storyItem__picture {
     position: relative;
 }
+
 .ambassadorStory__item {
     display: flex;
     width: 100%;
@@ -2164,9 +2230,11 @@ button.paginationBlock__item {
     width: 100%;
     display: flex;
 }
-.simplepage .breadcrumbs, .simplepage .slide__title, .simplepage .simplepage__content, .aboutDescription__link  {
+
+.simplepage .breadcrumbs, .simplepage .slide__title, .simplepage .simplepage__content, .aboutDescription__link {
     padding-left: 14px;
 }
+
 .simplepage__block {
     width: 50%;
     background-size: cover;
@@ -2193,15 +2261,19 @@ button.paginationBlock__item {
     font-size: 16px;
     line-height: 19px;
 }
+
 .simplepage__text.simplepage__text--bold {
     font-weight: bold;
 }
+
 .simplepage__content {
     margin-top: 15px;
 }
+
 .simplepage__contentFooter {
     margin-top: auto;
 }
+
 .aboutDescription__link {
     width: fit-content;
     width: -moz-fit-content;
