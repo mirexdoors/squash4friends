@@ -19,15 +19,13 @@ $(`.js-formClose`).on(`click`, function () {
     $(`body`).removeClass(`darken--mobile`);
 });
 
-
-
-/*ввод в инпут*/
+/* ввод в инпут */
 $(`input.required`).on(`input`, function () {
     if ($(this).parent().hasClass(`error`)) {
         $(this).parent().removeClass(`error`);
     }
 });
-/*проверяем localstorage на показ блока из ИГ */
+/* проверяем localstorage на показ блока из ИГ */
 if (!localStorage.getItem(`isShowInsta`)) {
     setTimeout(() => {
         $(`.darkenMask`).show();
@@ -35,4 +33,6 @@ if (!localStorage.getItem(`isShowInsta`)) {
         window.isDarken = true;
         $('#insta-modal').fadeIn();
     }, 5000);
+    //записываем в loalstorage после показа
+  localStorage.setItem('isShowInsta', true);
 }

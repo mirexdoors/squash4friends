@@ -1944,6 +1944,7 @@ input:-webkit-autofill {
     height: 54px;
     margin-right: 10px;
     margin-bottom: 6px;
+    order: 1;
 }
 
 .textBlock__form .inputWrapper:nth-of-type(even) {

@@ -99,9 +99,11 @@
         font-size: 22px;
         line-height: 24px;
     }
+
     .ambassadors--inner.innerWrapper {
         padding-top: 40px;
     }
+
     .pageTitle__subTitle {
         width: 50%;
     }
@@ -808,19 +810,27 @@
         padding: 35px 20px;
     }
 
+    .inputWrapper.mobileOrder {
+        order: 2;
+    }
+
     .mainColumn {
         padding-bottom: 50px;
     }
+
     .ambassadors--inner.innerWrapper {
         padding-top: 30px;
     }
- .ambassadors__filter {
+
+    .ambassadors__filter {
         max-width: 323px;
     }
+
     .ambassadors--inner .ambassadors__filter {
         margin-left: auto;
         margin-right: auto;
     }
+
     .textBlock__form .inputWrapper {
         width: 342px;
         margin-right: 0;
@@ -1236,9 +1246,11 @@
         top: 0;
         width: 100%;
     }
+
     .modalForm--message .modalForm__close span:before, .modalForm__close span:after {
 
     }
+
     .modalForm.form .modalForm__close span:before, .modalForm.form .modalForm__close span:after {
         background: #FBF8F6;
     }
