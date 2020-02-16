@@ -325,6 +325,16 @@
     .simplepage__block:not(.simplepage__block--text) {
         background-image: url('../img/about_1024.png') !important;
     }
+
+    .simplepage__block.searchList__wrapper {
+        width:  90%;
+    }
+    .searchList__item {
+        margin-bottom: 40px;
+    }
+    .searchItem__title {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -795,6 +805,9 @@
     .breadcrumbs {
         margin-bottom: 40px;
     }
+    .simplepage__block.searchList__wrapper {
+        width:  100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1209,6 +1222,17 @@
 
     .aboutDescription__content {
         margin-bottom: 35px;
+    }
+
+    .searchList__item {
+        margin-bottom: 30px;
+    }
+    .searchItem__title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .searchList.simplepage__content {
+        margin-top: 5px;
     }
 }
 

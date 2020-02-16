@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>:SQUASHFORFRIENDS</title>
+    <link rel="icon" href="./favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=bebas-neue" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<section class="topBar">
+    <div class="header__toolbar toolbar">
+        <div class="toolbar__counter counter">
+            <div class="counter__item toolbar__item">
+                <span class="counter__itemDigit">8</span>&nbsp;стран
+            </div>
+            <div class="counter__item toolbar__item">
+                <span class="counter__itemDigit">12</span>&nbsp;клубов
+            </div>
+            <div class="counter__item toolbar__item">
+                <span class="counter__itemDigit">12&nbsp;230</span>&nbsp;игроков
+            </div>
+            <div class="counter__item toolbar__item">
+                <span class="counter__itemDigit">123</span>&nbsp;амбассадора
+            </div>
+        </div>
+        <div class="toolbar__helpers">
+            <div class="search toolbar__helper">
+                <img class="search__icon js-search-icon" src="./img/search.png" alt="Поиск"/>
+            </div>
+            <div class="language toolbar__helper">
+                <span class="language__item  language__item--active">Ru</span>
+                <span class="language__item language__item--last">En</span>
+            </div>
+            <div class="social toolbar__helper">
+                <div class="social__item">
+                    <a href="https://vk.com" target="_blank" class="social__link">
+                        <img class="social__image" src="img/vk.png" alt="VK"/>
+                    </a>
+                </div>
+                <div class="social__item">
+                    <a href="https://facebook.com" target="_blank" class="social__link">
+                        <img class="social__image" src="img/fb.png" alt="FB"/>
+                    </a>
+                </div>
+                <div class="social__item">
+                    <a href="https://instagram.com" target="_blank" class="social__link">
+                        <img class="social__image" src="img/ig.png" alt="Instagram"/>
+                    </a>
+                </div>
+                <div class="social__item">
+                    <a href="https://youtube.com" target="_blank" class="social__link">
+                        <img class="social__image" src="img/yt.png" alt="youtube"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header">
+    <div class="menu">
+        <nav class="menu__block navigation nav">
+            <div class="navigation__item navigation__item--red navigation__item--mobileMenu">
+                <div class="logoSymbol logoSymbol--link logoSymbol--white">
+                    <a class="navigation__link navigation__link--white" href="/"><span class="navigation__text">
+                        squash4friends</span><span class="navigation__text navigation__text--mobile">
+                        s4f</span></a>
+                </div>
+            </div>
+            <div class="navigation__item navigation__item--mobile navigation__item--menu">
+                <button class="navigation__link js-burger"><span></span>Меню</button>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link active" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+        </nav>
+        <nav class="menu__block navigation navigation--mobile js-navigation nav">
+            <div class="navigation__item">
+                <a class="navigation__link" href="/clubs.html">Клубы</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/ambassadors.html">Амбассадоры</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/about.html">О нас</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/wiki.html">Сквош-вики</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="/articles.html">Статьи</a>
+            </div>
+            <div class="navigation__item navigation__item--feedback navigation__item--feedback--480">
+                <button data-modal="#order-ambassador"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                    амбассадором
+                </button>
+            </div>
+            <div class="navigation__item navigation__item--feedback">
+                <button data-modal="#try-squash"
+                        class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                    Попробовать
+                    сквош
+                </button>
+            </div>
+        </nav>
+        <div class="feedback menu__block linkBlock">
+            <button data-modal="#order-ambassador"
+                    class="js-openModal feedback__item linkBlock__item linkBlock__item--white">Стать
+                амбассадором
+            </button>
+            <button data-modal="#try-squash" class="js-openModal feedback__item linkBlock__item linkBlock__item--red">
+                Попробовать
+                сквош
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+        <section class="searchBox searchBox--visible">
+            <div class="searchBox__container">
+                <div class="searchBox__title">Поиск по сайту</div>
+                <div class="searchBox__inputWrapper"><input type="text" placeholder="Начните набирать"
+                                                            class="searchBox__input"></div>
+            </div>
+        </section>
+        <section class="pageTitle">
+            <div class="pageTitle__titleBlock">
+                <div class="wrapper">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                        <li class="breadcrumbs__item">Результаты поиска</li>
+                    </ul>
+                    <div class="pageTitle__title">
+                        <h2 class="titleText h2">Ничего не найдено</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="simplepage">
+        <div class="simplepage__block simplepage__block--text">
+            <div class="simplepage__content searchList">
+                <div class="logoSymbol"> <span
+                        class="simplepage__text simplepage__text--bold">Проверьте правильность написания, либо
+                    попробуйте изменить формулировку запроса.<br><br> Возможно, ответ на свой вопрос вы сможете найти в
+                                                                разделе «Сквош-вики», где мы собрали ответы на самые частые вопросы.</span></div>
+
+                <div class="linkBlock simplepage__linkBlock"><a href="/"
+                                                                class="linkBlock__item linkBlock__item--red">Читать
+                    сквош вики &rarr;
+                </a></div>
+
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
