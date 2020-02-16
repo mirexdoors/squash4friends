@@ -3,6 +3,8 @@ import $ from "jquery";
 const hideSearchBox = () => {
     $(`.searchBox`).slideUp();
     $(`.darkenMask`).hide();
+    $(`.header`).attr(`style`, ``);
+    $(`.topBar`).attr(`style`, ``);
     $(`body`).removeClass(`darken`);
     window.isDarken = false;
 };
@@ -10,6 +12,9 @@ const showSearchBox = () => {
     $(`.searchBox`).slideDown();
     $(`.darkenMask`).show();
     $(`body`).addClass(`darken`);
+    $(`.topBar`).show();
+    $(`.topBar`).css({position: `sticky`, top: 0, [`z-index`]: 99 });
+    $(`.header`).css({[`z-index`]: 99, top: `42px`});
     window.isDarken = true;
 };
 $(`.js-search-icon`).on(`click`, function () {
