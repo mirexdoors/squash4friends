@@ -1670,6 +1670,8 @@ button.paginationBlock__item {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 30px;
+}
+.searchItem__title a {
     color: #31312E;
 }
 .searchBox__title {
