@@ -1640,7 +1640,13 @@ button.paginationBlock__item {
     text-decoration-line: none;
     color: #888888;
 }
-
+.bottomBar__email {
+    color: #666666;
+    margin-left:  40px;
+    font-size: 16px;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
 /*bottomBar end*/
 /*searchBox start*/
 .searchBox {

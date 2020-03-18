@@ -461,7 +461,7 @@ $(`#story_slider`).lightSlider({
     const pagination = parent.find(`.lSPager`);
     const pagWidth = pagination.width() + 49;
 
-    let style = `right: calc(${pagWidth}px - 33px)`;
+    let style = `right: calc(${pagWidth}px - 24px)`;
     if (window.innerWidth < 1024) {
       style = `left: calc(50% - ${pagWidth}px / 2)`;
     }

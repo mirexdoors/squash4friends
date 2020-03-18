@@ -1233,6 +1233,19 @@
     .searchList.simplepage__content {
         margin-top: 5px;
     }
+
+    .bottomBar__content {
+        flex-direction: column;
+    }
+    .bottomBar__copyright {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .bottomBar__email {
+        margin-top: 10px;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 479px) {
